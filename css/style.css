@@ -1,5 +1,13 @@
 * { box-sizing: border-box; }
-    body { margin: 0; }    
+    body { margin: 0; }  
+    .bodydartist main a{
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        margin-left: 90%;
+        width: 50px;
+        margin-top: 15px;
+    }  
 ul, ol { 
     display: flex;
     justify-content: space-evenly;
@@ -91,33 +99,54 @@ header a:hover{
     width: 50px;
     display: flex;
     justify-content: center;
-margin-left: 95%;
-margin-top: 5px;
+    margin-top: 5px;
 }
 .bodydartist main{
     display: flex;
     flex-direction: column;
 }
+.contendor-banner{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+.bottom-left h1{
+    font-size: xx-large;
+    margin-left: 100px;
+}
 .canciontomi{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     border: solid 3px white;
     margin-top: 5px;
     border-radius: 30px;
+    align-content: center;
 }
 .canciontomi img{
-    width: 10%;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     margin-left: 30px;
+    align-self: center;
+    margin-bottom: 40px;
+    background-color: yellow;
 
 }
 .canciontomi h1{
     color: white;
     font-size: xx-large;
     margin-left: 50px;
+    align-self: center;
 }
 .canciontomi h2{
     margin-left: 50px;
     align-self: center;
+}
+.canciontomi a{
+    padding: 10px;
+    border-radius: 50%;
 }
