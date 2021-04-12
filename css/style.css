@@ -1,7 +1,6 @@
 * { box-sizing: border-box; }
     body { margin: 0; }  
     .bodydartist main a{
-        text-decoration: none;
         display: flex;
         justify-content: center;
         margin-left: 90%;
@@ -15,39 +14,63 @@ ul, ol {
     padding: 2%;
     align-items: center;
 }
-li { list-style-type: none;
-    width: 150px;
-    margin-left: 5px;
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    background-color:black;
+  }
+  ul,
+  ol {
     display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 2%;
     align-items: center;
-    justify-content: center;
-    border-radius: 30px;
-    height: 50px;
-    padding: 10px;
-}
-header{
-    width: 100%;
-    display: flex;
-    background-color: black;
-    height: 200px;
-    align-items: center;
-    border: solid 3px white;
-    border-radius: 50px;
-    justify-content: space-between;
-    padding: 5%;
-}
+  }
+  li{
+      text-decoration: none;
+  }
+  li a{
+      color: white;
+      font-size:x-large;
+  }
+  a:link {
+      text-decoration: none;
+  }
+  header{
+      padding:30px;
+  }
+  header nav ul{
+      width:100%;
+      height: 100%;
+      height: 67px;
+      border: solid 3px grey;
+      border-radius: 3px;
+      align-items: center;
+  }
+  /*.cajita{
+      border: solid 3px white;
+      border-radius:25px;
+      width:120px;
+      text-align:center;
+      padding:15px;
+  }*/
+  li input[type=text]{
+      padding: 6px;
+      margin-top: 8px;
+      margin-right: 16px;
+      margin-bottom: 8px;
+      border: none;
+      font-size: 17px;
+  }  
 .contenedor{
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 2%;
 }
-nav{
-    width: 50%;
-    height: 150px;
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-}
+
 figure{
     width: 15%;
 }
@@ -56,17 +79,6 @@ figure{
     flex-direction: column;
     align-items: center;
     margin-left: 30px;
-    color: white;
-}
-header a{
-    color: gray;
-    text-decoration: none;
-    height: 100%;
-    font-size: xx-large;
-    text-transform: capitalize;
-
-}
-header a:hover{
     color: white;
 }
 .bodyindex{
@@ -149,4 +161,27 @@ header a:hover{
 .canciontomi a{
     padding: 10px;
     border-radius: 50%;
+}
+.fotocancion{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+.h1nour{
+    text-align: center;
+    color: white;
+}
+.h3gris{
+    text-align: center;
+    color: grey;
+}
+.hijo{
+    color:white;
+}
+.hijo ul li a{
+    margin-left:15px;
+}
+.hijo ul{
+    list-style-type: none;
 }
