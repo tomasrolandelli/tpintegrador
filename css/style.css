@@ -1,218 +1,210 @@
-<<<<<<< HEAD
-* { box-sizing: border-box; }
-    body {
-         margin: 0;
-         background-color: black; 
-        }  
-    .bodydartist main a{
-        display: flex;
-        justify-content: center;
-        margin-left: 90%;
-        width: 50px;
-        margin-top: 15px;
+* { 
+    box-sizing: border-box; 
+}
+body {
+    margin: 0;
+    background-color: black; 
+    }  
+.bodydartist main a{
+    display: flex;
+    justify-content: center;
+    margin-left: 90%;
+    width: 50px;
+    margin-top: 15px;
     }  
 @media(min-width:768px){
     /* DESKTOP */
-
-
- ul , ol { 
-=======
-* { box-sizing: border-box; } 
-    figure img{
-        width: 100%;
-        height: 100%;
+    .padre{
+        height:100%;
     }
-    figure{
-        width: 15%;
-    }
-ul, ol { 
->>>>>>> 8bf39debc271764e2c1872315073f76b99512fdc
-    display: flex;
-    justify-content: space-evenly;
-    height: 100%;
-    padding: 2%;
-    align-items: center;
-<<<<<<< HEAD
-    text-align: center;
-}
-
-  li{
-      text-decoration: none;
-  }
-  li a{
-      color: white;
-      font-size:x-large;
-  }
-  a:link {
-      text-decoration: none;
-  }
-  header{
-      padding:30px;
-  }
-  header nav ul{
-      width:100%;
-      height: 100%;
-      height: 67px;
-      border: solid 3px grey;
-      border-radius: 3px;
-      align-items: center;
-  }
-  /*.cajita{
-      border: solid 3px white;
-      border-radius:25px;
-      width:120px;
-      text-align:center;
-      padding:15px;
-  }*/
-  li input[type=text]{
-      padding: 6px;
-      margin-top: 8px;
-      margin-right: 16px;
-      margin-bottom: 8px;
-      border: none;
-      font-size: 17px;
-  } 
-  .fotocancion{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-}
-.h1nour{
-    text-align: center;
-    color: white;
-}
-.h3gris{
-    text-align: center;
-    color: grey;
-}
-.hijo{
-    color:white;
-    margin: 0 auto;
-    border:solid 3px grey;
-    border-radius: 25px;
-    width: 350px;
-}
-.nieto{
-    margin-bottom: 20px;
-    display: flex;
-}
-.nieto a{
-    margin-left: 30px;
-    font-size: large;
-}
-.fas{
-    margin-left: 80px;
-    width: 20px;
-}
-.cajita{
-    margin-top: 15px;
-    border: solid 3px white;
-    border-radius: 25px;
-    background-color: white;
-    padding: 7px;
-    margin-left: 28px;
-    
-}
-.cajita a{
-    margin: 0 auto;
-    color: black;
-}
-.fa-play{
-    margin-top: 30px;
-}
+        ul,
+        ol {
+          display: flex;
+          justify-content: space-evenly;
+          padding: 2%;
+          align-items: center;
+        }
+        .padre{
+            height:100%;
+        }
+        li{
+            text-decoration: none;
+        }
+        li a{
+            color: white;
+            font-size:x-large;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        header{
+            padding:30px;
+        }
+        header nav ul{
+            width:100%;
+            height: 67px;
+            border: solid 3px grey;
+            border-radius: 3px;
+            align-items: center;
+        }
+        li input[type=text]{
+            padding: 6px;
+            margin-top: 8px;
+            margin-right: 16px;
+            margin-bottom: 8px;
+            border: none;
+            font-size: 17px;
+        }
+        
+        .main-img{
+            /* Centra */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        
+        }
+        h3{
+            text-align: center;
+            color: grey;
+        }
+        .contenedor{
+            align-items: center;
+        }
+        .hijo{
+            color: white;
+            border: solid 3px grey;
+            width: 350px;
+            margin:0 auto;
+            border-radius: 25px;
+        }
+        .hijito{
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .hijito a{
+            margin-left:50px;
+            color:white;
+            font-size: large;
+            align-items: center;
+        }
+        /* .hijo ul{
+            list-style-type: none;
+        } */
+        .fas{
+            width:20px;
+            margin-left:40px
+        }
+        .cajita{
+            margin-top:16px;
+            border: solid 3px white;
+            border-radius:25px;
+            padding:7px;
+            background-color: white;
+            margin-left:40px
+            
+        }
+        .cajita a{
+            margin: 0 auto;
+            color:black;
+        }
+        .fa-play{
+            margin-top:30px;
+        }
+        footer{
+            margin-top:30px;
+        
+        }
 
 }
 @media(max-width:375px){
     /* MOBILE */
     .padre{
-        height: 100vh;
+        height:100vh;
     }
-    ul { 
+    ul{
         display: flex;
         justify-content: space-evenly;
         padding: 2%;
         align-items: center;
         justify-content: space-between;
     }
-    
-      li a{
-          color: white;
-          font-size:x-large;
-      }
-      a:link {
-          text-decoration: none;
-      }
-      .search{
-          display: none;
-      }
-      header nav ul{
-          border: solid 3px grey;
-          border-radius: 3px;
-      }
-      /*.cajita{
-          border: solid 3px white;
-          border-radius:25px;
-          width:120px;
-          text-align:center;
-          padding:15px;
-      }*/
-      li input[type=text]{
-          padding: 6px;
-          margin-top: 8px;
-          margin-right: 16px;
-          margin-bottom: 8px;
-          border: none;
-          font-size: 17px;
-      } 
-      .fotocancion{
+    header nav ul{
+        border: solid 3px grey;
+        border-radius: 3px;
+    }
+    .search{
+        display:none;
+    }
+    a:link {
+        text-decoration: none;
+    }
+    li a{
+        color: white;
+        font-size:x-large;
+    }
+    .main-img{
+        width:255px;
+        margin-top: 30px;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 225px;
     }
-    .h1nour{
+    h1{
         text-align: center;
         color: white;
+    
     }
-    .h3gris{
+    h3{
         text-align: center;
         color: grey;
     }
     .hijo{
-        color:white;
-        margin: 0 auto;
-        border:solid 3px grey;
-        border-radius: 25px;
+        color: white;
+        border: solid 3px grey;
         width: 350px;
+        margin:0 auto;
+        border-radius: 25px;
     }
-    .nieto{
-        margin-bottom: 20px;
+    .hijito{
         display: flex;
+        margin-bottom: 20px;
     }
-    .nieto a{
-        margin-left: 30px;
+    .hijito a{
+        margin-left:50px;
+        color:white;
         font-size: large;
+        align-items: center;
     }
+    /* .hijo ul{
+        list-style-type: none;
+    } */
     .fas{
-        margin-left: 80px;
-        width: 20px;
+        width:20px;
+        margin-left:40px
     }
     .cajita{
-        margin-top: 15px;
+        margin-top:16px;
         border: solid 3px white;
-        border-radius: 25px;
+        border-radius:25px;
+        padding:7px;
         background-color: white;
-        padding: 7px;
-        margin-left: 28px;
+        margin-left:40px
         
     }
     .cajita a{
         margin: 0 auto;
-        color: black;
+        color:black;
     }
     .fa-play{
-        margin-top: 30px;
+        margin-top:30px;
+    }
+    footer{
+        display:none;
     }
 } 
 
@@ -234,12 +226,7 @@ figure{
 }
 .bodyindex{
     background-color: black;
-=======
     list-style: none;
-}
-body{
-    background-color: black;
-    padding: 2%;
 }
 /* Style the search field */
 form.example input[type=text] {
@@ -274,28 +261,7 @@ form.example input[type=text] {
     clear: both;
     display: table;
   }
-header{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 200px;
-    border-bottom-style: double;
-    border-bottom: solid 3px whitesmoke;
-}
-nav{
-    width: 40%;
-}
-header li a{
-    color: gray;
-    text-decoration: none;
-    height: 100%;
-    font-size: large;
->>>>>>> 8bf39debc271764e2c1872315073f76b99512fdc
-}
-header li a:hover{
-    color: whitesmoke;
-}
+
 .bodydartist h2{
     color: white;
     align-self: center;
@@ -344,20 +310,8 @@ header li a:hover{
     margin-left: 50px;
 }
 .canciontomi a{
-<<<<<<< HEAD
     padding: 10px;
     border-radius: 50%;
 }
-=======
-    color: white;
-    align-self: center;
-    height: 20px;
-    margin-left: 50%;
-    font-size: 50px;
-}
-footer{
-    width: 100%;
-    background-color: gray;
-    justify-self: flex-end ;
-}
->>>>>>> 8bf39debc271764e2c1872315073f76b99512fdc
+
+
