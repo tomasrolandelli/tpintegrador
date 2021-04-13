@@ -1,5 +1,8 @@
 * { box-sizing: border-box; }
-    body { margin: 0; }  
+    body {
+         margin: 0;
+         background-color: black; 
+        }  
     .bodydartist main a{
         display: flex;
         justify-content: center;
@@ -7,28 +10,18 @@
         width: 50px;
         margin-top: 15px;
     }  
-ul, ol { 
+@media(min-width:768px){
+    /* DESKTOP */
+
+
+ ul , ol { 
     display: flex;
     justify-content: space-evenly;
     height: 100%;
     padding: 2%;
     align-items: center;
 }
-* {
-    box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-    background-color:black;
-  }
-  ul,
-  ol {
-    display: flex;
-    justify-content: space-evenly;
-    height: 100%;
-    padding: 2%;
-    align-items: center;
-  }
+
   li{
       text-decoration: none;
   }
@@ -64,7 +57,151 @@ ul, ol {
       margin-bottom: 8px;
       border: none;
       font-size: 17px;
-  }  
+  } 
+  .fotocancion{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+.h1nour{
+    text-align: center;
+    color: white;
+}
+.h3gris{
+    text-align: center;
+    color: grey;
+}
+.hijo{
+    color:white;
+    margin: 0 auto;
+    border:solid 3px grey;
+    border-radius: 25px;
+    width: 350px;
+}
+.nieto{
+    margin-bottom: 20px;
+    display: flex;
+}
+.nieto a{
+    margin-left: 30px;
+    font-size: large;
+}
+.fas{
+    margin-left: 80px;
+    width: 20px;
+}
+.cajita{
+    margin-top: 15px;
+    border: solid 3px white;
+    border-radius: 25px;
+    background-color: white;
+    padding: 7px;
+    margin-left: 28px;
+    
+}
+.cajita a{
+    margin: 0 auto;
+    color: black;
+}
+.fa-play{
+    margin-top: 30px;
+}
+
+}
+@media(max-width:375px){
+    /* MOBILE */
+    .padre{
+        height: 100vh;
+    }
+    ul { 
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+      li a{
+          color: white;
+          font-size:x-large;
+      }
+      a:link {
+          text-decoration: none;
+      }
+      .search{
+          display: none;
+      }
+      header nav ul{
+          border: solid 3px grey;
+          border-radius: 3px;
+      }
+      /*.cajita{
+          border: solid 3px white;
+          border-radius:25px;
+          width:120px;
+          text-align:center;
+          padding:15px;
+      }*/
+      li input[type=text]{
+          padding: 6px;
+          margin-top: 8px;
+          margin-right: 16px;
+          margin-bottom: 8px;
+          border: none;
+          font-size: 17px;
+      } 
+      .fotocancion{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 225px;
+    }
+    .h1nour{
+        text-align: center;
+        color: white;
+    }
+    .h3gris{
+        text-align: center;
+        color: grey;
+    }
+    .hijo{
+        color:white;
+        margin: 0 auto;
+        border:solid 3px grey;
+        border-radius: 25px;
+        width: 350px;
+    }
+    .nieto{
+        margin-bottom: 20px;
+        display: flex;
+    }
+    .nieto a{
+        margin-left: 30px;
+        font-size: large;
+    }
+    .fas{
+        margin-left: 80px;
+        width: 20px;
+    }
+    .cajita{
+        margin-top: 15px;
+        border: solid 3px white;
+        border-radius: 25px;
+        background-color: white;
+        padding: 7px;
+        margin-left: 28px;
+        
+    }
+    .cajita a{
+        margin: 0 auto;
+        color: black;
+    }
+    .fa-play{
+        margin-top: 30px;
+    }
+} 
+
 .contenedor{
     margin-left: 2%;
     margin-right: 2%;
@@ -161,27 +298,4 @@ figure{
 .canciontomi a{
     padding: 10px;
     border-radius: 50%;
-}
-.fotocancion{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-}
-.h1nour{
-    text-align: center;
-    color: white;
-}
-.h3gris{
-    text-align: center;
-    color: grey;
-}
-.hijo{
-    color:white;
-}
-.hijo ul li a{
-    margin-left:15px;
-}
-.hijo ul{
-    list-style-type: none;
 }
