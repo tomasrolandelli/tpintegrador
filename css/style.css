@@ -64,13 +64,13 @@ nav{
     width: 40%;
 }
 header li a{
-    color: gray;
+    color: white;
     text-decoration: none;
     height: 100%;
     font-size: large;
 }
 header li a:hover{
-    color: whitesmoke;
+    color: gray;
 }
 .bodydartist h2{
     color: white;
