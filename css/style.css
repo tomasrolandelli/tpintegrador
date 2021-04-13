@@ -1,4 +1,5 @@
 
+
 *{
     box-sizing: border-box;
 }
@@ -93,41 +94,337 @@ header li a:hover{
     color: black;
     background-color: rgba(128, 128, 128, 0.5);
   }
-.canciontomi{
+
+
+body {
+    margin: 0;
+    background-color: black; 
+
+    }
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2%;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+    header nav ul{
+        border: solid 3px grey;
+        border-radius: 3px;
+    }
+.bodydartist main a{
+
     display: flex;
-    justify-content: baseline;
-    margin-top: 5px;
-    border-bottom: solid 3px white;
-    align-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    justify-content: center;
+    margin-left: 90%;
+    width: 50px;
+    margin-top: 15px;
+    }  
+@media(min-width:375px){
+    /* MOBILE */
+    .padre{
+        height:100vh;
+    }
+    .search{
+        display:none;
+    }
+    a:link {
+        text-decoration: none;
+    }
+    li a{
+        color: white;
+        font-size:x-large;
+    }
+    .main-img{
+        width:255px;
+        margin-top: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nourh1{
+        text-align: center;
+        color: white;
+    
+    }
+    .nourh3{
+        text-align: center;
+        color: grey;
+    }
+    .nourhijo{
+        color: white;
+        border: solid 3px grey;
+        width: 350px;
+        margin:0 auto;
+        border-radius: 25px;
+    }
+    .nietonour{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .nietonour a{
+        margin-left:50px;
+        color:white;
+        font-size: large;
+        align-items: center;
+    }
+    /* .hijo ul{
+        list-style-type: none;
+    } */
+    .fas{
+        width:20px;
+        margin-left:40px
+    }
+    .cajita{
+        margin-top:16px;
+        border: solid 3px white;
+        border-radius:25px;
+        padding:7px;
+        background-color: white;
+        margin-left:40px
+        
+    }
+    .cajita a{
+        margin: 0 auto;
+        color:black;
+    }
+    .fa-play{
+        margin-top:30px;
+    }
+    footer{
+        display:none;
+    }
+    /*Tomi*/
+    .bodydartist h2{
+        color: white;
+        align-self: center;
+    }
+    .bodydartist main{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor-banner {
+        position: relative;
+        text-align: center;
+        color: white;
+        margin-top: 10px;
+      }
+    .contenedor-banner img{
+        width: 100%;
+        height: 150px;
+    }
+    .bottom-left {
+        position: absolute;
+        bottom: 20px;
+        left: 16px;
+        color: black;
+        background-color: rgba(128, 128, 128, 0.5);
+      }
+    .canciontomi{
+        display: flex;
+        justify-content: baseline;
+        margin-top: 5px;
+        border-bottom: solid 3px white;
+        align-content: center;
+    }
+    .canciontomi img{
+        height: 70px;
+        width: 70px;
+        margin-left: 30px;
+        align-self: center;
+    }
+    .canciontomi h1{
+        color: white;
+        font-size: x-large;
+        margin-left: 10px;
+    }
+    .canciontomi h2{
+        margin-left: 20px;
+        color: white;
+        font-size: small;
+        align-self: center;
+    }
+    .canciontomi a{
+        padding: 10px;
+        border-radius: 50%;
+        color: white;
+        margin-left: auto;
+        align-self: center;
+    }    
+} 
+@media only screen and (max-width:1023px) and (min-width:768px){
+    /* TABLET */
+        ul,
+        ol {
+          display: flex;
+          justify-content: space-evenly;
+          padding: 2%;
+          align-items: center;
+        }
+        .padre{
+            height:100%;
+        }
+        li{
+            text-decoration: none;
+        }
+        li a{
+            color: white;
+            font-size:x-large;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        header{
+            padding:30px;
+        }
+        header nav ul{
+            width:100%;
+            height: 67px;
+            border: solid 3px grey;
+            border-radius: 3px;
+            align-items: center;
+        }
+        li input[type=text]{
+            padding: 6px;
+            margin-top: 8px;
+            margin-right: 16px;
+            margin-bottom: 8px;
+            border: none;
+            font-size: 17px;
+        }
+        
+        .main-img{
+            /* Centra */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+        }
+        .nourh1{
+            text-align: center;
+            color: white;
+        
+        }
+        .nourh3{
+            text-align: center;
+            color: grey;
+        }
+        .contenedornour{
+            align-items: center;
+        }
+        .nourhijo{
+            color: white;
+            border: solid 3px grey;
+            width: 350px;
+            margin:0 auto;
+            border-radius: 25px;
+        }
+        .nietonour{
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .nietonour a{
+            margin-left:50px;
+            color:white;
+            font-size: large;
+            align-items: center;
+        }
+        /* .hijo ul{
+            list-style-type: none;
+        } */
+        .fas{
+            width:20px;
+            margin-left:40px
+        }
+        .cajita{
+            margin-top:16px;
+            border: solid 3px white;
+            border-radius:25px;
+            padding:7px;
+            background-color: white;
+            margin-left:40px
+            
+        }
+        .cajita a{
+            margin: 0 auto;
+            color:black;
+        }
+        .fa-play{
+            margin-top:30px;
+        }
+        footer{
+            margin-top:30px;
+        
+        }
+        /*Tomi*/
+        .bodydartist h2{
+            color: white;
+            align-self: center;
+        }
+        .bodydartist main{
+            display: flex;
+            flex-direction: column;
+        }
+        .contenedor-banner {
+            position: relative;
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+          }
+        .contenedor-banner img{
+            width: 100%;
+            height: 400px;
+        }
+        .bottom-left {
+            position: absolute;
+            bottom: 20px;
+            left: 16px;
+            color: black;
+            background-color: rgba(128, 128, 128, 0.5);
+          }
+        .canciontomi{
+            display: flex;
+            justify-content: baseline;
+            margin-top: 5px;
+            border-bottom: solid 3px white;
+            align-content: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding: 20px;
+        }
+        .canciontomi img{
+            height: 20px;
+            width: 20px;
+            margin-left: 50px;
+        }
+        .canciontomi h1{
+            color: white;
+            font-size: xx-large;
+            margin-left: 50px;
+        }
+        .canciontomi h2{
+            margin-left: 50px;
+            color: white;
+        }
+        .canciontomi a{
+            padding: 10px;
+            border-radius: 50%;
+            color: white;
+            margin-left: auto;
+            align-self: center;
+        }
+        
+        
+
 }
-.canciontomi img{
-    height: 100px;
-    width: 100px;
-    margin-left: 50px;
-}
-.canciontomi h1{
-    color: white;
-    font-size: xx-large;
-    margin-left: 50px;
-}
-.canciontomi h2{
-    margin-left: 50px;
-}
-.canciontomi a{
-    color: white;
-    align-self: center;
-    height: 20px;
-    margin-left: 50%;
-    font-size: 50px;
-}
+
 footer{
     width: 100%;
     background-color: gray;
     justify-self: flex-end ;
 }
-
+/*DETAIL-ALBUM*/
 #detail-album{
     margin: 0;
     padding: 0;
@@ -174,3 +471,169 @@ footer{
 
 
 
+
+@media(min-width:1024px){
+    /* DESKTOP */
+        ul,
+        ol {
+          display: flex;
+          justify-content: space-evenly;
+          padding: 2%;
+          align-items: center;
+        }
+        .padre{
+            height:100%;
+        }
+        li{
+            text-decoration: none;
+        }
+        li a{
+            color: white;
+            font-size:x-large;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        header{
+            padding:30px;
+        }
+        header nav ul{
+            width:100%;
+            height: 67px;
+            border: solid 3px grey;
+            border-radius: 3px;
+            align-items: center;
+        }
+        li input[type=text]{
+            padding: 6px;
+            margin-top: 8px;
+            margin-right: 16px;
+            margin-bottom: 8px;
+            border: none;
+            font-size: 17px;
+        }
+        
+        .main-img{
+            /* Centra */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+        }
+        .nourh1{
+            text-align: center;
+            color: white;
+        
+        }
+        .nourh3{
+            text-align: center;
+            color: grey;
+        }
+        .contenedornour{
+            align-items: center;
+        }
+        .nourhijo{
+            color: white;
+            border: solid 3px grey;
+            width: 350px;
+            margin:0 auto;
+            border-radius: 25px;
+        }
+        .nietonour{
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .nietonour a{
+            margin-left:50px;
+            color:white;
+            font-size: large;
+            align-items: center;
+        }
+        /* .hijo ul{
+            list-style-type: none;
+        } */
+        .fas{
+            width:20px;
+            margin-left:40px
+        }
+        .cajita{
+            margin-top:16px;
+            border: solid 3px white;
+            border-radius:25px;
+            padding:7px;
+            background-color: white;
+            margin-left:40px
+            
+        }
+        .cajita a{
+            margin: 0 auto;
+            color:black;
+        }
+        .fa-play{
+            margin-top:30px;
+        }
+        footer{
+            margin-top:30px;
+        
+        }
+
+        /*Tomi*/
+        .bodydartist h2{
+            color: white;
+            align-self: center;
+        }
+        .bodydartist main{
+            display: flex;
+            flex-direction: column;
+        }
+        .contenedor-banner {
+            position: relative;
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+          }
+        .contenedor-banner img{
+            width: 100%;
+            height: 400px;
+        }
+        .bottom-left {
+            position: absolute;
+            bottom: 20px;
+            left: 16px;
+            color: black;
+            background-color: rgba(128, 128, 128, 0.5);
+          }
+        .canciontomi{
+            display: flex;
+            justify-content: baseline;
+            margin-top: 5px;
+            border-bottom: solid 3px white;
+            align-content: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding: 20px;
+        }
+        .canciontomi img{
+            height: 100px;
+            width: 100px;
+            margin-left: 50px;
+        }
+        .canciontomi h1{
+            color: white;
+            font-size: xx-large;
+            margin-left: 50px;
+        }
+        .canciontomi h2{
+            margin-left: 50px;
+            color: white;
+        }
+        .canciontomi a{
+            padding: 10px;
+            border-radius: 50%;
+            color: white;
+            margin-left: auto;
+            align-self: center;
+        }
+        
+        
+}
