@@ -4,8 +4,20 @@
 body {
     margin: 0;
     background-color: black; 
-    
-    }  
+
+    }
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2%;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+    header nav ul{
+        border: solid 3px grey;
+        border-radius: 3px;
+    }
 .bodydartist main a{
     display: flex;
     justify-content: center;
@@ -13,11 +25,85 @@ body {
     width: 50px;
     margin-top: 15px;
     }  
-@media(min-width:768px){
-    /* DESKTOP */
+
+
+@media(min-width:375px){
+    /* MOBILE */
     .padre{
-        height:100%;
+        height:100vh;
     }
+    .search{
+        display:none;
+    }
+    a:link {
+        text-decoration: none;
+    }
+    li a{
+        color: white;
+        font-size:x-large;
+    }
+    .main-img{
+        width:255px;
+        margin-top: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1{
+        text-align: center;
+        color: white;
+    
+    }
+    .nourh3{
+        text-align: center;
+        color: grey;
+    }
+    .hijo{
+        color: white;
+        border: solid 3px grey;
+        width: 350px;
+        margin:0 auto;
+        border-radius: 25px;
+    }
+    .hijito{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .hijito a{
+        margin-left:50px;
+        color:white;
+        font-size: large;
+        align-items: center;
+    }
+    /* .hijo ul{
+        list-style-type: none;
+    } */
+    .fas{
+        width:20px;
+        margin-left:40px
+    }
+    .cajita{
+        margin-top:16px;
+        border: solid 3px white;
+        border-radius:25px;
+        padding:7px;
+        background-color: white;
+        margin-left:40px
+        
+    }
+    .cajita a{
+        margin: 0 auto;
+        color:black;
+    }
+    .fa-play{
+        margin-top:30px;
+    }
+    footer{
+        display:none;
+    }
+} 
+@media(min-width:768px){
+    /* TABLET */
         ul,
         ol {
           display: flex;
@@ -69,7 +155,7 @@ body {
             color: white;
         
         }
-        h3{
+        .nourh3{
             text-align: center;
             color: grey;
         }
@@ -122,92 +208,112 @@ body {
         }
 
 }
-@media(max-width:375px){
-    /* MOBILE */
-    .padre{
-        height:100vh;
-    }
-    ul{
-        display: flex;
-        justify-content: space-evenly;
-        padding: 2%;
-        align-items: center;
-        justify-content: space-between;
-    }
-    header nav ul{
-        border: solid 3px grey;
-        border-radius: 3px;
-    }
-    .search{
-        display:none;
-    }
-    a:link {
-        text-decoration: none;
-    }
-    li a{
-        color: white;
-        font-size:x-large;
-    }
-    .main-img{
-        width:255px;
-        margin-top: 30px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    h1{
-        text-align: center;
-        color: white;
-    
-    }
-    h3{
-        text-align: center;
-        color: grey;
-    }
-    .hijo{
-        color: white;
-        border: solid 3px grey;
-        width: 350px;
-        margin:0 auto;
-        border-radius: 25px;
-    }
-    .hijito{
-        display: flex;
-        margin-bottom: 20px;
-    }
-    .hijito a{
-        margin-left:50px;
-        color:white;
-        font-size: large;
-        align-items: center;
-    }
-    /* .hijo ul{
-        list-style-type: none;
-    } */
-    .fas{
-        width:20px;
-        margin-left:40px
-    }
-    .cajita{
-        margin-top:16px;
-        border: solid 3px white;
-        border-radius:25px;
-        padding:7px;
-        background-color: white;
-        margin-left:40px
+@media(min-width:1024px){
+    /* DESKTOP */
+        ul,
+        ol {
+          display: flex;
+          justify-content: space-evenly;
+          padding: 2%;
+          align-items: center;
+        }
+        .padre{
+            height:100%;
+        }
+        li{
+            text-decoration: none;
+        }
+        li a{
+            color: white;
+            font-size:x-large;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        header{
+            padding:30px;
+        }
+        header nav ul{
+            width:100%;
+            height: 67px;
+            border: solid 3px grey;
+            border-radius: 3px;
+            align-items: center;
+        }
+        li input[type=text]{
+            padding: 6px;
+            margin-top: 8px;
+            margin-right: 16px;
+            margin-bottom: 8px;
+            border: none;
+            font-size: 17px;
+        }
         
-    }
-    .cajita a{
-        margin: 0 auto;
-        color:black;
-    }
-    .fa-play{
-        margin-top:30px;
-    }
-    footer{
-        display:none;
-    }
-} 
+        .main-img{
+            /* Centra */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        
+        }
+        .nourh3{
+            text-align: center;
+            color: grey;
+        }
+        .contenedor{
+            align-items: center;
+        }
+        .hijo{
+            color: white;
+            border: solid 3px grey;
+            width: 350px;
+            margin:0 auto;
+            border-radius: 25px;
+        }
+        .hijito{
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .hijito a{
+            margin-left:50px;
+            color:white;
+            font-size: large;
+            align-items: center;
+        }
+        /* .hijo ul{
+            list-style-type: none;
+        } */
+        .fas{
+            width:20px;
+            margin-left:40px
+        }
+        .cajita{
+            margin-top:16px;
+            border: solid 3px white;
+            border-radius:25px;
+            padding:7px;
+            background-color: white;
+            margin-left:40px
+            
+        }
+        .cajita a{
+            margin: 0 auto;
+            color:black;
+        }
+        .fa-play{
+            margin-top:30px;
+        }
+        footer{
+            margin-top:30px;
+        
+        }
+
+}
 
 .contenedor{
     margin-left: 2%;
