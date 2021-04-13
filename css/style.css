@@ -27,7 +27,7 @@ body {
     }  
 
 
-@media(min-width:375px){
+@media only screen and (max-width: 767px) and (min-width:375px){
     /* MOBILE */
     .padre{
         height:100vh;
@@ -49,7 +49,7 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-    h1{
+    .nourh1{
         text-align: center;
         color: white;
     
@@ -58,18 +58,18 @@ body {
         text-align: center;
         color: grey;
     }
-    .hijo{
+    .nourhijo{
         color: white;
         border: solid 3px grey;
         width: 350px;
         margin:0 auto;
         border-radius: 25px;
     }
-    .hijito{
+    .nietonour{
         display: flex;
         margin-bottom: 20px;
     }
-    .hijito a{
+    .nietonour a{
         margin-left:50px;
         color:white;
         font-size: large;
@@ -102,7 +102,7 @@ body {
         display:none;
     }
 } 
-@media(min-width:768px){
+@media only screen and (max-width:1023px) and (min-width:768px){
     /* TABLET */
         ul,
         ol {
@@ -150,7 +150,7 @@ body {
             margin-right: auto;
             width: 300px;
         }
-        h1{
+        .nourh1{
             text-align: center;
             color: white;
         
@@ -159,21 +159,21 @@ body {
             text-align: center;
             color: grey;
         }
-        .contenedor{
+        .contenedornour{
             align-items: center;
         }
-        .hijo{
+        .nourhijo{
             color: white;
             border: solid 3px grey;
             width: 350px;
             margin:0 auto;
             border-radius: 25px;
         }
-        .hijito{
+        .nietonour{
             display: flex;
             margin-bottom: 20px;
         }
-        .hijito a{
+        .nietonour a{
             margin-left:50px;
             color:white;
             font-size: large;
@@ -256,7 +256,7 @@ body {
             margin-right: auto;
             width: 300px;
         }
-        h1{
+        .nourh1{
             text-align: center;
             color: white;
         
@@ -265,21 +265,21 @@ body {
             text-align: center;
             color: grey;
         }
-        .contenedor{
+        .contenedornour{
             align-items: center;
         }
-        .hijo{
+        .nourhijo{
             color: white;
             border: solid 3px grey;
             width: 350px;
             margin:0 auto;
             border-radius: 25px;
         }
-        .hijito{
+        .nietonour{
             display: flex;
             margin-bottom: 20px;
         }
-        .hijito a{
+        .nietonour a{
             margin-left:50px;
             color:white;
             font-size: large;
