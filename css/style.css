@@ -38,7 +38,7 @@ body {
     width: 50px;
     margin-top: 15px;
     }  
-@media (max-width:767px)and(min-width:375px){
+@media only screen and (max-width:767px) and (min-width:375px){
     /* MOBILE */
     .padre{
         height:100vh;
