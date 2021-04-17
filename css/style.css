@@ -169,6 +169,89 @@ body {
         margin-left: auto;
         align-self: center;
     }    
+    #detail-album{
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+        margin: auto;
+    }
+   #detail-album h1, h5, h6 {
+        margin:0%;  
+        align-items: center;
+    }
+    
+    #detail-album .datos{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: space-between;
+        padding-left: 4%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #detail-album h6{
+        color: rgb(138, 141, 141);
+
+    }
+    #detail-album figure{
+        margin: 0;
+    }
+    #detail-album .banner img{
+        align-items: center;
+        width:100%;
+        display: block;
+        margin:10%;
+        width:255px;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;    
+   }
+    #detail-album div{
+        display: flex;
+        margin: 4% 0% 4% 0%;
+        justify-content: space-between;
+        align-items: center;
+    
+
+    }
+    #detail-album  div figure img{
+        width: 40px;
+        border-radius:50%;
+   
+    }
+    #detail-album .canciones{
+        margin:5%;
+    }
+    #detail-album  .cancioncla {
+        display: flex;
+        justify-content: baseline;
+        margin-top: 5px;
+        border-bottom:solid rgba(255, 255, 255, 0.39);
+        align-content: center;
+    }
+    #detail-album  .cancioncla h1{
+        color: white;
+        margin: 0px;
+        text-align: center;
+    }
+    #detail-album .cancioncla h2{
+        margin-left: 20px;
+        color: white;
+        font-size: small;
+        align-items: center;
+    }
+    #detail-album .cancioncla a{
+        padding: 10px;
+        border-radius: 50%;
+        color: white;
+        margin-left: auto;
+        align-self: center;
+    }   
+    #detail-album  .canciones .cancioncla img{
+        width: 0px;
+    }
+
 } 
 @media only screen and (max-width:1023px) and (min-width:768px){
     /* TABLET */
