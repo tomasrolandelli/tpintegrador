@@ -1,0 +1,393 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+}
+
+ul,
+ol {
+  display: flex;
+  border: solid 3px grey;
+  border-radius: 3px;
+  padding:1%;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+li a{
+    color: white;
+    font-size:medium;
+    text-decoration: none;
+}
+
+header, footer {
+    padding:30px;
+}
+
+header nav ul{
+   
+    border: solid 3px grey;
+    border-radius: 3px;
+    align-items: center;
+    padding:1%;
+}
+li input[type=text]{
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+    border: none;
+    font-size: 17px;
+}
+/*Tomi*/
+.bodydartist h2{
+    color: white;
+    align-self: center;
+}
+.bodydartist main{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+  }
+.contenedor-banner img{
+    width: 100%;
+    height: 150px;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 20px;
+    left: 16px;
+    color: black;
+    background-color: white;
+    width: 50px;
+  }
+.canciontomi{
+    display: flex;
+    justify-content: baseline;
+    margin-top: 5px;
+    border-bottom:solid rgba(255, 255, 255, 0.39);
+    align-content: center;
+}
+.canciontomi img{
+    height: 70px;
+    width: 70px;
+    margin-left: 30px;
+    align-self: center;
+}
+.cancionestomi h2{
+    color: white;
+    margin-left: 20px;
+}
+.canciontomi h1{
+    color: white;
+    font-size: x-large;
+    margin-left: 10px;
+}
+.canciontomi h2{
+    margin-left: 20px;
+    color: white;
+    font-size: small;
+    align-self: center;
+}
+.canciontomi a{
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    margin-left: auto;
+    align-self: center;
+}    
+/*Nour*/
+.padre{
+    height:100vh;
+}
+.search{
+    display:none;
+}
+a:link {
+    text-decoration: none;
+}
+.main-img{
+    width:255px;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nourh1{
+    text-align: center;
+    color: white;
+
+}
+.nourh3{
+    text-align: center;
+    color: grey;
+}
+.nourhijo{
+    color: white;
+    border: solid 3px grey;
+    width: 280px;
+    margin:0 auto;
+    border-radius: 25px;
+}
+.nietonour{
+    display: flex;
+    margin-bottom: 20px;
+}
+.nietonour a{
+    margin-left:50px;
+    color:white;
+    font-size: large;
+    align-items: center;
+}
+/* .hijo ul{
+    list-style-type: none;
+} */
+.fas{
+    width:20px;
+    margin-left:30px;
+}
+.cajita{
+    margin-top:16px;
+    border: solid 3px white;
+    border-radius:25px;
+    padding:7px;
+    background-color: white;
+    margin-left:40px
+    
+}
+.cajita a{
+    margin: 0 auto;
+    color:black;
+}
+.fa-play{
+    margin-top:30px;
+}
+footer{
+    display:none;
+}
+
+/*Clara*/
+#detail-album{
+    margin: 0;
+    padding: 0;
+    color: white;
+    margin: auto;
+ 
+}
+#detail-album h1, h5, h6 {
+    margin:0%;  
+    align-items: center;
+}
+
+#detail-album .datos{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-between;
+    padding-left: 4%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#detail-album h6{
+    color: rgb(138, 141, 141);
+
+}
+#detail-album figure{
+    margin: 0;
+}
+#detail-album .banner img{
+    align-items: center;
+    width:100%;
+    display: block;
+    margin:10%;
+    width:255px;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;    
+}
+#detail-album div{
+    display: flex;
+    margin: 4% 0% 4% 0%;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+#detail-album  div figure img{
+    width: 40px;
+    border-radius:50%;
+
+}
+#detail-album .canciones{
+    margin:5%;
+}
+#detail-album  .cancioncla {
+    display: flex;
+    justify-content: baseline;
+    margin-top: 2%;
+    border-bottom:solid rgba(255, 255, 255, 0.39);
+    align-content: center;
+}
+#detail-album  .cancioncla h1{
+    color: white;
+    margin: 0px;
+    text-align: center;
+    margin-top: 2%;
+}
+#detail-album .cancioncla h2{
+    margin-left: 20px;
+    color: white;
+    font-size: smaller;
+    align-items: center;
+}
+#detail-album .cancioncla a{
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    margin-left: auto;
+    align-self: center;
+}   
+#detail-album  .canciones .cancioncla img{
+    width: 0px;
+}
+
+@media(min-width:768px){
+/*Tomi*/
+.contenedor-banner img{
+    height: 225px;
+}
+.canciontomi h2{
+    font-size: x-large;
+}
+.canciontomi a{
+    height: 50px;
+    width: 50px;
+  
+}
+.bottom-left{
+    width: 100px;
+    font-size: x-large;
+    bottom: 30px;
+    left: 25px;
+}
+.canciontomi{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.canciontomi img{
+    height: 100px;
+    width: 100px;
+
+}
+/*Nour*/
+li a{
+    font-size: x-large;
+}
+.nourhijo{
+    width:350px
+}
+.fas{
+    margin-left:60px;
+}
+.search{
+    display: inline;
+}
+.main-img{
+    width: 350px;
+}
+
+/*Clara*/
+#detail-album .banner img{
+    padding:0%;
+    align-items: center;
+    width: 40%;
+    
+    }
+    #detail-album{
+        font-size:x-large;
+    }
+    #detail-album .cancioncla {
+        margin-bottom: 1%;
+        margin-top: 1%;
+    }
+    #detail-album .cancioncla {
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+}
+@media(min-width:1024px){
+/*Tomi*/
+.contenedor-banner img{
+    height: 300px;
+}
+.bottom-left{
+    position: absolute;
+    bottom: 50px;
+    left: 45px;
+    font-size: xx-large;
+    width: 150px;
+}
+.canciontomi{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/*Nour*/
+.main-img{
+    width: 400px;
+}
+.nourhijo{
+    width:400px;
+}
+.nourh1{
+    font-size: 35px;
+}
+.nourh3{
+    font-size: 23px;
+}
+.nietonour a{
+    font-size: 25px;
+}
+li a{
+    font-size: xx-large;
+}
+.fas{
+    width: 30px;
+}
+/*Clara*/
+#detail-album #datos-disco{
+    display: flex;
+    flex-direction: row;
+ }
+ #detail-album  .banner img{
+     margin-left: 20%;
+     width:255px;
+ }
+
+ #detail-album .datos-disco{
+    display: flex;
+}
+ #detail-album  .canciones .cancioncla img{
+    width: 70px;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    align-self: center;
+    }
+    #detail-album  .canciones .cancioncla h2{
+        padding-top: 1%;
+    }
+#detail-album .datos{
+        margin: 5%;
+    }
+}
