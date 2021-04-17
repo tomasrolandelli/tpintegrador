@@ -1,12 +1,48 @@
 *{
     box-sizing: border-box;
 }
-body {
+body{
+    background-color: black;
     margin: 0;
-    background-color: black; 
+    padding: 0;
+    margin: auto;
 }
-.padre{
-    height:100%;
+
+ul,
+ol {
+  display: flex;
+  border: solid 3px grey;
+  border-radius: 3px;
+  padding:1%;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+li a{
+    color: white;
+    font-size:medium;
+    text-decoration: none;
+}
+
+header, footer {
+    padding:30px;
+}
+
+header nav ul{
+   
+    border: solid 3px grey;
+    border-radius: 3px;
+    align-items: center;
+    padding:1%;
+}
+li input[type=text]{
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+    border: none;
+    font-size: 17px;
 }
 /*Tomi*/
 .bodydartist h2{
@@ -71,6 +107,75 @@ body {
     align-self: center;
 }    
 /*Nour*/
+.padre{
+    height:100vh;
+}
+.search{
+    display:none;
+}
+a:link {
+    text-decoration: none;
+}
+.main-img{
+    width:255px;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nourh1{
+    text-align: center;
+    color: white;
+
+}
+.nourh3{
+    text-align: center;
+    color: grey;
+}
+.nourhijo{
+    color: white;
+    border: solid 3px grey;
+    width: 280px;
+    margin:0 auto;
+    border-radius: 25px;
+}
+.nietonour{
+    display: flex;
+    margin-bottom: 20px;
+}
+.nietonour a{
+    margin-left:50px;
+    color:white;
+    font-size: large;
+    align-items: center;
+}
+/* .hijo ul{
+    list-style-type: none;
+} */
+.fas{
+    width:20px;
+    margin-left:30px;
+}
+.cajita{
+    margin-top:16px;
+    border: solid 3px white;
+    border-radius:25px;
+    padding:7px;
+    background-color: white;
+    margin-left:40px
+    
+}
+.cajita a{
+    margin: 0 auto;
+    color:black;
+}
+.fa-play{
+    margin-top:30px;
+}
+footer{
+    display:none;
+}
+
 /*Clara*/
 @media(min-width:768px){
 /*Tomi*/
@@ -102,6 +207,22 @@ body {
 
 }
 /*Nour*/
+li a{
+    font-size: x-large;
+}
+.nourhijo{
+    width:350px
+}
+.fas{
+    margin-left:60px;
+}
+.search{
+    display: inline;
+}
+.main-img{
+    width: 350px;
+}
+
 /*Clara*/
 }
 @media(min-width:1024px){
@@ -121,5 +242,26 @@ body {
     margin-right: 30px;
 }
 /*Nour*/
+.main-img{
+    width: 400px;
+}
+.nourhijo{
+    width:400px;
+}
+.nourh1{
+    font-size: 35px;
+}
+.nourh3{
+    font-size: 23px;
+}
+.nietonour a{
+    font-size: 25px;
+}
+li a{
+    font-size: xx-large;
+}
+.fas{
+    width: 30px;
+}
 /*Clara*/
 }
