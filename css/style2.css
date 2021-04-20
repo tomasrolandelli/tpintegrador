@@ -153,6 +153,18 @@ padding: 5px;
   .artistatomi{
       border-radius: 50%;
   }
+  .generostomi{
+      background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NBwcHDQ0NBwcHBw0HBwcHCA8ICQcNIBEWFiARHxUYHCggGCYlGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDg0NEisZFRkrKysrKy0rKzcrKysrKysrKysrKy0rNy0rKysrKysrKystKysrKysrKysrKysrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAAAAgEEBgP/xAAVEAEBAAAAAAAAAAAAAAAAAAAAEf/EABoBAQEBAQEBAQAAAAAAAAAAAAEAAgQDBwX/xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAMAwEAAhEDEQA/APCAPw31IASAEgBIBiTRhSq0ZSqCtE0qVaMrKhVCaVRaVSpYYNKpU0qg0qsrKyqDSqVNKoNKYysMGlUqayoaXWVNKhpVKilMGlFTWKLTpE0rDorRNKlpVKkMGlVlYxQaVSppVBptKmlUWlFTWUwaVSpohpVKilUGlUqaUwaVWVNKoNKpUUqg0qlTWVQaXWVNKYNKpUUqg0qlTWVQaXWVNZTBpdKilUGlUqKUwbdVKmlebr0qsqaVQaVSopTBpVKmlUGlVlTSqDSqVFKoNKpU1lMGl1lTSqDSqVFKYNKpU1lUZ0qlTWUwaXWVNKoNKpUUqg0qlRSmDa6yprKozpdZU1lUG10qKymDS6VFKoNKpUUpg266VNZXlHZpdZU0pg0qlRSqDSqVFKYNKpU1lUZ0usqaymDa6VFZVBpdKilUGl1lRSmDa6yopVGdLrKmsqg2usqaymDa6yppVBtVKilMZ2qlRSqDaqVFKYNrrKilUZ2usqaymDa6VFKoNuysqayvKO3S6yppTBtVKilUG1UqKUwbVSprKoztdZU1lMG11lTWVQbXSorKoztdKilMG1UqKVQbVSopTGdrrKilUG11lTWUwbXWVNZVBtdKisqjO10qKymDa6VFKoNqpUUpjO1UqKVQbdtZUUryju2usqaymDa6yprKYztdKilUG1UqKVQbVSopTGdrrKilUG11lRSmDa6yopVGdrrKmsqg2ulRWUwbXSopVGdqpUUpg2qlRSqDaqVFKYztdZUUqg2usqaymDa6yprKoNrpUUqg27KVFZXnHbtdKilUG11lRSmM7XWVFKoNrrKmspg2usqayqM7XSorKYNrpUUqg2qlRSmDaqVFKoztdZU1lUG11lTWUwbXWVNKoNqpUUpjOlUqKVQbVSprKoNLrKmspg0usqayqDS6VFKoNOysqayvOOza6yprKYNrpUVlUG10qKVQbVSopTGdrrKilUG11lTWUwbXSopVBtVKilUGlUqaymM6XWVNZVBpdZU1lMGl0qKVQaVSprKoNKpU0pg0qsqaVQaVSprKoNKpU0pg0qsqaVQadVKilecdel1lTWUwaXSopVBpVKilUGlUqaymDS6yprKoNLrKmlMGlUqayqDSqVNKoNKrKmlMGlUqayqDSqVNKoNKrKmhGlUqRDTaVjKhpVKmlQ02iaVDSqJoVW0qaVCumsqaViOnSqVNZVBpVKmlMGlVlTSqDSqVNZVBpVKmlI0qlSJabSppUNKrKysqGlUTSkaUysrKhVUqRRVVZWCgraVgRQYJVowSrRggAJACT60oMvasoCFAEKwoFUpQQZSghSlBJgBAAhQYJACQAkAJACQAkAJACQAkAJP/2Q==);
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-size: 3000px 500px;
+  }
+  .generostomi h1{
+    color: white;
+    font-size: 50px;
+    margin-left: 30px;
+    padding-top: 50px;
+  }
 /*Nour*/
 .search{
     display:none;
@@ -554,7 +566,7 @@ a:link {
     overflow-y: hidden;
     white-space: nowrap;
 }
-#search-results .album-avicii article{
+#search-results .opciones-album article{
     flex-direction: column;
     display: inline-block;
     width: 20%;
@@ -615,6 +627,13 @@ a:link {
 .sectiontomi img{
     max-height: 300px;
     max-width: 300px;
+}
+.generostomi h1{
+    font-size: 100px;
+}
+.generostomi h2{
+font-size: 30px;
+margin-top: 30px;
 }
 /*Nour*/
 li a{
