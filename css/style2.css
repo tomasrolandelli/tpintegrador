@@ -7,6 +7,7 @@ body{
     margin: 0;
     padding: 0;
     margin: auto;
+  
 }
 form .izq {
     display: inline-block;
@@ -153,9 +154,6 @@ padding: 5px;
       border-radius: 50%;
   }
 /*Nour*/
-.padre{
-    height:100vh;
-}
 .search{
     display:none;
 }
@@ -218,15 +216,110 @@ a:link {
 .fa-play{
     margin-top:30px;
 }
-footer{
-    display:none;
+/*Genero Nour*/
+.nourhead1{
+    color: white;
+    font-size: x-large;
+    margin-left: 50px;
 }
+.nourcajita{
+    width: 150px;
+    height: 80px;   
+}
+.noursection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+}
+.noursection a{
+    border-radius: 7%;
+    background-color: white;
+    margin-bottom: 10px;
+    color: white;
+}
+.nourcajita h2{
+    text-align: center;
+}
+.nourcajita:hover{
+    color:rgb(0, 0, 0)
+}
+#rock{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/8ad3050b34360d0573d9d7b8bf38997d/268x528-000000-80-0-0.jpg);
 
+}
+#pop{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/2b15578cf12902c0c7d2ae07e8071460/268x528-000000-80-0-0.jpg);
+
+}
+#musicalatina{
+    background-image:url(https://e-cdns-images.dzcdn.net/images/misc/d1f20c3f8aac2f94c87c5f64e0d14c99/268x528-000000-80-0-0.jpg)
+}
+#metal{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/dfd2c5f4b1ea497efb2f82da98b73572/268x528-000000-80-0-0.jpg);
+}
+#electronica{
+    background-image: url( https://e-cdns-images.dzcdn.net/images/misc/893d864206cf82d011d10f51686f47a6/268x528-000000-80-0-0.jpg);
+}
+#reggae{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/4de2c135cf4c39d7d9424446053cc41a/268x528-000000-80-0-0.jpg);
+}
+#funk{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/b8ae8f0791f5e9e6c7a11bab94b0cbad/268x528-000000-80-0-0.jpg);
+}
+#rap{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/e19942660ebf4f095dd8daaa84282a98/268x528-000000-80-0-0.jpg);
+}
+#jazz{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/ac23323f1de37faf026eb1191e60ce0c/268x528-000000-80-0-0.jpg);
+}
+#country{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/8dc8f5b3403196a4789aa5e0f0c2a40b/268x528-000000-80-0-0.jpg);
+}
+#clasica{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/de17a53eb95df5ef53bc43eea0d5cb67/268x528-000000-80-0-0.jpg);
+}
+#k-pop{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/6154c9fbd99a356ad269656ee88b0820/268x528-000000-80-0-0.jpg);
+}
+#reggueton{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/49ff19261ef3fb1ad85da7fb344c60ce/268x528-000000-80-0-0.jpg);
+}
+#salsa{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/1c282e04053a2d1ee0ffa638bff4cb9b/268x528-000000-80-0-0.jpg);
+}
+#indie{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/c66808f7d02a8da2d7869839be460851/268x528-000000-80-0-0.jpg);
+}
+#blues{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/3afdfc1cfa772d31a5ca70a121d10206/268x528-000000-80-0-0.jpg);
+}
+#musicacristiana{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/c67a0af86ff345a45db13844cc5d5806/268x528-000000-80-0-0.jpg);
+}
+#ryb{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/1c249bef95bcfa068e96957a13570ed2/268x528-000000-80-0-0.jpg);
+}
+#musicaafricana{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/cdb2b282bf856b1ec0061d1b00371e77/268x528-000000-80-0-0.jpg);
+}
+#vallenato{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/510eb0cc1773547bea4e42a25d9ca8c8/268x528-000000-80-0-0.jpg);
+}
+#musicaarabe{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/25d20727f59c78c43e9d9b20a0249f95/268x528-000000-80-0-0.jpg);
+}
+#soundtracks{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/bce4bf5c4e4d2f91e2d3ebf32c0e70fe/268x528-000000-80-0-0.jpg);
+}
+#musicajaponesa{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/8e211af480caea6fc4fa5378c1757e16/268x528-000000-80-0-0.jpg);
+}
+#musicamexicana{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/02e90cc40b05d31741adb2a48e9b3de7/268x528-000000-80-0-0.jpg);
+}
 /*Clara*/
 /*Album*/
 #detail-album{
-    margin: 0;
-    padding: 0;
     color: white;
     margin: auto;
  
@@ -267,8 +360,6 @@ footer{
     margin: 4% 0% 4% 0%;
     justify-content: space-between;
     align-items: center;
-
-
 }
 #detail-album  div figure img{
     width: 40px;
@@ -308,10 +399,7 @@ footer{
     width: 0px;
 }
 /*Playlist*/
-#playlist{
-    margin: 0%;
-    padding: 0%;
-}
+
 #playlist h1, h2, h6 , p{
     align-items: center;
 }
@@ -370,13 +458,10 @@ footer{
 #playlist  .cancioncla:hover {
         /* cambia el color */
         background-color: rgba(255, 255, 255, 0.137);
-       
-
 }
 #playlist  .cancioncla i{
     color: white;
     margin-top: 30px;
-    
 }
 
 #playlist .cancioncla div{
@@ -403,6 +488,108 @@ footer{
 #playlist .canciones .cancioncla img{
     width: 0px;
 }
+/*Search-results*/
+#search-results{
+    color: white;
+}
+#search-results .resultado{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 3%;
+}
+#search-results section h2{
+    border-bottom:solid rgba(255, 255, 255, 0.39);
+    width: 80%;
+    margin-left: 8%;
+    font-size: medium;
+    padding-bottom: 1%;
+}
+#search-results .artista a h5{
+   color: white;
+   margin-top: 95%;
+}
+#search-results .avicii{
+    margin: 0% 5% 0% 5%;
+}
+#search-results .avicii figure img{
+    border-radius:50%;
+    max-width: 50px;
+    margin-left: 5%;
+    align-self: center;
+}
+#search-results .canciones{
+    margin:0% 5% 0% 5%;
+}
+#search-results .artista{
+    display: flex;
+    align-items: flex-start;
+    }
+#search-results  .cancioncla {
+    display: flex;
+    justify-content: baseline;
+    margin-top: 2%;
+    align-items: center;
+}
+#search-results .cancioncla h3{
+    margin-left: 20px;
+    color: white;
+    font-size: smaller;
+    align-items: center;
+    margin-bottom: 40%;
+}
+#search-results #icon{
+    padding: 10px;
+    border-radius: 50%;
+    color: rgb(168, 167, 167);
+    margin-left: auto;
+    align-self: center;
+ 
+}   
+#search-results .cancioncla img{
+    max-width: 10%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    align-self: center;
+}
+#search-results .album-avicii{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    margin:0% 5% 0% 5%;
+}    
+#search-results .opciones-album{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+}
+#search-results .album-avicii article{
+    flex-direction: column;
+    display: inline-block;
+    width: 20%;
+ }
+#search-results h2{
+    width: 100%;
+    color: white;
+    font-size: medium;
+    margin-left: 10%;
+    font-family: 'Raleway', sans-serif;
+}
+ #search-results .album-avicii h3{
+    color: white;
+    font-size: small;
+    padding-left: 5%;
+  
+        }
+#search-results .album-avicii h4{
+   color:gray;
+    font-size: x-small;
+    padding-left: 5%;
+    }
+#search-results .album-avicii img{
+        max-width: 100%;
+}
+        
 
 @media(min-width:768px){
 /*Tomi*/
@@ -455,6 +642,11 @@ li a{
 .main-img{
     width: 350px;
 }
+.nourcajita{
+    width: 320px;
+    height: 100px;
+    justify-content: space-evenly;   
+}
 
 /*Clara*/
 #detail-album .banner img{
@@ -478,9 +670,14 @@ li a{
         width: 60px;
         margin-top: 15%;
         margin-left: 20px;
-
     }
- 
+    #search-results h2{
+        font-size: large;
+    }
+    #search-results .cancioncla h3{
+        font-size: medium;
+    }
+
 }
 @media(min-width:1024px){
 /*Tomi*/
@@ -538,6 +735,16 @@ li a{
 #detail-album .datos{
         margin: 5%;
     }
+    #search-results .canciones .cancioncla img{
+        width: 70px;
+        margin-left: 5%;
+        margin-bottom: 2%;
+        align-self: center;
+        }
+        #search-results .canciones .cancioncla h2{
+            padding-top: 1%;
+        }
+   
 
 /*Clara*/
 #playlist .datos-playlist{

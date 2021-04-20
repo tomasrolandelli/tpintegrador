@@ -1,96 +1,90 @@
-       <!DOCTYPE html>
-            <html lang="en">
-              <head>
-                <meta charset="UTF-8">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-                <link rel="stylesheet" href="./css/style2.css">
-                <title>Document</title>
-              </head>
-              <body>
-                <div>
-                <header>
-                    <nav>
-                        <ul>
-                            
-                            <li><a href="">Icono </a></li>
-                            <li><a href="">Inicio</a></li>
-                            <li><a href=""></i>Bilioteca</a></li>
-                            <li><a href=""></i>Explorar</a></li>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <title>Document</title>          
+  </head>
+<body>
+     <header>
+        <nav>
+         <ul>
+            <li><a href="">Icono </a></li>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Bilioteca</a></li>
+            <li><a href="">Explorar</a></li>
+          <form class="search" action="search-results.html" method="GET">
+            <div>
+             <input type="text" name="artista" value="" required class="der" placeholder="Buscar...">
+            </div>
+          </form>
+         </ul>          
+        </nav>           
+     </header>
+    <main id="detail-album">
+        <section>
+            <article class="datos-disco">
+                <figure class="banner"> <img src= "img/Aviccialbum.jpg" ></figure>
+            <div class="datos">
+                <h1>TRUE</h1>
+                 <div>
+                  <figure><img src= "./img/356x237.jpeg"></figure>
+                  <h5>Avicii</h5>
+                 </div>
+                
+                <h6><time datetime="2009-03-04">2009</time></h6>
+            </div>
+            </article>
+            <section class="canciones" >
+                <article class="cancioncla">
+                    <h1>1</h1>
+                    <img src= "./img/avicii-stories.jpg" alt=cover-the-nights>
+                    <h2>The Nights</h2>
+                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                </article>
+                <article class="cancioncla">
+                    <h1>2</h1>
+                    <img src= "./img/AVĪCI_(01).jpg" alt="cover-stories">
+                    <h2>Wake Me Up</h2>
+                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                </article>
+                <article class="cancioncla">
+                    <h1>3</h1>
+                    <img src= "./img/the_nights-portada.jpg" alt="cover-stories">
+                    <h2>Waiting for love</h2>
+                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                </article>
+                <article class="cancioncla">
+                    <h1>4</h1>
+                    <img src= "./img/Aviccialbum.jpg" >
+                    <h2>Without You (feat. Sandro Cavazza)</h2>
+                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                </article>
+                <article class="cancioncla">
+                    <h1>5</h1>
+                    <img src="./img/AVĪCI_(01).jpg">
+                    <h2>Hey brother</h2>
+                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                </article>
+               
+        </section>
+   
+    </main>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="">Icono</a></li>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Explorar</a></li>
+            <li><a href="">Biblioteca</a></li>
+            <li><input type="text" placeholder="Search.."></li>
+        </ul>          
+    </nav>
+</footer>
 
-                            <form action="search-results.html" method="GET">
-                              <div>
-                                <input type="text" name="artista" value="" required class="der" placeholder="Buscar...">
-                                <button type="submit" class="izq">Enviar</button>
-                              </div>
-                            </form>
-                       
-                        </ul>          
-                    </nav>
-                </header>
-               </div>
-                      <main id="detail-album">
-                        <section>
-                            <article class="datos-disco">
-                                <figure class="banner"> <img src= "img/Aviccialbum.jpg" ></figure>
-                            <div class="datos">
-                                <h1>TRUE</h1>
-                                 <div>
-                                  <figure><img src= "./img/356x237.jpeg"></figure>
-                                  <h5>Avicii</h5>
-                                 </div>
-                                
-                                <h6><time datetime="2009-03-04">2009</time></h6>
-                            </div>
-                            </article>
-                            <section class="canciones" >
-                                <article class="cancioncla">
-                                    <h1>1</h1>
-                                    <img src= "./img/avicii-stories.jpg" alt=cover-the-nights>
-                                    <h2>The Nights</h2>
-                                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
-                                </article>
-                                <article class="cancioncla">
-                                    <h1>2</h1>
-                                    <img src= "./img/AVĪCI_(01).jpg" alt="cover-stories">
-                                    <h2>Wake Me Up</h2>
-                                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
-                                </article>
-                                <article class="cancioncla">
-                                    <h1>3</h1>
-                                    <img src= "./img/the_nights-portada.jpg" alt="cover-stories">
-                                    <h2>Waiting for love</h2>
-                                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
-                                </article>
-                                <article class="cancioncla">
-                                    <h1>4</h1>
-                                    <img src= "./img/Aviccialbum.jpg" >
-                                    <h2>Without You (feat. Sandro Cavazza)</h2>
-                                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
-                                </article>
-                                <article class="cancioncla">
-                                    <h1>5</h1>
-                                    <img src="./img/AVĪCI_(01).jpg">
-                                    <h2>Hey brother</h2>
-                                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
-                                </article>
-                               
-                        </section>
-                   
-                    </main>
-                <footer>
-                    <nav>
-                        <ul>
-                            <li><a href="">Icono</a></li>
-                            <li><a href="">Inicio</a></li>
-                            <li><a href="">Explorar</a></li>
-                            <li><a href="">Biblioteca</a></li>
-                            <li><input type="text" placeholder="Search.."></li>
-                        </ul>          
-                    </nav>
-                </footer>
-            
-                 </body>  
-            </html>
-            
+ </body>  
+</html>
+              
