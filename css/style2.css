@@ -328,7 +328,6 @@ a:link {
     margin:0%;  
     align-items: center;
 }
-
 #detail-album .datos{
     display: flex;
     flex-direction: column;
@@ -340,7 +339,6 @@ a:link {
 }
 #detail-album h6{
     color: rgb(138, 141, 141);
-
 }
 #detail-album figure{
     margin: 0;
@@ -364,7 +362,6 @@ a:link {
 #detail-album  div figure img{
     width: 40px;
     border-radius:50%;
-
 }
 #detail-album .canciones{
     margin:5%;
@@ -439,11 +436,9 @@ a:link {
     width:255px;
     margin-right: auto;   
     margin-left: auto;
-  
 }
 #playlist .cajita{
     margin: 16% 0% 0% 0%;
-  
 }
 #playlist .canciones{
     margin:5%;
@@ -452,7 +447,6 @@ a:link {
     display: flex;
     justify-content: baseline;
     margin-top: 2%;
-   
     align-content: center;
 }
 #playlist  .cancioncla:hover {
@@ -463,7 +457,6 @@ a:link {
     color: white;
     margin-top: 30px;
 }
-
 #playlist .cancioncla div{
     display: flex;
     flex-direction: column;
@@ -542,7 +535,6 @@ a:link {
     color: rgb(168, 167, 167);
     margin-left: auto;
     align-self: center;
- 
 }   
 #search-results .cancioncla img{
     max-width: 10%;
@@ -561,7 +553,6 @@ a:link {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-
 }
 #search-results .album-avicii article{
     flex-direction: column;
@@ -588,9 +579,8 @@ a:link {
     }
 #search-results .album-avicii img{
         max-width: 100%;
+        padding-right: 5%;
 }
-        
-
 @media(min-width:768px){
 /*Tomi*/
 .contenedor-banner img{
