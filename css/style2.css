@@ -326,16 +326,20 @@ a:link {
 }
 #detail-album h1, h5, h6 {
     margin:0%;  
-    align-items: center;
+}
+#detail-album .banner img{
+    display: block;
+    margin:7%;
+    width:255px;
+    margin-left: auto;
+    margin-right: auto;    
 }
 #detail-album .datos{
     display: flex;
     flex-direction: column;
     align-items:flex-start;
-    justify-content: space-between;
     padding-left: 4%;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-between;
 }
 #detail-album h6{
     color: rgb(138, 141, 141);
@@ -343,52 +347,38 @@ a:link {
 #detail-album figure{
     margin: 0;
 }
-#detail-album .banner img{
-    align-items: center;
-    width:100%;
-    display: block;
-    margin:10%;
-    width:255px;
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;    
-}
 #detail-album div{
     display: flex;
     margin: 4% 0% 4% 0%;
-    justify-content: space-between;
     align-items: center;
 }
 #detail-album  div figure img{
     width: 40px;
     border-radius:50%;
-}
-#detail-album .canciones{
-    margin:5%;
+ 
 }
 #detail-album  .cancioncla {
     display: flex;
-    justify-content: baseline;
-    margin-top: 2%;
     border-bottom:solid rgba(255, 255, 255, 0.39);
-    align-content: center;
+
+    margin: 0% 3% 0% 3%;
+ 
 }
 #detail-album  .cancioncla h1{
-    color: white;
-    margin: 0px;
     text-align: center;
-    margin-top: 2%;
+    margin-top: 3%;
 }
 #detail-album .cancioncla h2{
     margin-left: 20px;
-    color: white;
-    font-size: smaller;
+    font-size: small;
     align-items: center;
+ 
+    margin: 3%;
+ 
 }
 #detail-album .cancioncla a{
-    padding: 10px;
     border-radius: 50%;
-    color: white;
+    color:  rgba(255, 255, 255, 0.39);;
     margin-left: auto;
     align-self: center;
 }   
@@ -397,13 +387,11 @@ a:link {
 }
 /*Playlist*/
 
-#playlist h1, h2, h6 , p{
-    align-items: center;
-}
+
 #playlist .datos-playlist{
     display: flex;
     flex-direction: column;
-  align-items: center;
+    align-items: center;
 
 }
 #playlist .datos-playlist h1{
@@ -421,7 +409,7 @@ a:link {
 }
 #playlist h6{
     color: rgb(138, 141, 141);
-    padding-top: 0%;
+    padding-top: 3%;
 
 }
 #playlist figure{
@@ -451,7 +439,7 @@ a:link {
 }
 #playlist  .cancioncla:hover {
         /* cambia el color */
-        background-color: rgba(255, 255, 255, 0.137);
+    background-color: rgba(255, 255, 255, 0.137);
 }
 #playlist  .cancioncla i{
     color: white;
@@ -461,14 +449,13 @@ a:link {
     display: flex;
     flex-direction: column;
     padding-top: 0%;
-   
     margin: 0%;
 }
 #playlist .cancioncla a h2, h6{
     margin-left: 10px;
     color: white;
     font-size: smaller;
-    align-items:center;
+
   
 }
 #playlist .cancioncla .punto{
@@ -482,12 +469,11 @@ a:link {
     width: 0px;
 }
 /*Search-results*/
-#search-results{
-    color: white;
-}
+
 #search-results .resultado{
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 3%;
+   margin-left: 15%;
 }
 #search-results section h2{
     border-bottom:solid rgba(255, 255, 255, 0.39);
@@ -496,6 +482,7 @@ a:link {
     font-size: medium;
     padding-bottom: 1%;
 }
+
 #search-results .artista a h5{
    color: white;
    margin-top: 95%;
@@ -524,8 +511,9 @@ a:link {
 }
 #search-results .cancioncla h3{
     margin-left: 20px;
+    margin-top: 30%;
     color: white;
-    font-size: smaller;
+font-size: small;
     align-items: center;
     margin-bottom: 40%;
 }
@@ -537,7 +525,7 @@ a:link {
     align-self: center;
 }   
 #search-results .cancioncla img{
-    max-width: 10%;
+    max-width: 60px;
     margin-left: 5%;
     margin-bottom: 2%;
     align-self: center;
@@ -545,7 +533,7 @@ a:link {
 #search-results .album-avicii{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+ 
     margin-bottom: 20px;
     margin:0% 5% 0% 5%;
 }    
@@ -553,18 +541,19 @@ a:link {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+    margin:0% 5% 0% 5%;
 }
 #search-results .album-avicii article{
     flex-direction: column;
     display: inline-block;
-    width: 20%;
+    width: 23%;
+    margin: 3% 3% 0% 0% ;
  }
 #search-results h2{
-    width: 100%;
     color: white;
     font-size: medium;
-    margin-left: 10%;
     font-family: 'Raleway', sans-serif;
+
 }
  #search-results .album-avicii h3{
     color: white;
@@ -578,9 +567,10 @@ a:link {
     padding-left: 5%;
     }
 #search-results .album-avicii img{
-        max-width: 100%;
+        width: 100%;
         padding-right: 5%;
 }
+
 @media(min-width:768px){
 /*Tomi*/
 .contenedor-banner img{
@@ -639,23 +629,6 @@ li a{
 }
 
 /*Clara*/
-#detail-album .banner img{
-    padding:0%;
-    align-items: center;
-    width: 40%;
-    
-    }
-    #detail-album{
-        font-size:x-large;
-    }
-    #detail-album .cancioncla {
-        margin-bottom: 1%;
-        margin-top: 1%;
-    }
-    #detail-album .cancioncla {
-        margin-top: 1%;
-        margin-bottom: 2%;
-    }
     #playlist .canciones .cancioncla img{
         width: 60px;
         margin-top: 15%;
@@ -667,7 +640,12 @@ li a{
     #search-results .cancioncla h3{
         font-size: medium;
     }
-
+    #search-results .canciones .cancioncla img{
+        width: 70px;
+        margin-left: 5%;
+        margin-bottom: 2%;
+        align-self: center;
+        }
 }
 @media(min-width:1024px){
 /*Tomi*/
@@ -701,42 +679,34 @@ li a{
     width: 30px;
 }
 /*Clara*/
-#detail-album #datos-disco{
+#detail-album article{
     display: flex;
     flex-direction: row;
  }
  #detail-album  .banner img{
      margin-left: 20%;
-     width:255px;
- }
-
- #detail-album .datos-disco{
-    display: flex;
 }
  #detail-album  .canciones .cancioncla img{
     width: 70px;
     margin-left: 5%;
     margin-bottom: 2%;
+    margin-top: 2%;
     align-self: center;
+    }
+    #detail-album  .canciones .cancioncla h1{
+        margin-top: 50px;
     }
     #detail-album  .canciones .cancioncla h2{
         padding-top: 1%;
     }
-#detail-album .datos{
+    #detail-album .datos{
         margin: 5%;
     }
-    #search-results .canciones .cancioncla img{
-        width: 70px;
-        margin-left: 5%;
-        margin-bottom: 2%;
-        align-self: center;
-        }
-        #search-results .canciones .cancioncla h2{
-            padding-top: 1%;
-        }
    
+ #search-results .canciones .cancioncla h2{
 
-/*Clara*/
+            padding-top: 4%;
+        }
 #playlist .datos-playlist{
     display: flex;
     flex-direction: row;
