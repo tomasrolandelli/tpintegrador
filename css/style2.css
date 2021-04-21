@@ -7,6 +7,7 @@ body{
     margin: 0;
     padding: 0;
     margin: auto;
+    color: white;
   
 }
 form .izq {
@@ -16,6 +17,9 @@ form .izq {
     width: 30%;
     vertical-align: top;
   }
+a{
+    color: white;
+}
 ul,
 ol {
   display: flex;
@@ -52,6 +56,47 @@ li input[type=text]{
     border: none;
     font-size: 17px;
 }
+.canciones{
+    margin:0% 5% 0% 5%;
+}
+.track{
+    display: flex;
+    align-content: center;
+}
+.track:hover {
+    background-color: rgba(255, 255, 255, 0.137);
+}
+.track div{
+    display: flex;
+    flex-direction: column;
+}
+.track a h2, h6{
+    padding-left: 30px;
+    margin: 18% 0% 0% 0%;
+    font-size: smaller;
+    align-items:center;
+    font-family: 'Noto Sans TC', sans-serif;
+
+}
+ .track .punto{
+    padding: 0px;
+    margin-top: 2%;
+    margin-left: auto;
+   align-items: center;
+}   
+.track .corazon{
+    padding: 0px;
+    margin-top: 2%;
+   align-items: center;
+}  
+.canciones .track img{
+    width: 60px;
+    margin-top: 10%;
+    margin-left: 20px;
+}
+.track div a h6{
+    margin-top:1% ;
+}
 /*Tomi*/
 .bodydartist h2{
     color: white;
@@ -71,42 +116,7 @@ li input[type=text]{
     width: 100%;
     height: 150px;
 }
-.canciontomi{
-    display: flex;
-    justify-content: baseline;
-    margin-top: 5px;
-    border-bottom:solid rgba(255, 255, 255, 0.39);
-    align-content: center;
-}
-.canciontomi img{
-    height: 70px;
-    width: 70px;
-    margin-left: 30px;
-    align-self: center;
-}
-.cancionestomi h2{
-    color: white;
-    margin-left: 20px;
-    margin-bottom: 5px;
-}
-.canciontomi h1{
-    color: white;
-    font-size: x-large;
-    margin-left: 10px;
-}
-.canciontomi h2{
-    margin-left: 20px;
-    color: white;
-    font-size: small;
-    align-self: center;
-}
-.canciontomi a{
-    padding: 10px;
-    border-radius: 50%;
-    color: white;
-    margin-left: auto;
-    align-self: center;
-}
+
 .bodyhometomi main{
 padding: 5px;
 }
@@ -152,6 +162,18 @@ padding: 5px;
   }
   .artistatomi{
       border-radius: 50%;
+  }
+  .generostomi{
+      background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NBwcHDQ0NBwcHBw0HBwcHCA8ICQcNIBEWFiARHxUYHCggGCYlGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDg0NEisZFRkrKysrKy0rKzcrKysrKysrKysrKy0rNy0rKysrKysrKystKysrKysrKysrKysrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAAAAgEEBgP/xAAVEAEBAAAAAAAAAAAAAAAAAAAAEf/EABoBAQEBAQEBAQAAAAAAAAAAAAEAAgQDBwX/xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAMAwEAAhEDEQA/APCAPw31IASAEgBIBiTRhSq0ZSqCtE0qVaMrKhVCaVRaVSpYYNKpU0qg0qsrKyqDSqVNKoNKYysMGlUqayoaXWVNKhpVKilMGlFTWKLTpE0rDorRNKlpVKkMGlVlYxQaVSppVBptKmlUWlFTWUwaVSpohpVKilUGlUqaUwaVWVNKoNKpUUqg0qlTWVQaXWVNKYNKpUUqg0qlTWVQaXWVNZTBpdKilUGlUqKUwbdVKmlebr0qsqaVQaVSopTBpVKmlUGlVlTSqDSqVFKoNKpU1lMGl1lTSqDSqVFKYNKpU1lUZ0qlTWUwaXWVNKoNKpUUqg0qlRSmDa6yprKozpdZU1lUG10qKymDS6VFKoNKpUUpg266VNZXlHZpdZU0pg0qlRSqDSqVFKYNKpU1lUZ0usqaymDa6VFZVBpdKilUGl1lRSmDa6yopVGdLrKmsqg2usqaymDa6yppVBtVKilMZ2qlRSqDaqVFKYNrrKilUZ2usqaymDa6VFKoNuysqayvKO3S6yppTBtVKilUG1UqKUwbVSprKoztdZU1lMG11lTWVQbXSorKoztdKilMG1UqKVQbVSopTGdrrKilUG11lTWUwbXWVNZVBtdKisqjO10qKymDa6VFKoNqpUUpjO1UqKVQbdtZUUryju2usqaymDa6yprKYztdKilUG1UqKVQbVSopTGdrrKilUG11lRSmDa6yopVGdrrKmsqg2ulRWUwbXSopVGdqpUUpg2qlRSqDaqVFKYztdZUUqg2usqaymDa6yprKoNrpUUqg27KVFZXnHbtdKilUG11lRSmM7XWVFKoNrrKmspg2usqayqM7XSorKYNrpUUqg2qlRSmDaqVFKoztdZU1lUG11lTWUwbXWVNKoNqpUUpjOlUqKVQbVSprKoNLrKmspg0usqayqDS6VFKoNOysqayvOOza6yprKYNrpUVlUG10qKVQbVSopTGdrrKilUG11lTWUwbXSopVBtVKilUGlUqaymM6XWVNZVBpdZU1lMGl0qKVQaVSprKoNKpU0pg0qsqaVQaVSprKoNKpU0pg0qsqaVQadVKilecdel1lTWUwaXSopVBpVKilUGlUqaymDS6yprKoNLrKmlMGlUqayqDSqVNKoNKrKmlMGlUqayqDSqVNKoNKrKmhGlUqRDTaVjKhpVKmlQ02iaVDSqJoVW0qaVCumsqaViOnSqVNZVBpVKmlMGlVlTSqDSqVNZVBpVKmlI0qlSJabSppUNKrKysqGlUTSkaUysrKhVUqRRVVZWCgraVgRQYJVowSrRggAJACT60oMvasoCFAEKwoFUpQQZSghSlBJgBAAhQYJACQAkAJACQAkAJACQAkAJP/2Q==);
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-size: 3000px 500px;
+  }
+  .generostomi h1{
+    color: white;
+    font-size: 50px;
+    margin-left: 30px;
+    padding-top: 50px;
   }
 /*Nour*/
 .search{
@@ -318,75 +340,39 @@ a:link {
     background-image: url(https://e-cdns-images.dzcdn.net/images/misc/02e90cc40b05d31741adb2a48e9b3de7/268x528-000000-80-0-0.jpg);
 }
 /*Clara*/
-/*Album*/
-#detail-album{
-    color: white;
-    margin: auto;
- 
-}
-#detail-album h1, h5, h6 {
-    margin:0%;  
-}
+
 #detail-album .banner img{
     display: block;
-    margin:7%;
     width:255px;
     margin-left: auto;
     margin-right: auto;    
 }
-#detail-album .datos{
+
+#detail-album .info-avicii{
     display: flex;
     flex-direction: column;
     align-items:flex-start;
-    padding-left: 4%;
-    justify-content: space-between;
 }
-#detail-album h6{
-    color: rgb(138, 141, 141);
-}
-#detail-album figure{
-    margin: 0;
+#detail-album .portada{
+    margin-bottom: 4%;
 }
 #detail-album div{
     display: flex;
-    margin: 4% 0% 4% 0%;
-    align-items: center;
 }
 #detail-album  div figure img{
     width: 40px;
     border-radius:50%;
- 
 }
-#detail-album  .cancioncla {
-    display: flex;
-    border-bottom:solid rgba(255, 255, 255, 0.39);
+#detail-album .info-avicii h1{
+    margin-left: 4%; 
+}
 
-    margin: 0% 3% 0% 3%;
- 
+#detail-album h6{
+    color: rgb(138, 141, 141);
+    padding-top: 2%;
 }
-#detail-album  .cancioncla h1{
-    text-align: center;
-    margin-top: 3%;
-}
-#detail-album .cancioncla h2{
-    margin-left: 20px;
-    font-size: small;
-    align-items: center;
- 
-    margin: 3%;
- 
-}
-#detail-album .cancioncla a{
-    border-radius: 50%;
-    color:  rgba(255, 255, 255, 0.39);;
-    margin-left: auto;
-    align-self: center;
-}   
-#detail-album  .canciones .cancioncla img{
-    width: 0px;
-}
+
 /*Playlist*/
-
 
 #playlist .datos-playlist{
     display: flex;
@@ -410,13 +396,11 @@ a:link {
 #playlist h6{
     color: rgb(138, 141, 141);
     padding-top: 3%;
-
 }
 #playlist figure{
     margin: 0;
 }
 #playlist .banner img{
-
     width:100%;
     display: block;
     margin:10%;
@@ -428,67 +412,24 @@ a:link {
 #playlist .cajita{
     margin: 16% 0% 0% 0%;
 }
-#playlist .canciones{
-    margin:5%;
-}
-#playlist  .cancioncla {
-    display: flex;
-    justify-content: baseline;
-    margin-top: 2%;
-    align-content: center;
-}
-#playlist  .cancioncla:hover {
-        /* cambia el color */
-    background-color: rgba(255, 255, 255, 0.137);
-}
-#playlist  .cancioncla i{
-    color: white;
-    margin-top: 30px;
-}
-#playlist .cancioncla div{
-    display: flex;
-    flex-direction: column;
-    padding-top: 0%;
-    margin: 0%;
-}
-#playlist .cancioncla a h2, h6{
-    margin-left: 10px;
-    color: white;
-    font-size: smaller;
 
-  
-}
-#playlist .cancioncla .punto{
-    padding: 0px;
-    border-radius: 50%;
-    color: white;
-    margin-left: auto;
-   align-items: center;
-}   
-#playlist .canciones .cancioncla img{
-    width: 0px;
-}
 /*Search-results*/
 
 #search-results .resultado{
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 3%;
-   margin-left: 15%;
-}
-#search-results section h2{
-    border-bottom:solid rgba(255, 255, 255, 0.39);
-    width: 80%;
-    margin-left: 8%;
-    font-size: medium;
-    padding-bottom: 1%;
-}
-
-#search-results .artista a h5{
-   color: white;
-   margin-top: 95%;
+    margin-left: 15%;
 }
 #search-results .avicii{
     margin: 0% 5% 0% 5%;
+}
+#search-results .artista{
+    display: flex;
+    align-items: flex-start;
+    }
+#search-results .artista a h5{
+ color: white;
+   margin-top: 95%;
 }
 #search-results .avicii figure img{
     border-radius:50%;
@@ -496,26 +437,14 @@ a:link {
     margin-left: 5%;
     align-self: center;
 }
-#search-results .canciones{
-    margin:0% 5% 0% 5%;
-}
-#search-results .artista{
-    display: flex;
-    align-items: flex-start;
-    }
-#search-results  .cancioncla {
-    display: flex;
-    justify-content: baseline;
-    margin-top: 2%;
-    align-items: center;
-}
-#search-results .cancioncla h3{
-    margin-left: 20px;
-    margin-top: 30%;
-    color: white;
-font-size: small;
-    align-items: center;
-    margin-bottom: 40%;
+#search-results .title-search{
+    border-bottom:solid rgba(255, 255, 255, 0.39);
+    width: 80%;
+    margin-left: 8%;
+    font-size: medium;
+    padding-bottom: 1%;
+    font-size: medium;
+    font-family: 'Raleway', sans-serif;
 }
 #search-results #icon{
     padding: 10px;
@@ -523,17 +452,8 @@ font-size: small;
     color: rgb(168, 167, 167);
     margin-left: auto;
     align-self: center;
-}   
-#search-results .cancioncla img{
-    max-width: 60px;
-    margin-left: 5%;
-    margin-bottom: 2%;
-    align-self: center;
-}
+} 
 #search-results .album-avicii{
-    display: flex;
-    flex-wrap: wrap;
- 
     margin-bottom: 20px;
     margin:0% 5% 0% 5%;
 }    
@@ -543,32 +463,25 @@ font-size: small;
     white-space: nowrap;
     margin:0% 5% 0% 5%;
 }
-#search-results .album-avicii article{
+#search-results .opciones-album article{
     flex-direction: column;
     display: inline-block;
     width: 23%;
     margin: 3% 3% 0% 0% ;
  }
-#search-results h2{
-    color: white;
-    font-size: medium;
-    font-family: 'Raleway', sans-serif;
-
-}
  #search-results .album-avicii h3{
     color: white;
     font-size: small;
     padding-left: 5%;
-  
-        }
+}
 #search-results .album-avicii h4{
    color:gray;
     font-size: x-small;
     padding-left: 5%;
-    }
+}
 #search-results .album-avicii img{
-        width: 100%;
-        padding-right: 5%;
+    width: 100%;
+    padding-right: 5%;
 }
 
 @media(min-width:768px){
@@ -606,6 +519,13 @@ font-size: small;
     max-height: 300px;
     max-width: 300px;
 }
+.generostomi h1{
+    font-size: 100px;
+}
+.generostomi h2{
+font-size: 30px;
+margin-top: 30px;
+}
 /*Nour*/
 li a{
     font-size: x-large;
@@ -629,24 +549,11 @@ li a{
 }
 
 /*Clara*/
-    #playlist .canciones .cancioncla img{
-        width: 60px;
-        margin-top: 15%;
-        margin-left: 20px;
-    }
-    #search-results h2{
-        font-size: large;
-    }
-    #search-results .cancioncla h3{
-        font-size: medium;
-    }
-    #search-results .canciones .cancioncla img{
-        width: 70px;
-        margin-left: 5%;
-        margin-bottom: 2%;
-        align-self: center;
-        }
+
+#search-results .track h3{
+    font-size: medium;
 }
+
 @media(min-width:1024px){
 /*Tomi*/
 .contenedor-banner img{
@@ -679,6 +586,7 @@ li a{
     width: 30px;
 }
 /*Clara*/
+
 #detail-album article{
     display: flex;
     flex-direction: row;
@@ -686,27 +594,14 @@ li a{
  #detail-album  .banner img{
      margin-left: 20%;
 }
- #detail-album  .canciones .cancioncla img{
-    width: 70px;
-    margin-left: 5%;
-    margin-bottom: 2%;
-    margin-top: 2%;
-    align-self: center;
-    }
-    #detail-album  .canciones .cancioncla h1{
-        margin-top: 50px;
-    }
-    #detail-album  .canciones .cancioncla h2{
-        padding-top: 1%;
-    }
-    #detail-album .datos{
-        margin: 5%;
-    }
-   
- #search-results .canciones .cancioncla h2{
+#detail-album .info-avicii {
+    margin: 4% 0% 0% 4%;
+}
+#detail-album .info-avicii h1{
 
-            padding-top: 4%;
-        }
+    margin-left: 15%; 
+}
+
 #playlist .datos-playlist{
     display: flex;
     flex-direction: row;
@@ -715,18 +610,7 @@ li a{
      margin-left: 20%;
      width:255px;
  }
-
-  #playlist .canciones .cancioncla img{
-    width: 60px;
-    margin-top: 15%;
-    margin-left: 20px;
-  }
-      #playlist  .canciones .cancioncla h2, h6{
-          padding-top: 18%;
-          margin-left: 30px;
-     
-    }
-    #playlist  .datos{
-        margin: 5%;
-    }
+ #playlist  .datos{
+    margin: 5%;
+ }
 }
