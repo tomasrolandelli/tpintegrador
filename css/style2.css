@@ -7,65 +7,58 @@ body{
     margin: 0;
     padding: 0;
     margin: auto;
-    color: white;
-  
 }
-form .izq {
-    display: inline-block;
-    margin-right: 15px;
-    text-align: right;
-    width: 30%;
-    vertical-align: top;
-}
-a{
-    color: white;
+nav{
+    display: flex;
+  border: solid 3px grey;
+  border-radius: 3px;
+  padding:1%;  
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 ul,
 ol {
   display: flex;
-  border: solid 3px grey;
-  border-radius: 3px;
-  padding:1%;
-  align-items: center;
-  justify-content: space-around;
   list-style-type: none;
+  width: 100%;
+  justify-content: space-between;
+  margin-right: 30px;
 }
-
+.logo3{
+    width: 50%;
+}
+.logo3 img{
+    width: 70%;
+    border: solid 3px white;
+    margin-left: 20px;
+}
+.row1{
+    display: flex;
+}
 li a{
     color: white;
-    font-size:medium;
+    display: flex;
+    font-size: x-large;
     text-decoration: none;
 }
-
 header, footer {
-    padding:30px;
+    padding: 20px;
 }
-
-header nav ul{
-    border: solid 3px grey;
-    border-radius: 3px;
-    align-items: center;
-    padding:1%;
-}
-li input[type=text]{
-    padding: 6px;
-    margin-top: 8px;
-    margin-right: 16px;
-    margin-bottom: 8px;
-    border: none;
-    font-size: 17px;
+form.example{
+    width: 45%;
+    align-self: center;
 }
 form.example input[type=text] {
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
     float: left;
-    width: 80%;
+    width: 70%;
     background: #f1f1f1;
+    height: 40px;
   }
-  
-  /* Style the submit button */
-  form.example button {
+   /* Style the submit button */
+   form.example button {
     float: left;
     width: 20%;
     padding: 10px;
@@ -75,17 +68,11 @@ form.example input[type=text] {
     border: 1px solid grey;
     border-left: none; /* Prevent double borders */
     cursor: pointer;
+    height: 40px;
   }
   
   form.example button:hover {
     background: #0b7dda;
-  }
-  
-  /* Clear floats */
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
   }
 .canciones{
     margin:0% 5% 0% 5%;
@@ -112,12 +99,15 @@ form.example input[type=text] {
     font-size: smaller;
     align-items: center;
     font-family: 'Noto Sans TC', sans-serif;
+    color: white;
 }
 .track h6{
     margin-left: 14px;
     padding-left: 15px;
  }
- 
+ .track a{
+     color: white;
+ }
  .track .punto{
     padding: 0px;
     margin-top: 2%;
@@ -453,6 +443,9 @@ a:link {
     margin: 16% 0% 0% 0%;
 }
 /*Search-results*/
+#search-results h2{
+    color: white;
+}
 #search-results .resultado{
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 3%;
@@ -504,7 +497,31 @@ a:link {
 
 
 @media(min-width:768px){
-/*Tomi*/
+nav{
+    flex-direction: row;
+}
+.row1{
+    width: 50%;
+}
+ul{
+    width: 40%;
+}
+.logo3{
+    width: 100%;
+    max-height: 200px;
+    max-width: 400px;
+}
+.logo3 img{
+    width: 100%;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+form.example{
+    width: 600px;
+    margin-left: 50px;
+}
+li a{ margin-top: 15px;}
+    /*Tomi*/
 .contenedor-banner img{
     height: 300px;
 }
