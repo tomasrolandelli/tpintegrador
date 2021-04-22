@@ -70,11 +70,11 @@ li input[type=text]{
     display: flex;
     flex-direction: column;
 }
-.track a h2, h6{
+.track a h2{
     padding-left: 30px;
     margin: 18% 0% 0% 0%;
     font-size: smaller;
-    align-items:center;
+    align-items: center;
     font-family: 'Noto Sans TC', sans-serif;
 
 }
@@ -88,6 +88,7 @@ li input[type=text]{
     padding: 0px;
     margin-top: 2%;
    align-items: center;
+   margin-left: 10px;
 }  
 .canciones .track img{
     width: 60px;
@@ -370,6 +371,7 @@ a:link {
 #detail-album h6{
     color: rgb(138, 141, 141);
     padding-top: 2%;
+    margin-left: 20px;
 }
 
 /*Playlist*/
@@ -483,25 +485,14 @@ a:link {
     width: 100%;
     padding-right: 5%;
 }
+.track h6{
+    margin-left: 20px;
+}
 
 @media(min-width:768px){
 /*Tomi*/
 .contenedor-banner img{
     height: 300px;
-}
-.canciontomi h2{
-    font-size: x-large;
-}
-.canciontomi{
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.canciontomi img{
-    height: 100px;
-    width: 100px;
-
 }
 .sectiontomi h3{
     font-size: medium;
@@ -553,15 +544,11 @@ li a{
 #search-results .track h3{
     font-size: medium;
 }
-
+}
 @media(min-width:1024px){
 /*Tomi*/
 .contenedor-banner img{
     height: 300px;
-}
-.canciontomi{
-    margin-left: 30px;
-    margin-right: 30px;
 }
 /*Nour*/
 .main-img{
