@@ -16,7 +16,7 @@ form .izq {
     text-align: right;
     width: 30%;
     vertical-align: top;
-  }
+}
 a{
     color: white;
 }
@@ -30,19 +30,16 @@ ol {
   justify-content: space-around;
   list-style-type: none;
 }
-
 li a{
     color: white;
     font-size:medium;
     text-decoration: none;
 }
-
 header, footer {
     padding:30px;
 }
 
 header nav ul{
-   
     border: solid 3px grey;
     border-radius: 3px;
     align-items: center;
@@ -59,6 +56,11 @@ li input[type=text]{
 .canciones{
     margin:0% 5% 0% 5%;
 }
+.canciones h6{
+    color: rgb(138, 141, 141);
+    padding-top: 1%;
+    margin-right: 18%;
+}
 .track{
     display: flex;
     align-content: center;
@@ -70,13 +72,17 @@ li input[type=text]{
     display: flex;
     flex-direction: column;
 }
-.track a h2, h6{
+.track a h2{
     padding-left: 30px;
-    margin: 18% 0% 0% 0%;
+    margin: 25% 0% 0% 0%;
     font-size: smaller;
-    align-items:center;
+    align-items: center;
     font-family: 'Noto Sans TC', sans-serif;
 }
+.track h6{
+    margin-left: 14px;
+    padding-left: 15px;
+ }
  .track .punto{
     padding: 0px;
     margin-top: 2%;
@@ -87,15 +93,18 @@ li input[type=text]{
     padding: 0px;
     margin-top: 2%;
    align-items: center;
+   margin-left: 10px;
 }  
 .canciones .track img{
     width: 60px;
     margin-top: 10%;
     margin-left: 20px;
 }
+
 .track div a h6{
     margin-top:1% ;
 }
+
 .scroll{
     display: flex;
     flex-wrap: wrap;
@@ -139,6 +148,7 @@ li input[type=text]{
     overflow-y: hidden;
     white-space: nowrap;
   }
+
 /*Tomi*/
 .bodydartist h2{
     color: white;
@@ -269,7 +279,6 @@ a:link {
 }
 #rock{
     background-image: url(https://e-cdns-images.dzcdn.net/images/misc/8ad3050b34360d0573d9d7b8bf38997d/268x528-000000-80-0-0.jpg);
-
 }
 #pop{
     background-image: url(https://e-cdns-images.dzcdn.net/images/misc/2b15578cf12902c0c7d2ae07e8071460/268x528-000000-80-0-0.jpg);
@@ -370,6 +379,7 @@ a:link {
 #detail-album h6{
     color: rgb(138, 141, 141);
     padding-top: 2%;
+  margin-left: 4%;
 }
 /*Playlist*/
 #playlist .datos-playlist{
@@ -389,11 +399,7 @@ a:link {
     margin-left: auto;
     margin-right: auto;
 }
-#playlist h6{
-    color: rgb(138, 141, 141);
-    padding-top: 1%;
-    margin-right: 18%;
-}
+
 #playlist figure{
     margin: 0;
 }
@@ -452,8 +458,13 @@ a:link {
     margin:0% 5% 0% 5%;
  }
  #search-results .scroll h2{
-     width:80%;
+    width:80%;
  }
+#search-results .album-avicii img{
+    width: 100%;
+    padding-right: 5%;
+}
+
 
 @media(min-width:768px){
 /*Tomi*/
@@ -510,15 +521,11 @@ li a{
 #search-results .track h3{
     font-size: medium;
 }
-
+}
 @media(min-width:1024px){
 /*Tomi*/
 .contenedor-banner img{
     height: 300px;
-}
-.canciontomi{
-    margin-left: 30px;
-    margin-right: 30px;
 }
 /*Nour*/
 .main-img{
@@ -555,10 +562,12 @@ li a{
     margin: 4% 0% 0% 4%;
 }
 #detail-album .info-avicii h1{
-
     margin-left: 15%; 
 }
-
+#detail-album h6{
+  
+    margin-left: 20%;
+}
 #playlist .datos-playlist{
     display: flex;
     flex-direction: row;
