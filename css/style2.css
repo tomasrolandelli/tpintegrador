@@ -76,7 +76,6 @@ li input[type=text]{
     font-size: smaller;
     align-items:center;
     font-family: 'Noto Sans TC', sans-serif;
-
 }
  .track .punto{
     padding: 0px;
@@ -97,6 +96,49 @@ li input[type=text]{
 .track div a h6{
     margin-top:1% ;
 }
+.scroll{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  
+}
+.scroll h2{
+    width: 100%;
+    color: white;
+    font-size: medium;
+    margin-left: 10%;
+}
+.scroll h3{
+    color: white;
+    font-size: small;
+    width: 100%;
+    padding-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.scroll h4{
+    color:gray;
+    font-size: x-small;
+    padding-left: 5%;
+}
+.scroll img{
+    width: 100%
+}
+.scroll article{
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    display: inline-block;
+    margin-left: 5px;
+    width: 23%;
+    margin: 3% 3% 0% 0% ;
+}
+.nomelacontainer{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
 /*Tomi*/
 .bodydartist h2{
     color: white;
@@ -120,46 +162,6 @@ li input[type=text]{
 .bodyhometomi main{
 padding: 5px;
 }
-.sectiontomi{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-}
-.sectiontomi h2{
-    width: 100%;
-    color: white;
-    font-size: medium;
-    margin-left: 10%;
-}
-.sectiontomi h3{
-    color: white;
-    font-size: small;
-    width: 100%;
-    padding-left: 5%;
-    display: flex;
-    flex-wrap: wrap;
-}
-.sectiontomi h4{
-    color:gray;
-    font-size: x-small;
-    padding-left: 5%;
-}
-.sectiontomi img{
-    width: 100%
-}
-.sectiontomi article{
-    width: 30%;
-    flex-direction: column;
-    align-items: center;
-    display: inline-block;
-    margin-left: 5px;
-}
-.nomelacontainer{
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-  }
   .artistatomi{
       border-radius: 50%;
   }
@@ -340,14 +342,13 @@ a:link {
     background-image: url(https://e-cdns-images.dzcdn.net/images/misc/02e90cc40b05d31741adb2a48e9b3de7/268x528-000000-80-0-0.jpg);
 }
 /*Clara*/
-
+/*Detalle de album*/
 #detail-album .banner img{
     display: block;
     width:255px;
     margin-left: auto;
     margin-right: auto;    
 }
-
 #detail-album .info-avicii{
     display: flex;
     flex-direction: column;
@@ -366,36 +367,32 @@ a:link {
 #detail-album .info-avicii h1{
     margin-left: 4%; 
 }
-
 #detail-album h6{
     color: rgb(138, 141, 141);
     padding-top: 2%;
 }
-
 /*Playlist*/
-
 #playlist .datos-playlist{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 #playlist .datos-playlist h1{
     font-size: x-large;
-    color: rgb(248, 248, 248);
+    margin: 0%;
 }
 #playlist .datos{
     display: flex;
     flex-direction: column;
     align-items:center;
-    justify-content: space-between;
     padding-left: 4%;
     margin-left: auto;
     margin-right: auto;
 }
 #playlist h6{
     color: rgb(138, 141, 141);
-    padding-top: 3%;
+    padding-top: 1%;
+    margin-right: 18%;
 }
 #playlist figure{
     margin: 0;
@@ -412,9 +409,7 @@ a:link {
 #playlist .cajita{
     margin: 16% 0% 0% 0%;
 }
-
 /*Search-results*/
-
 #search-results .resultado{
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 3%;
@@ -438,8 +433,8 @@ a:link {
     align-self: center;
 }
 #search-results .title-search{
+    margin-left: 10%;
     border-bottom:solid rgba(255, 255, 255, 0.39);
-    width: 80%;
     margin-left: 8%;
     font-size: medium;
     padding-bottom: 1%;
@@ -453,55 +448,17 @@ a:link {
     margin-left: auto;
     align-self: center;
 } 
-#search-results .album-avicii{
-    margin-bottom: 20px;
+#search-results .nomelacontainer {
     margin:0% 5% 0% 5%;
-}    
-#search-results .opciones-album{
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    margin:0% 5% 0% 5%;
-}
-#search-results .opciones-album article{
-    flex-direction: column;
-    display: inline-block;
-    width: 23%;
-    margin: 3% 3% 0% 0% ;
  }
- #search-results .album-avicii h3{
-    color: white;
-    font-size: small;
-    padding-left: 5%;
-}
-#search-results .album-avicii h4{
-   color:gray;
-    font-size: x-small;
-    padding-left: 5%;
-}
-#search-results .album-avicii img{
-    width: 100%;
-    padding-right: 5%;
-}
+ #search-results .scroll h2{
+     width:80%;
+ }
 
 @media(min-width:768px){
 /*Tomi*/
 .contenedor-banner img{
     height: 300px;
-}
-.canciontomi h2{
-    font-size: x-large;
-}
-.canciontomi{
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.canciontomi img{
-    height: 100px;
-    width: 100px;
-
 }
 .sectiontomi h3{
     font-size: medium;
