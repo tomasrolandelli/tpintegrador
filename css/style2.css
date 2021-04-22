@@ -30,11 +30,13 @@ ol {
   justify-content: space-around;
   list-style-type: none;
 }
+
 li a{
     color: white;
     font-size:medium;
     text-decoration: none;
 }
+
 header, footer {
     padding:30px;
 }
@@ -53,6 +55,38 @@ li input[type=text]{
     border: none;
     font-size: 17px;
 }
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 .canciones{
     margin:0% 5% 0% 5%;
 }
@@ -83,9 +117,11 @@ li input[type=text]{
     margin-left: 14px;
     padding-left: 15px;
  }
+ 
  .track .punto{
     padding: 0px;
     margin-top: 2%;
+    border-radius: 50%;
     margin-left: auto;
    align-items: center;
 }   
@@ -95,6 +131,7 @@ li input[type=text]{
    align-items: center;
    margin-left: 10px;
 }  
+
 .canciones .track img{
     width: 60px;
     margin-top: 10%;
@@ -175,7 +212,7 @@ padding: 5px;
   .artistatomi{
       border-radius: 50%;
   }
-  .generostomi{
+.generostomi{
       background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NBwcHDQ0NBwcHBw0HBwcHCA8ICQcNIBEWFiARHxUYHCggGCYlGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDg0NEisZFRkrKysrKy0rKzcrKysrKysrKysrKy0rNy0rKysrKysrKystKysrKysrKysrKysrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAAAAgEEBgP/xAAVEAEBAAAAAAAAAAAAAAAAAAAAEf/EABoBAQEBAQEBAQAAAAAAAAAAAAEAAgQDBwX/xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAMAwEAAhEDEQA/APCAPw31IASAEgBIBiTRhSq0ZSqCtE0qVaMrKhVCaVRaVSpYYNKpU0qg0qsrKyqDSqVNKoNKYysMGlUqayoaXWVNKhpVKilMGlFTWKLTpE0rDorRNKlpVKkMGlVlYxQaVSppVBptKmlUWlFTWUwaVSpohpVKilUGlUqaUwaVWVNKoNKpUUqg0qlTWVQaXWVNKYNKpUUqg0qlTWVQaXWVNZTBpdKilUGlUqKUwbdVKmlebr0qsqaVQaVSopTBpVKmlUGlVlTSqDSqVFKoNKpU1lMGl1lTSqDSqVFKYNKpU1lUZ0qlTWUwaXWVNKoNKpUUqg0qlRSmDa6yprKozpdZU1lUG10qKymDS6VFKoNKpUUpg266VNZXlHZpdZU0pg0qlRSqDSqVFKYNKpU1lUZ0usqaymDa6VFZVBpdKilUGl1lRSmDa6yopVGdLrKmsqg2usqaymDa6yppVBtVKilMZ2qlRSqDaqVFKYNrrKilUZ2usqaymDa6VFKoNuysqayvKO3S6yppTBtVKilUG1UqKUwbVSprKoztdZU1lMG11lTWVQbXSorKoztdKilMG1UqKVQbVSopTGdrrKilUG11lTWUwbXWVNZVBtdKisqjO10qKymDa6VFKoNqpUUpjO1UqKVQbdtZUUryju2usqaymDa6yprKYztdKilUG1UqKVQbVSopTGdrrKilUG11lRSmDa6yopVGdrrKmsqg2ulRWUwbXSopVGdqpUUpg2qlRSqDaqVFKYztdZUUqg2usqaymDa6yprKoNrpUUqg27KVFZXnHbtdKilUG11lRSmM7XWVFKoNrrKmspg2usqayqM7XSorKYNrpUUqg2qlRSmDaqVFKoztdZU1lUG11lTWUwbXWVNKoNqpUUpjOlUqKVQbVSprKoNLrKmspg0usqayqDS6VFKoNOysqayvOOza6yprKYNrpUVlUG10qKVQbVSopTGdrrKilUG11lTWUwbXSopVBtVKilUGlUqaymM6XWVNZVBpdZU1lMGl0qKVQaVSprKoNKpU0pg0qsqaVQaVSprKoNKpU0pg0qsqaVQadVKilecdel1lTWUwaXSopVBpVKilUGlUqaymDS6yprKoNLrKmlMGlUqayqDSqVNKoNKrKmlMGlUqayqDSqVNKoNKrKmhGlUqRDTaVjKhpVKmlQ02iaVDSqJoVW0qaVCumsqaViOnSqVNZVBpVKmlMGlVlTSqDSqVNZVBpVKmlI0qlSJabSppUNKrKysqGlUTSkaUysrKhVUqRRVVZWCgraVgRQYJVowSrRggAJACT60oMvasoCFAEKwoFUpQQZSghSlBJgBAAhQYJACQAkAJACQAkAJACQAkAJP/2Q==);
       background-repeat: no-repeat;
       background-position-x: center;
@@ -275,7 +312,7 @@ a:link {
     text-align: center;
 }
 .nourcajita:hover{
-    color:rgb(0, 0, 0)
+    background-color: rgba(255, 255, 255, 0.137);
 }
 #rock{
     background-image: url(https://e-cdns-images.dzcdn.net/images/misc/8ad3050b34360d0573d9d7b8bf38997d/268x528-000000-80-0-0.jpg);
@@ -565,7 +602,6 @@ li a{
     margin-left: 15%; 
 }
 #detail-album h6{
-  
     margin-left: 20%;
 }
 #playlist .datos-playlist{
