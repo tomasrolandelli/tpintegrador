@@ -56,6 +56,38 @@ li input[type=text]{
     border: none;
     font-size: 17px;
 }
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 .canciones{
     margin:0% 5% 0% 5%;
 }
@@ -264,7 +296,7 @@ a:link {
     text-align: center;
 }
 .nourcajita:hover{
-    color:rgb(0, 0, 0)
+    background-color: rgba(255, 255, 255, 0.137);
 }
 #rock{
     background-image: url(https://e-cdns-images.dzcdn.net/images/misc/8ad3050b34360d0573d9d7b8bf38997d/268x528-000000-80-0-0.jpg);
