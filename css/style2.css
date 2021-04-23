@@ -17,6 +17,9 @@ nav{
   flex-wrap: wrap;
   justify-content: space-between;
 }
+a{
+    color: white;
+}
 ul,
 ol {
   display: flex;
@@ -51,7 +54,7 @@ form.example{
     width: 45%;
     align-self: center;
 }
-form.example input[type=text] {
+form.example input{
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
@@ -60,8 +63,8 @@ form.example input[type=text] {
     background: #f1f1f1;
     height: 40px;
   }
-   /* Style the submit button */
-   form.example button {
+/* Style the submit button */
+form.example button {
     float: left;
     width: 20%;
     padding: 10px;
@@ -75,7 +78,7 @@ form.example input[type=text] {
   }
   
 form.example button:hover {
-    background: #082946;
+    background-color: #082946;
   }
 .canciones{
     margin:0% 5% 0% 5%;
@@ -107,9 +110,6 @@ form.example button:hover {
 .track h6{
     margin-left: 30px;
  }
- .track a{
-     color: white;
- }
  .track .punto{
     padding: 0px;
     margin-top: 2%;
@@ -123,31 +123,26 @@ form.example button:hover {
    align-items: center;
    margin-left: 10px;
 }  
-.canciones .track img{
+.track img{
     width: 60px;
     margin-top: 10%;
     margin-left: 20px;
 }
-
 .track div a h6{
     margin-top:1% ;
 }
-
 .scroll{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     margin-bottom: 20px;
-  
 }
 .scroll h2{
-    width: 100%;
-    color: white;
+  
     font-size: medium;
     margin-left: 10%;
 }
 .scroll h3{
-    color: white;
+    
     font-size: small;
     width: 100%;
     padding-left: 5%;
@@ -248,6 +243,7 @@ a:link {
     display: flex;
     margin-bottom: 20px;
 }
+
 .nietonour a{
     margin-left:50px;
     color:white;
@@ -283,8 +279,6 @@ a:link {
     font-size: x-large;
     margin-left: 50px;
 }
-
-
 .nourcajita{
     width: 150px;
     height: 80px;   
@@ -450,9 +444,7 @@ margin-top:15% ;
     margin: 16% 0% 0% 0%;
 }
 /*Search-results*/
-#search-results h2{
-    color: white;
-}
+
 #search-results .resultado{
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 3%;
@@ -466,7 +458,6 @@ margin-top:15% ;
     align-items: flex-start;
     }
 #search-results .artista a h5{
- color: white;
    margin-top: 95%;
 }
 #search-results .avicii figure img{
@@ -501,7 +492,6 @@ margin-top:15% ;
     width: 100%;
     padding-right: 5%;
 }
-
 
 @media(min-width:768px){
 nav{
@@ -575,9 +565,6 @@ li a{
     height: 100px;
     justify-content: space-evenly;   
 }
-
-/*Clara*/
-
 #search-results .track h3{
     font-size: medium;
 }
@@ -616,7 +603,7 @@ li a{
     display: flex;
     flex-direction: row;
  }
- #detail-album  .banner img{
+#detail-album  .banner img{
      margin-left: 20%;
 }
 #detail-album .info-avicii {
@@ -632,11 +619,11 @@ li a{
     display: flex;
     flex-direction: row;
  }
- #playlist  .banner img{
-     margin-left: 20%;
-     width:255px;
+#playlist  .banner img{
+    margin-left: 20%;
+    width:255px;
  }
- #playlist  .datos{
+#playlist  .datos{
     margin: 5%;
- }
+}
 }
