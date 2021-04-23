@@ -8,89 +8,83 @@ body{
     padding: 0;
     margin: auto;
     color: white;
-  
 }
-form .izq {
-    display: inline-block;
-    margin-right: 15px;
-    text-align: right;
-    width: 30%;
-    vertical-align: top;
-  }
-a{
-    color: white;
+nav{
+    display: flex;
+  border: solid 3px grey;
+  border-radius: 3px;
+  padding:0%;  
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 ul,
 ol {
   display: flex;
-  border: solid 3px grey;
-  border-radius: 3px;
-  padding:1%;
-  align-items: center;
-  justify-content: space-around;
   list-style-type: none;
+  width: 100%;
+  justify-content: space-between;
+  margin-right: 30px;
 }
-
+.logo3{
+    width: 50%;
+}
+.logo3 img{
+    width: 70%;
+    border: solid 3px white;
+    margin-left: 20px;
+    margin-top: 2%;
+}
+.row1{
+    display: flex;
+}
 li a{
     color: white;
-    font-size:medium;
+    display: flex;
+    font-size: x-large;
     text-decoration: none;
+   margin-bottom: 22%;
 }
-
 header, footer {
-    padding:30px;
+    padding: 20px;
 }
-
-header nav ul{
-   
-    border: solid 3px grey;
-    border-radius: 3px;
-    align-items: center;
-    padding:1%;
-}
-li input[type=text]{
-    padding: 6px;
-    margin-top: 8px;
-    margin-right: 16px;
-    margin-bottom: 8px;
-    border: none;
-    font-size: 17px;
+form.example{
+    width: 45%;
+    align-self: center;
 }
 form.example input[type=text] {
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
     float: left;
-    width: 80%;
+    width: 70%;
     background: #f1f1f1;
+    height: 40px;
   }
-  
-  /* Style the submit button */
-  form.example button {
+   /* Style the submit button */
+   form.example button {
     float: left;
     width: 20%;
     padding: 10px;
-    background: #2196F3;
+    background-color: rgb(111, 127, 145);
     color: white;
     font-size: 17px;
     border: 1px solid grey;
     border-left: none; /* Prevent double borders */
     cursor: pointer;
+    height: 40px;
   }
   
-  form.example button:hover {
-    background: #0b7dda;
-  }
-  
-  /* Clear floats */
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
+form.example button:hover {
+    background: #082946;
   }
 
 .canciones{
     margin:0% 5% 0% 5%;
+}
+.canciones h6{
+    color: rgb(138, 141, 141);
+    padding-top: 1%;
+    margin-right: 18%;
 }
 .track{
     display: flex;
@@ -105,15 +99,22 @@ form.example input[type=text] {
 }
 .track a h2{
     padding-left: 30px;
-    margin: 18% 0% 0% 0%;
+    margin: 25% 0% 0% 0%;
     font-size: smaller;
     align-items: center;
     font-family: 'Noto Sans TC', sans-serif;
-
+    color: white;
 }
+.track h6{
+    margin-left: 30px;
+ }
+ .track a{
+     color: white;
+ }
  .track .punto{
     padding: 0px;
     margin-top: 2%;
+    border-radius: 50%;
     margin-left: auto;
    align-items: center;
 }   
@@ -128,9 +129,55 @@ form.example input[type=text] {
     margin-top: 10%;
     margin-left: 20px;
 }
+
 .track div a h6{
     margin-top:1% ;
 }
+
+.scroll{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  
+}
+.scroll h2{
+    width: 100%;
+    color: white;
+    font-size: medium;
+    margin-left: 10%;
+}
+.scroll h3{
+    color: white;
+    font-size: small;
+    width: 100%;
+    padding-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.scroll h4{
+    color:gray;
+    font-size: x-small;
+    padding-left: 5%;
+}
+.scroll img{
+    width: 100%
+}
+.scroll article{
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    display: inline-block;
+    margin-left: 5px;
+    width: 23%;
+    margin: 3% 3% 0% 0% ;
+}
+.nomelacontainer{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
 /*Tomi*/
 .bodydartist h2{
     color: white;
@@ -150,54 +197,13 @@ form.example input[type=text] {
     width: 100%;
     height: 150px;
 }
-
 .bodyhometomi main{
 padding: 5px;
 }
-.sectiontomi{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-}
-.sectiontomi h2{
-    width: 100%;
-    color: white;
-    font-size: medium;
-    margin-left: 10%;
-}
-.sectiontomi h3{
-    color: white;
-    font-size: small;
-    width: 100%;
-    padding-left: 5%;
-    display: flex;
-    flex-wrap: wrap;
-}
-.sectiontomi h4{
-    color:gray;
-    font-size: x-small;
-    padding-left: 5%;
-}
-.sectiontomi img{
-    width: 100%
-}
-.sectiontomi article{
-    width: 30%;
-    flex-direction: column;
-    align-items: center;
-    display: inline-block;
-    margin-left: 5px;
-}
-.nomelacontainer{
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-  }
   .artistatomi{
       border-radius: 50%;
   }
-  .generostomi{
+.generostomi{
       background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NBwcHDQ0NBwcHBw0HBwcHCA8ICQcNIBEWFiARHxUYHCggGCYlGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDg0NEisZFRkrKysrKy0rKzcrKysrKysrKysrKy0rNy0rKysrKysrKystKysrKysrKysrKysrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAAAAgEEBgP/xAAVEAEBAAAAAAAAAAAAAAAAAAAAEf/EABoBAQEBAQEBAQAAAAAAAAAAAAEAAgQDBwX/xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAMAwEAAhEDEQA/APCAPw31IASAEgBIBiTRhSq0ZSqCtE0qVaMrKhVCaVRaVSpYYNKpU0qg0qsrKyqDSqVNKoNKYysMGlUqayoaXWVNKhpVKilMGlFTWKLTpE0rDorRNKlpVKkMGlVlYxQaVSppVBptKmlUWlFTWUwaVSpohpVKilUGlUqaUwaVWVNKoNKpUUqg0qlTWVQaXWVNKYNKpUUqg0qlTWVQaXWVNZTBpdKilUGlUqKUwbdVKmlebr0qsqaVQaVSopTBpVKmlUGlVlTSqDSqVFKoNKpU1lMGl1lTSqDSqVFKYNKpU1lUZ0qlTWUwaXWVNKoNKpUUqg0qlRSmDa6yprKozpdZU1lUG10qKymDS6VFKoNKpUUpg266VNZXlHZpdZU0pg0qlRSqDSqVFKYNKpU1lUZ0usqaymDa6VFZVBpdKilUGl1lRSmDa6yopVGdLrKmsqg2usqaymDa6yppVBtVKilMZ2qlRSqDaqVFKYNrrKilUZ2usqaymDa6VFKoNuysqayvKO3S6yppTBtVKilUG1UqKUwbVSprKoztdZU1lMG11lTWVQbXSorKoztdKilMG1UqKVQbVSopTGdrrKilUG11lTWUwbXWVNZVBtdKisqjO10qKymDa6VFKoNqpUUpjO1UqKVQbdtZUUryju2usqaymDa6yprKYztdKilUG1UqKVQbVSopTGdrrKilUG11lRSmDa6yopVGdrrKmsqg2ulRWUwbXSopVGdqpUUpg2qlRSqDaqVFKYztdZUUqg2usqaymDa6yprKoNrpUUqg27KVFZXnHbtdKilUG11lRSmM7XWVFKoNrrKmspg2usqayqM7XSorKYNrpUUqg2qlRSmDaqVFKoztdZU1lUG11lTWUwbXWVNKoNqpUUpjOlUqKVQbVSprKoNLrKmspg0usqayqDS6VFKoNOysqayvOOza6yprKYNrpUVlUG10qKVQbVSopTGdrrKilUG11lTWUwbXSopVBtVKilUGlUqaymM6XWVNZVBpdZU1lMGl0qKVQaVSprKoNKpU0pg0qsqaVQaVSprKoNKpU0pg0qsqaVQadVKilecdel1lTWUwaXSopVBpVKilUGlUqaymDS6yprKoNLrKmlMGlUqayqDSqVNKoNKrKmlMGlUqayqDSqVNKoNKrKmhGlUqRDTaVjKhpVKmlQ02iaVDSqJoVW0qaVCumsqaViOnSqVNZVBpVKmlMGlVlTSqDSqVNZVBpVKmlI0qlSJabSppUNKrKysqGlUTSkaUysrKhVUqRRVVZWCgraVgRQYJVowSrRggAJACT60oMvasoCFAEKwoFUpQQZSghSlBJgBAAhQYJACQAkAJACQAkAJACQAkAJP/2Q==);
       background-repeat: no-repeat;
       background-position-x: center;
@@ -278,10 +284,13 @@ a:link {
     font-size: x-large;
     margin-left: 50px;
 }
+
+
 .nourcajita{
     width: 150px;
     height: 80px;   
 }
+
 .noursection{
     display: flex;
     flex-wrap: wrap;
@@ -301,11 +310,9 @@ a:link {
 }
 #rock{
     background-image: url(https://e-cdns-images.dzcdn.net/images/misc/8ad3050b34360d0573d9d7b8bf38997d/268x528-000000-80-0-0.jpg);
-
 }
 #pop{
     background-image: url(https://e-cdns-images.dzcdn.net/images/misc/2b15578cf12902c0c7d2ae07e8071460/268x528-000000-80-0-0.jpg);
-
 }
 #musicalatina{
     background-image:url(https://e-cdns-images.dzcdn.net/images/misc/d1f20c3f8aac2f94c87c5f64e0d14c99/268x528-000000-80-0-0.jpg)
@@ -374,14 +381,13 @@ a:link {
     background-image: url(https://e-cdns-images.dzcdn.net/images/misc/02e90cc40b05d31741adb2a48e9b3de7/268x528-000000-80-0-0.jpg);
 }
 /*Clara*/
-
+/*Detalle de album*/
 #detail-album .banner img{
     display: block;
     width:255px;
     margin-left: auto;
     margin-right: auto;    
 }
-
 #detail-album .info-avicii{
     display: flex;
     flex-direction: column;
@@ -400,37 +406,34 @@ a:link {
 #detail-album .info-avicii h1{
     margin-left: 4%; 
 }
-
 #detail-album h6{
     color: rgb(138, 141, 141);
     padding-top: 2%;
-    margin-left: 20px;
+  margin-left: 4%;
 }
-
 /*Playlist*/
-
+#playlist .track img{
+margin-top:15% ;
+}
+#playlist .track .punto{
+    margin-top: 3%;
+}
 #playlist .datos-playlist{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 #playlist .datos-playlist h1{
     font-size: x-large;
-    color: rgb(248, 248, 248);
+    margin: 0%;
 }
 #playlist .datos{
     display: flex;
     flex-direction: column;
     align-items:center;
-    justify-content: space-between;
     padding-left: 4%;
     margin-left: auto;
     margin-right: auto;
-}
-#playlist h6{
-    color: rgb(138, 141, 141);
-    padding-top: 3%;
 }
 #playlist figure{
     margin: 0;
@@ -447,9 +450,10 @@ a:link {
 #playlist .cajita{
     margin: 16% 0% 0% 0%;
 }
-
 /*Search-results*/
-
+#search-results h2{
+    color: white;
+}
 #search-results .resultado{
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 3%;
@@ -473,8 +477,8 @@ a:link {
     align-self: center;
 }
 #search-results .title-search{
+    margin-left: 10%;
     border-bottom:solid rgba(255, 255, 255, 0.39);
-    width: 80%;
     margin-left: 8%;
     font-size: medium;
     padding-bottom: 1%;
@@ -488,42 +492,43 @@ a:link {
     margin-left: auto;
     align-self: center;
 } 
-#search-results .album-avicii{
-    margin-bottom: 20px;
+#search-results .nomelacontainer {
     margin:0% 5% 0% 5%;
-}    
-#search-results .opciones-album{
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    margin:0% 5% 0% 5%;
-}
-#search-results .opciones-album article{
-    flex-direction: column;
-    display: inline-block;
-    width: 23%;
-    margin: 3% 3% 0% 0% ;
  }
- #search-results .album-avicii h3{
-    color: white;
-    font-size: small;
-    padding-left: 5%;
-}
-#search-results .album-avicii h4{
-   color:gray;
-    font-size: x-small;
-    padding-left: 5%;
-}
+ #search-results .scroll h2{
+    width:80%;
+ }
 #search-results .album-avicii img{
     width: 100%;
     padding-right: 5%;
 }
-.track h6{
-    margin-left: 20px;
-}
+
 
 @media(min-width:768px){
-/*Tomi*/
+nav{
+    flex-direction: row;
+}
+.row1{
+    width: 50%;
+}
+ul{
+    width: 40%;
+}
+.logo3{
+    width: 100%;
+    max-height: 200px;
+    max-width: 400px;
+}
+.logo3 img{
+    width: 100%;
+    margin: 23px 10px 19px 10px ;
+}
+form.example{
+    width: 600px;
+    margin-left: 50px;
+}
+li a{ margin-top: 15px;}
+    /*Tomi*/
 .contenedor-banner img{
     height: 300px;
 }
@@ -579,6 +584,7 @@ li a{
 }
 }
 @media(min-width:1024px){
+
 /*Tomi*/
 .contenedor-banner img{
     height: 300px;
@@ -618,10 +624,11 @@ li a{
     margin: 4% 0% 0% 4%;
 }
 #detail-album .info-avicii h1{
-
     margin-left: 15%; 
 }
-
+#detail-album h6{
+    margin-left: 20%;
+}
 #playlist .datos-playlist{
     display: flex;
     flex-direction: row;
