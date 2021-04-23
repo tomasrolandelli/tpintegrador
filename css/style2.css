@@ -11,12 +11,17 @@ body{
 }
 nav{
     display: flex;
-    border: solid 3px grey;
-  border-radius: 3%;
   padding:2% 0% 1% 0%; 
   width: 100%; 
   flex-wrap: wrap;
   justify-content: space-between;
+}
+header nav{
+    border-bottom: solid 3px grey;
+}
+footer nav{
+    margin-top: 2%;
+    border-top: solid 3px grey;
 }
 a{
     color: white;
@@ -48,8 +53,9 @@ li a{
     text-decoration: none;
    margin-bottom: 22%;
 }
+
 header, footer{
-    padding: 4% 10% 4% 10%;
+    padding: 1% 10% 1% 10%;
 }
 form.example{
     width: 45%;
@@ -83,7 +89,7 @@ form.example button:hover {
   }
 
 .canciones{
-    margin:0% 5% 0% 05%;
+    margin:0% 5% 0% 5%;
 }
 .canciones h6{
     color: rgb(138, 141, 141);
@@ -107,7 +113,6 @@ form.example button:hover {
     font-size: smaller;
     align-items: center;
     font-family: 'Noto Sans TC', sans-serif;
-    color: white;
 }
 .track h6{
     margin-left: 30px;
@@ -120,14 +125,13 @@ form.example button:hover {
    align-items: center;
 }   
 .track .corazon{
-    padding: 0px;
-    margin-top: 2%;
+    margin-top: 25px;
    align-items: center;
    margin-left: 10px;
 }  
 .track img{
     width: 60px;
-    margin-top: 10%;
+    margin-top: 7px;
     margin-left: 20px;
 }
 .track div a h6{
@@ -486,7 +490,7 @@ margin-top:15% ;
 }
 #search-results .title-search{
     margin-left: 10%;
-    border-bottom:solid rgba(255, 255, 255, 0.39);
+    border-bottom:solid rgba(255, 255, 255, 0.13);
     margin-left: 8%;
     font-size: medium;
     padding-bottom: 1%;
@@ -599,7 +603,6 @@ li a{
 }
 }
 @media(min-width:1024px){
-
 /*Tomi*/
 .contenedor-banner img{
     height: 300px;
@@ -628,7 +631,7 @@ li a{
 }
 /*Clara*/
 
-#detail-album article{
+#detail-album .portada{
     display: flex;
     flex-direction: row;
  }
@@ -638,7 +641,7 @@ li a{
 #detail-album .info-avicii {
     margin: 4% 0% 0% 4%;
 }
-#detail-album .info-avicii h1{
+#detail-album  .info-avicii h1{
     margin-left: 15%; 
 }
 #detail-album h6{
