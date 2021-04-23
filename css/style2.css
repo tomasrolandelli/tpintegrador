@@ -11,7 +11,7 @@ body{
 }
 nav{
     display: flex;
-  border: solid 3px grey;
+    border: solid 3px grey;
   border-radius: 3px;
   padding:0%;  
   flex-wrap: wrap;
@@ -51,7 +51,7 @@ form.example{
     width: 45%;
     align-self: center;
 }
-form.example input[type=text] {
+form.example input {
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
@@ -177,7 +177,13 @@ form.example button:hover {
     overflow-y: hidden;
     white-space: nowrap;
   }
-
+.footernour{
+    padding: 10px;
+    width: 100px;
+}
+.nombres{
+    margin-top: 18px;
+}
 /*Tomi*/
 .bodydartist h2{
     color: white;
@@ -526,6 +532,13 @@ ul{
 form.example{
     width: 600px;
     margin-left: 50px;
+}
+.footernour{
+    width: 150px;
+}
+.nombres{
+    margin-left: 125px;
+    margin-top: 10px;
 }
 li a{ margin-top: 15px;}
     /*Tomi*/
