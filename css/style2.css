@@ -46,7 +46,6 @@ ol {
     display: flex;
 }
 li a{
-   
     display: flex;
     font-size: large;
     text-decoration: none;
@@ -629,11 +628,10 @@ li a{
     width: 30px;
 }
 /*Clara*/
-
 #detail-album .portada{
     display: flex;
     flex-direction: row;
- }
+}
 #detail-album  .banner img{
      margin-left: 20%;
 }
