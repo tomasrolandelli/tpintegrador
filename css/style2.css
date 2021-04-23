@@ -630,7 +630,6 @@ li a{
 /*Clara*/
 #detail-album .portada{
     display: flex;
-    flex-direction: row;
 }
 #detail-album  .banner img{
      margin-left: 20%;
