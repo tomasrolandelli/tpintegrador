@@ -29,7 +29,7 @@ window.addEventListener("load", function () {
       let fotoArtista = cantantes.picture_medium;
       let nombreArtista = cantantes.name;
 
-      artista.innerHTML+= `
+      artista.innerHTML += `
       <article class="portada">
       <figure class="banner"><img src="${fotoArtista}" alt="${nombreArtista}"></figure>
       <div class="nn"
@@ -39,9 +39,35 @@ window.addEventListener("load", function () {
       `
     }
 
-  )
-  .catch(function(error){
-    console.log(error);
-  })
+    )
+    .catch(function (error) {
+      console.log(error);
+    })
 
+  //SEGUNDO FETCH PARA BUSCAR ALBUMES POR ARTISTA
+  fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${busqueda}/albums`)
+    .then(function (response) {
+      console.log(response);
+      return response.json()
+    })
+    .then(function (datos) {
+      console.log(datos);
+      //PREPARO BUCLE
+      for (let i = 0; i < 5; i++) {
+        let albumTitle = datos.data[i].title;
+        let albumCover = datos.data[i].cover;
+        albumes.innerHTML += `
+      <article class="track">
+      <a href="./playlist.html" class="corazon"><i class="far fa-heart"></i></a>
+      <a href="./detail-album"><img src="${albumCover}" alt="${albumTitle}"></a>
+      <div>
+      <a href="detail-track.html"><h2>${albumTitle}</h2></a>
+      </div>
+      <a href="detail-track.html" class="punto"><i class="fas fa-ellipsis-h"></i></a>
+      </article>
+      `
+      }
+
+    })
+    .catch()
 })
