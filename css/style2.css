@@ -406,6 +406,9 @@ a:link {
     flex-direction: column;
     align-items:flex-start;
 }
+#detail-album #album{
+    margin-left: 10%;
+}
 #detail-album .portada{
     margin-bottom: 4%;
 }
@@ -416,13 +419,16 @@ a:link {
     width: 40px;
     border-radius:50%;
 }
+#artista{
+    margin-top: 15%;
+}
 #detail-album .info-avicii h1{
     margin-left: 4%; 
 }
 #detail-album h6{
     color: rgb(138, 141, 141);
-    padding-top: 2%;
-  margin-left: 4%;
+    padding-top: 0%;
+  margin-left: 10%;
 }
 /*Playlist*/
 #playlist .track img{
@@ -628,8 +634,15 @@ li a{
     width: 30px;
 }
 /*Clara*/
+
 #detail-album .portada{
     display: flex;
+    
+}
+#detail-album .nn{
+    margin-top: 3%;
+    flex-direction: column;
+    margin-left: 7%;
 }
 #detail-album  .banner img{
      margin-left: 20%;
@@ -640,9 +653,7 @@ li a{
 #detail-album  .info-avicii h1{
     margin-left: 15%; 
 }
-#detail-album h6{
-    margin-left: 20%;
-}
+
 #playlist .datos-playlist{
     display: flex;
     flex-direction: row;
