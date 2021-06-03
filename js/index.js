@@ -36,8 +36,8 @@ let nombreArtista= artistas[i].name
 let imagenArtista= artistas[i].picture_medium
 
     artist.innerHTML += ` <article>
-    <a href="./detail-artist.html"><img class="artistatomi" src="${imagenArtista}" alt=${nombreArtista}></a>
-    <a href="./detail-artist.html"> <h3>${nombreArtista}</h3> </a>
+    <a href="./detail-artist.html?id=${artistas[i].id}"><img class="artistatomi" src="${imagenArtista}" alt=${nombreArtista}></a>
+    <a href="./detail-artist.html?id=${artistas[i].id}"> <h3>${nombreArtista}</h3> </a>
 </article>`
 }
 
