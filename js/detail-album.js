@@ -24,7 +24,7 @@ let imagenAlbum=datos.cover_medium
 let imagenChica= datos.cover_small
 let imagenArtista= datos.artist.picture_small
 let releaseDate= datos.release_date
-
+let genero= datos.genres.data
 info.innerHTML +=  
 ` 
 <article class="portada">
@@ -37,7 +37,7 @@ info.innerHTML +=
     <figure><img src="${imagenArtista}"></figure>    
      <h5 id="artista">${artistaAlbum}</h5>
   </div> 
-  <h6><time datetime="${releaseDate}">${releaseDate}</time></h6>         
+  <h6><time datetime="${releaseDate}">${releaseDate}</time>-${genero}</h6>         
 </div>
 <div >
 </article>`
@@ -46,7 +46,7 @@ for (let i=0; i<album.length; i++){
   let nombreCancion= album[i].title
    canciones.innerHTML= canciones.innerHTML +
   ` <article class="track">
-  <a href="./playlist.html" class="corazon"><i class="far fa-heart"></i></a>  
+  <a href="./playlist.html?id=${album[i].id}" class="corazon"><i class="far fa-heart"></i></a>  
   <a href="./detail-track.html"><img src= "${imagenChica}" alt="${nombreAlbum}"></a>
   <div>
      <a href="detail-track.html"><h2>${nombreCancion}</h2></a>                    
@@ -57,5 +57,11 @@ for (let i=0; i<album.length; i++){
 })
  .catch(function (error) {
 console.log(error)
+})
+
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${busqueda}`)
+.then(function(response){
+console.log(response)
+return response.json
 })
 })

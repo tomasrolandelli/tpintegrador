@@ -19,7 +19,7 @@ let canciones= datos.tracks.data
 for (let i=0; i<albums.length; i++){
 let nombreAlbum= albums[i].title
 let artistaAlbum= albums[i].artist.name
-let imagenAlbum= albums[i].artist.picture_medium
+let imagenAlbum= albums[i].cover_medium
 album.innerHTML += ` 
 
                     <article>
