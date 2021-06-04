@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
 
     let track = document.querySelector("#tracksnour")
 
-    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/3135556`)
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${busqueda}`)
         .then(function (response) {
             console.log(response)
             return response.json()
