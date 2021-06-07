@@ -24,7 +24,7 @@ let imagenAlbum=datos.cover_medium
 let imagenChica= datos.cover_small
 let imagenArtista= datos.artist.picture_small
 let releaseDate= datos.release_date
-let genero= datos.genres.data
+let genero= datos.genres.data[0].name
 info.innerHTML +=  
 ` 
 <article class="portada">
@@ -37,7 +37,7 @@ info.innerHTML +=
     <figure><img src="${imagenArtista}"></figure>    
      <h5 id="artista">${artistaAlbum}</h5>
   </div> 
-  <h6><time datetime="${releaseDate}">${releaseDate}</time>-${genero}</h6>         
+  <h6><time datetime="${releaseDate}">${releaseDate}</time>---${genero}</h6>         
 </div>
 <div >
 </article>`

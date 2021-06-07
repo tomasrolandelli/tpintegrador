@@ -36,8 +36,8 @@ let nombreArtista= artistas[i].name
 let imagenArtista= artistas[i].picture_medium
 
     artist.innerHTML += ` <article>
-    <a href="./detail-artist.html"><img class="artistatomi" src="${imagenArtista}" alt=${nombreArtista}></a>
-    <a href="./detail-artist.html"> <h3>${nombreArtista}</h3> </a>
+    <a href="./detail-artist.html?id=${artistas[i].id}"><img class="artistatomi" src="${imagenArtista}" alt=${nombreArtista}></a>
+    <a href="./detail-artist.html?id=${artistas[i].id}"> <h3>${nombreArtista}</h3> </a>
 </article>`
 }
 
@@ -47,12 +47,9 @@ for (let i=0; i<canciones.length; i++){
     let imagenTrack= canciones[i].artist.picture_medium
     track.innerHTML+= 
     `<article>
-    <a href="./detail-track.html"><img src="${imagenTrack}" alt="${nombreTrack}"></a>
-    <a href="./detail-track.html">
+    <a href="./detail-track.html?id=${canciones[i].id}"><img src="${imagenTrack}" alt="${nombreTrack}"></a>
+    <a href="./detail-track.html?id=${canciones[i].id}"><h1>${autorTrack}<h1>
         <h3>${nombreTrack}</h3>
-    </a>
-    <a href="./detail-track.html">
-        <h4>${autorTrack}</h4>
     </a>
 </article>`
 }

@@ -1,36 +1,35 @@
-window.addEventListener("load", function(){
-console.log(window.location.search)
+window.addEventListener("load", function () {
 
-let track= document.querySelector("#tracks") 
+    console.log(window.location.search);
 
-fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/3135556')
-.then(function(response){
-    console.log(response)
-return response.json()
-})
-.then(function(data){
-    let canciones = data
-    console.log(canciones)
+    let queryString = location.search;
+    let queryStringObj = new URLSearchParams(queryString)
+    let busqueda = queryStringObj.get('id');
 
-for (let i=0; i<canciones.length; i++){
-    let nombreTrack= canciones[i].title
-    let autorTrack= canciones[i].artist.name
-    let imagenTrack= canciones[i].artist.picture_small
+    let track = document.querySelector("#tracksnour")
 
-    track.innerHTML+= 
-    `<article>
-    <a href="./detail-track.html"><img src="${imagenTrack}"
-            alt="${nombreTrack}"></a>
-    <a href="./detail-track.html">
-        <h3>${nombreTrack}</h3>
-    </a>
-    <a href="./detail-track.html">
-        <h4>${autorTrack}</h4>
-    </a>
-</article>`
-}
-})
-.catch(function(error){
-    console.log(error)
-  }) 
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/3135556`)
+        .then(function (response) {
+            console.log(response)
+            return response.json()
+        })
+        .then(function (datos) {
+            console.log(datos)
+
+            let nombreTrack = datos.title
+            let autorTrack = datos.artist.name
+            let imagenTrack = datos.artist.picture_small
+            console.log(nombreTrack);
+            console.log(autorTrack);
+            console.log(imagenTrack);
+
+            track.innerHTML += 
+            `<a href="./detail-track.html"><img src="${imagenTrack}" alt="${nombreTrack}"></a>
+            <a href="./detail-track.html"><h1>${autorTrack}<h1>
+            <h3>${nombreTrack}</h3>
+            </a>`
+        })
+        .catch(function (error) {
+            console.log(error)
+        })
 })
