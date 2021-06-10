@@ -5,11 +5,10 @@ window.addEventListener("load", function () {
     let queryString = location.search;
     let queryStringObj = new URLSearchParams(queryString)
     let busqueda = queryStringObj.get('id');
-    let urlTracks = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${busqueda}`
-
+    
     let track = document.querySelector("#tracksnour")
 
-    fetch(urlTracks)
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${busqueda}`)
         .then(function (response) {
             console.log(response)
             return response.json()

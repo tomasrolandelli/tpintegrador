@@ -276,100 +276,25 @@ a:link {
     font-size: x-large;
     margin-left: 50px;
 }
-.nourcajita{
-    width: 150px;
-    height: 80px;   
-}
 
 .noursection{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;    
 }
-.noursection a{
-    border-radius: 7%;
-    background-color: white;
-    margin-bottom: 10px;
-    color: white;
-}
+
 .nourcajita h2{
     text-align: center;
+    font-size: large;
 }
-.nourcajita:hover{
-    background-color: rgba(255, 255, 255, 0.137);
+.generosname{
+    font-size: small;
 }
-#rock{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/8ad3050b34360d0573d9d7b8bf38997d/268x528-000000-80-0-0.jpg);
+.imgmedium{
+    height: 80%;
+    width: 100%;
 }
-#pop{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/2b15578cf12902c0c7d2ae07e8071460/268x528-000000-80-0-0.jpg);
-}
-#musicalatina{
-    background-image:url(https://e-cdns-images.dzcdn.net/images/misc/d1f20c3f8aac2f94c87c5f64e0d14c99/268x528-000000-80-0-0.jpg)
-}
-#metal{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/dfd2c5f4b1ea497efb2f82da98b73572/268x528-000000-80-0-0.jpg);
-}
-#electronica{
-    background-image: url( https://e-cdns-images.dzcdn.net/images/misc/893d864206cf82d011d10f51686f47a6/268x528-000000-80-0-0.jpg);
-}
-#reggae{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/4de2c135cf4c39d7d9424446053cc41a/268x528-000000-80-0-0.jpg);
-}
-#funk{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/b8ae8f0791f5e9e6c7a11bab94b0cbad/268x528-000000-80-0-0.jpg);
-}
-#rap{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/e19942660ebf4f095dd8daaa84282a98/268x528-000000-80-0-0.jpg);
-}
-#jazz{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/ac23323f1de37faf026eb1191e60ce0c/268x528-000000-80-0-0.jpg);
-}
-#country{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/8dc8f5b3403196a4789aa5e0f0c2a40b/268x528-000000-80-0-0.jpg);
-}
-#clasica{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/de17a53eb95df5ef53bc43eea0d5cb67/268x528-000000-80-0-0.jpg);
-}
-#k-pop{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/6154c9fbd99a356ad269656ee88b0820/268x528-000000-80-0-0.jpg);
-}
-#reggueton{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/49ff19261ef3fb1ad85da7fb344c60ce/268x528-000000-80-0-0.jpg);
-}
-#salsa{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/1c282e04053a2d1ee0ffa638bff4cb9b/268x528-000000-80-0-0.jpg);
-}
-#indie{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/c66808f7d02a8da2d7869839be460851/268x528-000000-80-0-0.jpg);
-}
-#blues{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/3afdfc1cfa772d31a5ca70a121d10206/268x528-000000-80-0-0.jpg);
-}
-#musicacristiana{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/c67a0af86ff345a45db13844cc5d5806/268x528-000000-80-0-0.jpg);
-}
-#ryb{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/1c249bef95bcfa068e96957a13570ed2/268x528-000000-80-0-0.jpg);
-}
-#musicaafricana{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/cdb2b282bf856b1ec0061d1b00371e77/268x528-000000-80-0-0.jpg);
-}
-#vallenato{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/510eb0cc1773547bea4e42a25d9ca8c8/268x528-000000-80-0-0.jpg);
-}
-#musicaarabe{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/25d20727f59c78c43e9d9b20a0249f95/268x528-000000-80-0-0.jpg);
-}
-#soundtracks{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/bce4bf5c4e4d2f91e2d3ebf32c0e70fe/268x528-000000-80-0-0.jpg);
-}
-#musicajaponesa{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/8e211af480caea6fc4fa5378c1757e16/268x528-000000-80-0-0.jpg);
-}
-#musicamexicana{
-    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/02e90cc40b05d31741adb2a48e9b3de7/268x528-000000-80-0-0.jpg);
-}
+
 /*Clara*/
 /*Detalle de album*/
 #detail-album .banner img{
