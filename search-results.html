@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300&display=swap" rel="stylesheet">
     <title>Search Results</title>
 </head>
+
 <body>
     <header>
         <nav>
-            <div class="row1"><a class="logo3" href="index.html"><img src="./img/Captura de Pantalla 2021-04-10 a la(s) 18.54.31.png"></a>
-            <form class="example" action="search-results.html">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form></div>
+            <div class="row1"><a class="logo3" href="index.html"><img
+                        src="./img/Captura de Pantalla 2021-04-10 a la(s) 18.54.31.png"></a>
+                <form class="example" action="search-results.html">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="genres.html">Generos</a></li>
@@ -36,11 +40,28 @@
                 <li>Usuarios</li>
             </ul>
         </section>
-         <h2 id="resultadoTitulo">
-            Resultados de Búsqueda: 
+        <h2 id="resultadoTitulo" class="generalesSearch">
+            Resultados de Búsqueda:
         </h2>
-        <section id="resultados">
-            
+        <section id="resultadosGral" class="generalesSearch">
+            <h2>Mejor resultado</h2>
+
+        </section>
+        <section id="resultadosCanciones" class="generalesSearch">
+            <h2>Canciones:</h2>
+
+        </section>
+        <section id="resultadosAlbumes" class="generalesSearch">
+            <h2>Albumes:</h2>
+
+        </section>
+        <section id="resultadosPlaylist" class="generalesSearch">
+            <h2>Playlists:</h2>
+
+        </section>
+        <section id="resultadosUsuarios" class="generalesSearch">
+            <h2>Ususarios:</h2>
+
         </section>
         <!---<section class="avicii">
          <h2 class="title-search"> Artista</h2>
@@ -123,23 +144,25 @@
                 </article>
             </div>
         </section>--->
-       <!-- 
+        <!-- 
        <article>
         Lo sentimos, pero no hemos encontrado resultados para su búsqueda: "Avicii"  
        </article>
        -->
-        </main>
+    </main>
     <footer>
-         <nav>
+        <nav>
             <ul>
-                <li class="footernour" ><img src="./img/Captura de Pantalla 2021-04-10 a la(s) 18.54.31.png" alt="logo"></li>
-                <li class="nombres" >Nour</li>
-                <li class="nombres" >Tomas</li>
-                <li class="nombres">Clara</li>      
-            </ul>          
+                <li class="footernour"><img src="./img/Captura de Pantalla 2021-04-10 a la(s) 18.54.31.png" alt="logo">
+                </li>
+                <li class="nombres">Nour</li>
+                <li class="nombres">Tomas</li>
+                <li class="nombres">Clara</li>
+            </ul>
         </nav>
     </footer>
     <!-- SCRIPT -->
     <script src="./js/search-results.js"></script>
-    </body>
+</body>
+
 </html>
