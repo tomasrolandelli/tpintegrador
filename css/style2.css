@@ -236,63 +236,31 @@ padding: 5px;
 a:link {
     text-decoration: none;
 }
-.main-img{
-    width:255px;
-    margin-top: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.nourh1{
-    text-align: center;
-    color: white;
 
-}
-.nourh3{
-    text-align: center;
-    color: grey;
-}
-.nourhijo{
-    color: white;
-    border: solid 3px grey;
-    width: 280px;
-    margin:0 auto;
-    border-radius: 25px;
-}
-.nietonour{
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.nietonour a{
-    margin-left:50px;
-    color:white;
+.headtrack{
     font-size: large;
-    align-items: center;
 }
-/* .hijo ul{
-    list-style-type: none;
-} */
-.fas{
-    width:20px;
-    margin-left:30px;
+.audiotrack{
+    width: 270px;
 }
-.cajita{
-    margin-top:16px;
-    border: solid 3px white;
-    border-radius:25px;
-    padding:7px;
-    background-color: white;
-    margin-left:40px
+.divtrack{
+    margin:auto;
+    width:320px;
+    padding:10px;
+}
+.divtrackhijo{
+    text-align: center;
+}
+
+.divplayer{
+    display: flex;
+    justify-content:space-evenly;
     
 }
-.cajita a{
-    margin: 0 auto;
-    color:black;
+.indexhead1{
+    font-size: x-small;
 }
-.fa-play{
-    margin-top:30px;
-}
+
 /*Genero Nour*/
 .nourhead1{
     color: white;
@@ -585,25 +553,26 @@ margin-top: 30px;
 li a{
     font-size: x-large;
 }
-.nourhijo{
-    width:350px
-}
-.fas{
-    margin-left:60px;
-}
 .search{
     display: inline;
 }
-.main-img{
-    width: 350px;
-}
-.nourcajita{
-    width: 320px;
-    height: 100px;
-    justify-content: space-evenly;   
-}
 #search-results .track h3{
     font-size: medium;
+}
+.divtrack{
+    width: 400px;
+}
+.imgtrack{
+    width: 350px;
+}
+.audiotrack{
+    width: 350px;
+}
+.indexhead1{
+    font-size: small;
+}
+.indexhead3{
+    font-size: x-small;
 }
 }
 @media(min-width:1024px){
@@ -612,26 +581,14 @@ li a{
     height: 300px;
 }
 /*Nour*/
-.main-img{
-    width: 400px;
-}
-.nourhijo{
-    width:400px;
-}
-.nourh1{
-    font-size: 35px;
-}
-.nourh3{
-    font-size: 23px;
-}
-.nietonour a{
-    font-size: 25px;
-}
 li a{
     font-size: xx-large;
 }
-.fas{
-    width: 30px;
+.divtrack{
+    width: 420px;
+}
+.imgtrack{
+    width: 370px;
 }
 /*Clara*/
 
@@ -639,7 +596,7 @@ li a{
     display: flex;
     
 }
-#detail-album .nn{
+#detail-album .info{
     margin-top: 3%;
     flex-direction: column;
     margin-left: 7%;

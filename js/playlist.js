@@ -11,4 +11,5 @@ let busqueda= queryStringObj.get('id');
 
 
 
+
 })
