@@ -5,8 +5,8 @@ window.addEventListener("load", function(){
     let busqueda = queryStringObj.get('q');
     
     //QUERY SELECTORS
-    let resultado = document.querySelector('#search-results h2')
-    let secciones = document.querySelector('#search-results .track')
+    let resultado = document.querySelector('#resultados')
+    let secciones = document.querySelector('#resultadoTitulo')
 
 
     //FETCH
@@ -20,7 +20,7 @@ window.addEventListener("load", function(){
             console.log(datos);
             let cantResultados = datos.total
             let resultados = datos.data
-            for (let i = 0; i>5;i++){
+            for (let i = 0; i>resultados.length ;i++){
 
                 let nombreArtista = resultados[i].artist.name;
                 let nombreAlbum = resultados[i].title;
