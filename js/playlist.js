@@ -1,12 +1,47 @@
 window.addEventListener("load", function(){
 
-    console.log(window);
-    console.log(window.location.search);
-    
-    let queryString= location.search;
-let queryStringObj= new URLSearchParams(queryString);
-let busqueda= queryStringObj.get('id');
+let recuperoStorage= localStorage.getItem("favoritos");
+let track = document.querySelector(".canciones")
 
+
+//en el caso de que haya elementos en storage. Osea no sea nulo,
+if (recuperoStorage != null){
+    //transformo el string en array
+    //parse transforma a json en obj literal
+    listaFavoritos=JSON.parse(recuperoStorage)
+    console.log(listaFavoritos)
+}
+
+for(let i=0; i<listaFavoritos.length; i++){
+    let cancion= listaFavoritos[i];
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${cancion}`)
+    .then(function (response) {
+        console.log(response)
+        return response.json()
+    })
+    .then(function (datos) {
+        console.log(datos)
+        let nombreTrack = datos.title
+        let autorTrack = datos.artist.name
+        let imagenTrack = datos.artist.picture_medium
+        let albumTrack = datos.album.title
+       
+
+        track.innerHTML+=`<article class="track">
+                   
+        <a href="./detail-track.html?id=${cancion}"><img src= "${imagenTrack}" alt="${nombreTrack}"></a>
+        <div>
+        <a href="detail-track.html?id=${cancion}"><h2>${nombreTrack}</h2></a>
+        <a href="detail-track.html?id=${cancion}"><h6>${autorTrack}</h6></a>
+       </div>
+       <a href="detail-track.html" class="punto"><i class="fas fa-ellipsis-h"></i></a>
+   </article>`
+    })
+    .catch(function (error) {
+        console.log(error)
+    })
+
+}
 
 
 

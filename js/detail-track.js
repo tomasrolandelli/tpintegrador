@@ -5,11 +5,10 @@ window.addEventListener("load", function () {
     let queryString = location.search;
     let queryStringObj = new URLSearchParams(queryString)
     let busqueda = queryStringObj.get('id');
-    let urlTracks = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${busqueda}`
-
+    
     let track = document.querySelector("#tracksnour")
 
-    fetch(urlTracks)
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${busqueda}`)
         .then(function (response) {
             console.log(response)
             return response.json()
@@ -22,6 +21,7 @@ window.addEventListener("load", function () {
             let imagenTrack = datos.artist.picture_medium
             let albumTrack = datos.album.title
             let linkTrack = datos.preview
+            let artist= datos.artist.id
             console.log(nombreTrack);
             console.log(autorTrack);
             console.log(imagenTrack);
@@ -33,7 +33,7 @@ window.addEventListener("load", function () {
             `<a href="./detail-track.html"><div class= "divtrack"><div class= "divtrackhijo"><img class= "imgtrack" src="${imagenTrack}" alt="${nombreTrack}"></a>
             <a href="./detail-track.html"><h1 class= "headtrack" id="h1track">${nombreTrack}<h1>
             <h3 class= "headtrack" id="h3track">${albumTrack}</h3>
-            <h4 class= "headtrack">${autorTrack}</h4>
+           <a href="./detail-artist.html?id=${artist}"> <h4 class= "headtrack">${autorTrack}</h4></a>
             <audio controls class="audiotrack">
             <source src="${linkTrack}">
             </audio>
@@ -57,13 +57,13 @@ console.log(recuperoStorage)
 if (recuperoStorage != null){
     //transformo el string en array
     //parse transforma a json en obj literal
-    listaFavoritos=JSON.parse(recuperoStorage)
+    listaFavoritos=JSON.parse(recuperoStorage)//Parse toma cadena de texto en JSON y lo transforma en objeto literal
 }
 // Me fijo si el id de la canción esta en la lista
 //si esta cambio el texto para sacar
 //includes servia para ver si está o no
 if (listaFavoritos.includes(busqueda)){
-document.querySelector("#agregarAFav").innerHTML=`Quitar de favoritos`
+document.querySelector("#agregarAFav").innerHTML=` <a class="divplayer" id="agregarAFav"><button>Agregar a mi playlist</button><i class="far fa-heart"></i></a>`
 }
 //Agregar a favs
 let agregarAFav= document.querySelector('#agregarAFav');
@@ -77,8 +77,7 @@ agregarAFav.addEventListener('click', function(e){
         listaFavoritos.splice(sacarID, 1);
         //Si ya lo saque --> cambio el texto de link
         document.querySelector("#agregarAFav").innerHTML =`
-        Agregar a mi Playlist
-        <i class="far fa-heart"></i>`
+        <a class="divplayer" id="agregarAFav"><button>Agregar a mi playlist</button><i class="far fa-heart"></i></a>`
         console.log(listaFavoritos)
     }
     //si no esta en mi lista
@@ -87,8 +86,7 @@ agregarAFav.addEventListener('click', function(e){
         listaFavoritos.push(busqueda);
         //si ya lo agregué-->cambio texto 
         document.querySelector("#agregarAFav").innerHTML=`
-       Quitar de mi Playlist
-        <i class="fas fa-heart"></i>`;
+        <a class="divplayer" id="agregarAFav"><button>Quitar de mi Playlist</button><i class="fas fa-heart"></i></a>`;
 
     }
     //guardo el array actualizado como string

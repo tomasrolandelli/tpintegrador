@@ -11,6 +11,9 @@ let h2= document.querySelector("h2")
 let time=document.querySelector("h6 time")
 let h6=document.querySelector("h6")
 let h4= document.querySelector("h4")
+let corazon= document.querySelector(".corazon")
+let imagenChicaa= document.querySelector(".track img")
+let div= document.querySelector(".track div a")
 
 
 
@@ -46,16 +49,23 @@ h4.innerText=genero
 
 
 for (let i=0; i<album.length; i++){
-  let nombreCancion= album[i].title
+ /* let track=album[i].id
+  
+imagenChicaa.src=imagenChica
+imagenChicaa.alt=nombreAlbum
+h2.innerText=nombreCancion
+div.href.innerHTML=`detail-track.html?id=${track}`*/
 
- 
+let nombreCancion= album[i].title
+let track=album[i].id
    canciones.innerHTML= canciones.innerHTML +
+   
   ` <article class="track">
-  <a href="./playlist.html?id=${album[i].id}" class="corazon"><i class="far fa-heart"></i></a> 
-  <a href="./detail-track.html"><img src= "${imagenChica}" alt="${nombreAlbum}"></a> 
+  <a href="./playlist.html" class="corazon"><i class="far fa-heart"></i></a> 
+  <a href="./detail-track.html?id="><img src= "${imagenChica}" alt="${nombreAlbum}"></a> 
  
   <div>
-     <a href="detail-track.html"><h2>${nombreCancion}</h2></a>                    
+     <a href="detail-track.html?id=${track}"><h2>${nombreCancion}</h2></a>                    
   </div>    
   <a href="detail-track.html" class="punto"><i class="fas fa-ellipsis-h"></i></a> 
   </article>`
@@ -70,6 +80,60 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${busque
 console.log(response)
 return response.json
 })
+let listaFavoritos= []
+
+//Recuperso datos del storage
+//set item agrega una propiedad y sus valores a obj literal
+//para ver si habia algo
+let recuperoStorage= localStorage.getItem('favoritos');
+console.log(recuperoStorage)
+//en el caso de que haya elementos en storage. Osea no sea nulo,
+if (recuperoStorage != null){
+    //transformo el string en array
+    //parse transforma a json en obj literal
+    listaFavoritos=JSON.parse(recuperoStorage)
+}
+// Me fijo si el id de la canción esta en la lista
+//si esta cambio el texto para sacar
+//includes servia para ver si está o no
+if (listaFavoritos.includes(busqueda)){
+document.querySelector("corazon").innerHTML=`  <a  class="corazon"><i class="far fa-heart"></i></a> `
+}
+//Agregar a favs
+/*
+let agregarAFav= document.querySelector('.corazon');
+agregarAFav.addEventListener('click', function(e){
+    e.preventDefault();
+    //si esta en la lista
+    if (listaFavoritos.includes(busqueda)){
+        //lo localizo en array INDEXOF-->LOCALIZAR
+        let sacarID= listaFavoritos.indexOf(busqueda);
+        //y lo saco SPLICE-->SACAR
+        listaFavoritos.splice(sacarID, 1);
+        //Si ya lo saque --> cambio el texto de link
+        document.querySelector(".corazon").innerHTML =`
+        <a class="divplayer" id="agregarAFav"><i class="far fa-heart"></i></a>`
+        console.log(listaFavoritos)
+    }
+    //si no esta en mi lista
+   else {
+        //se agrega la canción actual
+        listaFavoritos.push(busqueda);
+        //si ya lo agregué-->cambio texto 
+        document.querySelector(".corazon").innerHTML=`
+        <a class="divplayer" id="agregarAFav"><i class="fas fa-heart"></i></a>`;
+
+    }
+    //guardo el array actualizado como string
+    let trackAStorage= JSON.stringify(listaFavoritos);
+    //Guardo el string en local storage
+    localStorage.setItem('favoritos', trackAStorage)
+    //chequeo
+    console.log(localStorage)
+})
+*/
+
+
 })
 /*
   info.innerHTML +=  ` 
