@@ -240,10 +240,12 @@ padding: 5px;
     height: 50px;
 }
 .search-lista li{
-    font-size: x-large;
     width: 20%;
-    text-align: center;
     margin-top: 5px;
+}
+.search-lista li a{
+    font-size: x-large;
+    text-align: center;
 }
 /*Nour*/
 .search{
