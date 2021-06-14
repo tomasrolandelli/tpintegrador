@@ -96,6 +96,7 @@ form.example button:hover {
 .track{
     display: flex;
     align-content: center;
+    padding-right: 4%;
 }
 .track:hover {
     background-color: rgba(255, 255, 255, 0.137);
@@ -110,6 +111,9 @@ form.example button:hover {
     font-size: smaller;
     align-items: center;
     font-family: 'Noto Sans TC', sans-serif;
+}
+.track h4 a:hover{
+    text-decoration: underline;
 }
 .track h6{
     margin-left: 30px;
@@ -229,14 +233,17 @@ padding: 5px;
     margin-left: 30px;
     padding-top: 50px;
   }
-.search-section{
-    background-color: gray;
-}
 .search-lista{
-    background-color: green;
-    margin-left: 5%;
-    margin-right: 5%;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+    height: 50px;
+}
+.search-lista li{
+    font-size: x-large;
+    width: 20%;
+    text-align: center;
+    margin-top: 5px;
 }
 /*Nour*/
 .search{
@@ -373,14 +380,29 @@ margin-top:15% ;
     margin: 16% 0% 0% 0%;
 }
 /*Search-results*/
-
-#search-results .resultado{
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 3%;
-    margin-left: 15%;
+#search-results{
+    margin-right: 5%;
+    margin-left: 5%;
 }
-#search-results .avicii{
-    margin: 0% 5% 0% 5%;
+#search-results ul{
+    list-style: none;
+    justify-content: space-evenly;
+}
+#search-results ul li{
+    text-decoration:none;
+    color: white;
+
+}
+#search-results ul li:hover{
+    border-bottom: 2px solid red;
+    background-color: rgb(255, 255, 255, 0.1);
+}
+#search-results .dobleTitulo{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 #search-results .artista{
     display: flex;
@@ -404,6 +426,7 @@ margin-top:15% ;
     font-size: medium;
     font-family: 'Raleway', sans-serif;
 }
+
 #search-results #icon{
     padding: 10px;
     border-radius: 50%;
@@ -414,13 +437,7 @@ margin-top:15% ;
 #search-results .nomelacontainer {
     margin:0% 5% 0% 5%;
  }
- #search-results .scroll h2{
-    width:80%;
- }
-#search-results .album-avicii img{
-    width: 100%;
-    padding-right: 5%;
-}
+
 
 @media(min-width:768px){
 nav{
