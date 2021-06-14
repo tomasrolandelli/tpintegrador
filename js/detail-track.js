@@ -22,11 +22,7 @@ window.addEventListener("load", function () {
             let albumTrack = datos.album.title
             let linkTrack = datos.preview
             let artist= datos.artist.id
-            console.log(nombreTrack);
-            console.log(autorTrack);
-            console.log(imagenTrack);
-            console.log(albumTrack);
-            console.log(linkTrack);
+
             
 
             track.innerHTML += 

@@ -32,7 +32,7 @@ window.addEventListener("load", function () {
       artista.innerHTML += `
       <article class="portada">
       <figure class="banner"><img src="${fotoArtista}" alt="${nombreArtista}"></figure>
-      <div class="nn"
+      <div  id="album">
       <h1>${nombreArtista}</h1>
       </div>
       </article>

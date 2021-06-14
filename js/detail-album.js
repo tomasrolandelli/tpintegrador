@@ -3,18 +3,6 @@ window.addEventListener("load", function(){
   console.log(window.location.search);
 let info= document.querySelector("#datosPortada ");
 let canciones= document.querySelector(".canciones");
-let img=document.querySelector(".banner img");
-let h1=document.querySelector("h1")
-let imgArtista= document.querySelector(".info-avicii figure img")
-let h5=document.querySelector("h5")
-let h2= document.querySelector("h2")
-let time=document.querySelector("h6 time")
-let h6=document.querySelector("h6")
-let h4= document.querySelector("h4")
-let corazon= document.querySelector(".corazon")
-let imagenChicaa= document.querySelector(".track img")
-let div= document.querySelector(".track div a")
-
 
 
 let queryString= location.search;
@@ -37,37 +25,42 @@ let imagenChica= datos.cover_small
 let imagenArtista= datos.artist.picture_small
 let releaseDate= datos.release_date
 let genero= datos.genres.data[0].name
+let artist= datos.artist.id
 
-img.src=imagenAlbum
-img.alt=nombreAlbum
-h1.innerText=nombreAlbum
-imgArtista.src=imagenArtista
-imgArtista.alt=artistaAlbum
-h5.innerText=artistaAlbum
-h6.innerText=releaseDate
-h4.innerText=genero
-
+info.innerHTML+=` <article class="portada">
+<figure class="banner"><img src="${imagenAlbum}" alt="${nombreAlbum}"></figure>
+<div class="info" >
+   <h1 id="album">${nombreAlbum}</h1>
+<div class="info-avicii">
+    <div>
+     <figure><img src= "${imagenArtista}" alt= "${artistaAlbum}"></figure> 
+     <a href="./detail-artist.html?id=${artist}"><h4>${artistaAlbum}</h4></a>
+     <h6>${releaseDate}</h6>
+    </div>
+    <h4>${genero}</h4>
+</div> 
+</article>`
 
 for (let i=0; i<album.length; i++){
- /* let track=album[i].id
-  
+ /* let track=album[i].id*/
+ let nombreCancion= album[i].title
+ let track=album[i].id
+/*
 imagenChicaa.src=imagenChica
 imagenChicaa.alt=nombreAlbum
 h2.innerText=nombreCancion
-div.href.innerHTML=`detail-track.html?id=${track}`*/
+div.href=`detail-track.html?id=${track}`
+*/
 
-let nombreCancion= album[i].title
-let track=album[i].id
    canciones.innerHTML= canciones.innerHTML +
    
   ` <article class="track">
-  <a href="./playlist.html" class="corazon"><i class="far fa-heart"></i></a> 
+  <a  class="corazon"><i class="far fa-heart"></i></a> 
   <a href="./detail-track.html?id="><img src= "${imagenChica}" alt="${nombreAlbum}"></a> 
  
   <div>
      <a href="detail-track.html?id=${track}"><h2>${nombreCancion}</h2></a>                    
   </div>    
-  <a href="detail-track.html" class="punto"><i class="fas fa-ellipsis-h"></i></a> 
   </article>`
 }
 })
@@ -75,7 +68,56 @@ let track=album[i].id
 console.log(error)
 })
 
-fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${busqueda}`)
+
+
+
+
+
+})
+/*
+  info.innerHTML +=  ` 
+<article class="portada">
+<figure class="banner"> <img src= "${imagenAlbum}"alt="${nombreAlbum}"></figure> 
+<div class="nn" >
+<h1 id="album">${nombreAlbum}</h1>
+<div class="info-avicii">
+<div>
+    <figure><img src="${imagenArtista}"></figure>    
+     <h5 id="artista">${artistaAlbum}</h5>
+  </div> 
+  <h6><time datetime="${releaseDate}">${releaseDate}</time>-${genero} --</h6>         
+</div>
+<div >
+</article>`*/
+/*
+img.src=imagenAlbum
+img.alt=nombreAlbum
+h1.innerText=nombreAlbum
+h5.innerText=artistaAlbum
+h6.innerText=releaseDate
+h4.innerText=genero
+a.innerHTML=`<div><figure><img src="${imagenArtista}" alt="${artistaAlbum}"></figure>   
+<a href="./detail-artist.html?id=${artist}"><h4>${artistaAlbum}</h4></a>
+</div>`*/
+/*
+let time=document.querySelector("h6 time")
+let h6=document.querySelector("h6")
+let h4= document.querySelector("h4")
+let corazon= document.querySelector(".corazon")
+
+let div= document.querySelector(".track div a")
+let a = document.querySelector(".info-avicii")
+let canciones= document.querySelector(".canciones");
+let img=document.querySelector(".banner img");
+let h1=document.querySelector("h1")
+let imgArtista= document.querySelector(".info-avicii figure img")
+let h5=document.querySelector("h5")
+let h2= document.querySelector("h2")
+let imagenChicaa= document.querySelector(".track a img")
+let div= document.querySelector(".track div a")
+
+
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${busqueda}`)
 .then(function(response){
 console.log(response)
 return response.json
@@ -100,7 +142,7 @@ if (listaFavoritos.includes(busqueda)){
 document.querySelector("corazon").innerHTML=`  <a  class="corazon"><i class="far fa-heart"></i></a> `
 }
 //Agregar a favs
-/*
+
 let agregarAFav= document.querySelector('.corazon');
 agregarAFav.addEventListener('click', function(e){
     e.preventDefault();
@@ -129,24 +171,5 @@ agregarAFav.addEventListener('click', function(e){
     //Guardo el string en local storage
     localStorage.setItem('favoritos', trackAStorage)
     //chequeo
-    console.log(localStorage)
-})
-*/
-
-
-})
-/*
-  info.innerHTML +=  ` 
-<article class="portada">
-<figure class="banner"> <img src= "${imagenAlbum}"alt="${nombreAlbum}"></figure> 
-<div class="nn" >
-<h1 id="album">${nombreAlbum}</h1>
-<div class="info-avicii">
-<div>
-    <figure><img src="${imagenArtista}"></figure>    
-     <h5 id="artista">${artistaAlbum}</h5>
-  </div> 
-  <h6><time datetime="${releaseDate}">${releaseDate}</time>-${genero} --</h6>         
-</div>
-<div >
-</article>`*/
+    console.log(localStorage) 
+  })*/
