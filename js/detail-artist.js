@@ -58,7 +58,7 @@ window.addEventListener("load", function () {
         let albumCover = datos.data[i].cover;
         albumes.innerHTML += `
       <article class="track">
-      <a href="./playlist.html" class="corazon"><i class="far fa-heart"></i></a>
+      <a href="./playlist.html" class="corazon"></a>
       <a href="./detail-album"><img src="${albumCover}" alt="${albumTitle}"></a>
       <div>
       <a href="detail-track.html"><h2>${albumTitle}</h2></a>

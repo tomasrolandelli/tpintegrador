@@ -19,7 +19,7 @@ let canciones= datos.tracks.data
 for (let i=0; i<albums.length; i++){
 let nombreAlbum= albums[i].title
 let artistaAlbum= albums[i].artist.name
-let imagenAlbum= albums[i].artist.picture_medium
+let imagenAlbum= albums[i].cover_medium
 album.innerHTML += ` 
 
                     <article>
@@ -49,7 +49,7 @@ for (let i=0; i<canciones.length; i++){
     track.innerHTML+= 
     `<article>
     <a href="./detail-track.html?id=${canciones[i].id}"><img src="${imagenTrack}" alt="${nombreTrack}"></a>
-    <a href="./detail-track.html?id=${canciones[i].id}"><h1 class="indexhead1">${nombreTrack}<h1>
+
         <h3 id="indexhead3">${albumTrack}</h3><h4>${autorTrack}</h4>
         </div>
     </a>
@@ -64,7 +64,7 @@ for (let i=0; i<canciones.length; i++){
 })
 
 
-
+//<a href="./detail-track.html?id=${canciones[i].id}"><h1 class="indexhead1">${nombreTrack}<h1>
 
 
 })

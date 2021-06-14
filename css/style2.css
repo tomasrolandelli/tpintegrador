@@ -359,6 +359,7 @@ margin-top:15% ;
 #playlist figure{
     margin: 0;
 }
+
 #playlist .banner img{
     width:100%;
     display: block;
@@ -530,7 +531,7 @@ li a{
     display: flex;
     
 }
-#detail-album .nn{
+#detail-album .info{
     margin-top: 3%;
     flex-direction: column;
     margin-left: 7%;

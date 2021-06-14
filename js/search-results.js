@@ -10,8 +10,10 @@ window.addEventListener("load", function () {
     let resAlbu = document.querySelector("#resultadosAlbumes");
     let resPlay = document.querySelector("#resultadosPlaylist");
     let resUser = document.querySelector("#resultadosUsuarios");
+    let form= document.querySelector("#form");
+    let search= document.querySelector("#search")
 
-
+   
     //FETCH GENERAL
     fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${busqueda}`)
         .then(function (response) {
