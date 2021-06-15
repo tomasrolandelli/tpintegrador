@@ -18,8 +18,8 @@
         <nav>
             <div class="row1"><a class="logo3" href="index.html"><img
                         src="./img/Captura de Pantalla 2021-04-10 a la(s) 18.54.31.png"></a>
-                <form class="example" action="search-results.html">
-                    <input type="text" placeholder="Search.." name="search">
+                <form id="form" class="example" action="search-results.html">
+                    <input id="search" type="text" placeholder="Search.." name="q">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
@@ -33,35 +33,34 @@
     <main id="search-results">
         <section class="search-section">
             <ul class="search-lista">
-                <li>Todo</li>
-                <li>Canciones</li>
-                <li>Albumes</li>
-                <li>Playlists</li>
-                <li>Usuarios</li>
+                <li><a href="#resultadosGral">Todo</a></li>
+                <li><a href="#resultadosCanciones">Canciones</a></li>
+                <li><a href="#resultadosArtistas">Artistas</a></li>
+                <li><a href="#resultadosAlbumes">Albumes</a></li>
             </ul>
         </section>
         <h2 id="resultadoTitulo" class="generalesSearch">
             Resultados de Búsqueda:
         </h2>
         <section id="resultadosGral" class="generalesSearch">
-            <h2>Mejor resultado</h2>
+            <h1>Mejor resultado</h2>
 
         </section>
         <section id="resultadosCanciones" class="generalesSearch">
-            <h2>Canciones:</h2>
+            <h1>Canciones:</h2>
 
         </section>
-        <section id="resultadosAlbumes" class="generalesSearch">
-            <h2>Albumes:</h2>
+        <section id="resultadosArtistas" class="scroll">
+            <h1>Artistas:</h2>
+            <div class="nomelacontainer">
 
+            </div>
         </section>
-        <section id="resultadosPlaylist" class="generalesSearch">
-            <h2>Playlists:</h2>
+        <section id="resultadosAlbumes" class="scroll">
+            <h1>Albumes:</h2>
+            <div class="nomelacontainer">
 
-        </section>
-        <section id="resultadosUsuarios" class="generalesSearch">
-            <h2>Ususarios:</h2>
-
+            </div>
         </section>
         <!---<section class="avicii">
          <h2 class="title-search"> Artista</h2>

@@ -7,11 +7,12 @@ window.addEventListener("load", function () {
     //QUERY SELECTORS
     let resGral = document.querySelector('#resultadosGral');
     let resCanc = document.querySelector("#resultadosCanciones");
-    let resAlbu = document.querySelector("#resultadosAlbumes");
-    let resPlay = document.querySelector("#resultadosPlaylist");
-    let resUser = document.querySelector("#resultadosUsuarios");
+    let resAlbu = document.querySelector("#resultadosAlbumes .nomelacontainer");
+    let resArti = document.querySelector("#resultadosArtistas .nomelacontainer")
+    let form= document.querySelector("#form");
+    let search= document.querySelector("#search")
 
-
+   
     //FETCH GENERAL
     fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${busqueda}`)
         .then(function (response) {
@@ -58,19 +59,44 @@ window.addEventListener("load", function () {
                 let trackIdCanc = aprobarDos[i].id
                 resCanc.innerHTML += `
             <article class="track">
-            <a href="./playlist.html" class="corazon"><i class="far fa-heart"></i></a>
-            <a href="./detail-album"><img src="${imagenCanc}" alt="${titleCanc}"></a>
-            <div>
-            <a href="detail-track.html"><h2>${titleCanc}</h2></a>
-            <a href="detail-artists.html"><h3>${artistsCanc}</h3></a>
-            </div>
-            <a href="detail-track.html" class="punto"><i class="fas fa-ellipsis-h"></i></a>
+            <a href="./detail-track.html?id=${trackIdCanc}"><img src="${imagenCanc}" alt="${titleCanc}"></a>
+            <h4 class="dobleTitulo">
+            <a href="./detail-track.html?id=${trackIdCanc}">${titleCanc}</a>
+            
+            <a href="detail-artist.html?id=${artistsIdCanc}">${artistsCanc}</a>
+            </h4>
+            <a href="detail-track.html?id=${trackIdCanc}" class="punto"><i class="fas fa-ellipsis-h"></i></a>
             </article>
             `
 
             }
         })
         .catch(function (error) {
+            console.log(error);
+        })
+        //FETCH ARTISTAS
+        fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q=${busqueda}`)
+        .then(function(response){
+            return response.json()
+        })
+        .then(function(datos){
+            let aprobarSeis = datos.data;
+            console.log(aprobarSeis);
+            for(let i=0;i<5;i++){
+                let nombreArti = aprobarSeis[i].name;
+                let idArti = aprobarSeis[i].id;
+                let fotoArti = aprobarSeis[i].picture_medium;
+                resArti.innerHTML+=`
+                <article>
+                <a href="./detail-artist.html?id=${idArti}" ><img src="${fotoArti}" alt="${nombreArti}"></a>
+                <a href="./detail-artist.html?id=${idArti}">
+                 <h3>${nombreArti}</h3>
+                </a>
+            </article>`
+
+            }
+        })
+        .catch(function(error){
             console.log(error);
         })
 
@@ -83,7 +109,7 @@ window.addEventListener("load", function () {
         .then(function (datos) {
             console.log(datos);
             let aprobarTres = datos.data;
-            for (let i = 0; i < 4; i++) {
+            for (let i = 0; i < 10; i++) {
                 let imagenAlbu = aprobarTres[i].cover_medium;
                 let titleAlbu = aprobarTres[i].title
                 let artistAlbu = aprobarTres[i].artist.name;
@@ -102,7 +128,8 @@ window.addEventListener("load", function () {
             console.log(error);
         })
 
-    //FETCH PLAYLIST
+    /*
+        //FETCH PLAYLIST
     fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/playlist?q=${busqueda}`)
         .then(function(response) {
             console.log(response);
@@ -126,7 +153,8 @@ window.addEventListener("load", function () {
         .catch(function(error){
             console.log(error);
         })
-
+*/
+/*
         //FETCH USUARIOS
         fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/user?q=${busqueda}`)
         .then(function(response){
@@ -151,4 +179,5 @@ window.addEventListener("load", function () {
         .catch(function(error){
             console.log(error);
         })
+        */
 })
