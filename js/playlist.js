@@ -34,7 +34,7 @@ for(let i=0; i<listaFavoritos.length; i++){
         <a href="detail-track.html?id=${cancion}"><h2>${nombreTrack}</h2></a>
         <a href="detail-track.html?id=${cancion}"><h6>${autorTrack}</h6></a>
        </div>
-       <a href="detail-track.html" class="punto"><i class="fas fa-ellipsis-h"></i></a>
+       
    </article>`
     })
     .catch(function (error) {

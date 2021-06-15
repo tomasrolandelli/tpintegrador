@@ -3,7 +3,10 @@ window.addEventListener("load", function(){
   console.log(window.location.search);
 let info= document.querySelector("#datosPortada ");
 let canciones= document.querySelector(".canciones");
-
+let corazon= document.querySelector(".corazon")
+let div= document.querySelector(".track div a")
+let h2= document.querySelector("h2")
+let imagenChicaa= document.querySelector(".track a img")
 
 let queryString= location.search;
 let queryStringObj= new URLSearchParams(queryString);
@@ -45,13 +48,13 @@ for (let i=0; i<album.length; i++){
  /* let track=album[i].id*/
  let nombreCancion= album[i].title
  let track=album[i].id
-/*
+
 imagenChicaa.src=imagenChica
 imagenChicaa.alt=nombreAlbum
 h2.innerText=nombreCancion
 div.href=`detail-track.html?id=${track}`
-*/
 
+/*
    canciones.innerHTML= canciones.innerHTML +
    
   ` <article class="track">
@@ -61,7 +64,7 @@ div.href=`detail-track.html?id=${track}`
   <div>
      <a href="detail-track.html?id=${track}"><h2>${nombreCancion}</h2></a>                    
   </div>    
-  </article>`
+  </article>`*/
 }
 })
  .catch(function (error) {

@@ -47,25 +47,28 @@ let listaFavoritos= []
 //Recuperso datos del storage
 //set item agrega una propiedad y sus valores a obj literal
 //para ver si habia algo
+//getItem obtiene los valores de una prop guardada en localStorage
 let recuperoStorage= localStorage.getItem('favoritos');
 console.log(recuperoStorage)
 //en el caso de que haya elementos en storage. Osea no sea nulo,
 if (recuperoStorage != null){
     //transformo el string en array
-    //parse transforma a json en obj literal
-    listaFavoritos=JSON.parse(recuperoStorage)//Parse toma cadena de texto en JSON y lo transforma en objeto literal
+ //parse toma cadena de texto en json y lo transforma en obj literal
+    listaFavoritos=JSON.parse(recuperoStorage)
 }
 // Me fijo si el id de la canción esta en la lista
 //si esta cambio el texto para sacar
 //includes servia para ver si está o no
 if (listaFavoritos.includes(busqueda)){
-document.querySelector("#agregarAFav").innerHTML=` <a class="divplayer" id="agregarAFav"><button>Agregar a mi playlist</button><i class="far fa-heart"></i></a>`
+document.querySelector("#agregarAFav").innerHTML=
+` <button>Quitar de mi playlist</button>
+<i class="fas fa-heart"></i>`
 }
 //Agregar a favs
 let agregarAFav= document.querySelector('#agregarAFav');
 agregarAFav.addEventListener('click', function(e){
     e.preventDefault();
-    //si esta en la lista
+    //si esta en la lista LO SACO
     if (listaFavoritos.includes(busqueda)){
         //lo localizo en array INDEXOF-->LOCALIZAR
         let sacarID= listaFavoritos.indexOf(busqueda);
@@ -73,16 +76,19 @@ agregarAFav.addEventListener('click', function(e){
         listaFavoritos.splice(sacarID, 1);
         //Si ya lo saque --> cambio el texto de link
         document.querySelector("#agregarAFav").innerHTML =`
-        <a class="divplayer" id="agregarAFav"><button>Agregar a mi playlist</button><i class="far fa-heart"></i></a>`
+      <button>Agregar a mi playlist</button>
+      <i class="far fa-heart"></i>`
         console.log(listaFavoritos)
     }
-    //si no esta en mi lista
+    //si no esta en mi lista LO PONGO
    else {
         //se agrega la canción actual
         listaFavoritos.push(busqueda);
         //si ya lo agregué-->cambio texto 
         document.querySelector("#agregarAFav").innerHTML=`
-        <a class="divplayer" id="agregarAFav"><button>Quitar de mi Playlist</button><i class="fas fa-heart"></i></a>`;
+        <button>Quitar de mi Playlist</button>
+        <i class="fas fa-heart"></i>
+        `;
 
     }
     //guardo el array actualizado como string
