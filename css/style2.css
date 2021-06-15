@@ -197,46 +197,34 @@ form.example button:hover {
     display: flex;
     flex-direction: column;
 }
-.contenedor-banner {
-    position: relative;
-    text-align: center;
-    color: white;
-    margin-top: 10px;
-  }
-.contenedor-banner img{
-    width: 100%;
-    height: 150px;
-}
-.bodyhometomi main{
-padding: 5px;
-}
-  .artistatomi{
-      border-radius: 50%;
-  }
-
 .scroll .index{
     font-size: x-large;
 }
-.generostomi{
-      background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NBwcHDQ0NBwcHBw0HBwcHCA8ICQcNIBEWFiARHxUYHCggGCYlGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDg0NEisZFRkrKysrKy0rKzcrKysrKysrKysrKy0rNy0rKysrKysrKystKysrKysrKysrKysrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAAAAgEEBgP/xAAVEAEBAAAAAAAAAAAAAAAAAAAAEf/EABoBAQEBAQEBAQAAAAAAAAAAAAEAAgQDBwX/xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAMAwEAAhEDEQA/APCAPw31IASAEgBIBiTRhSq0ZSqCtE0qVaMrKhVCaVRaVSpYYNKpU0qg0qsrKyqDSqVNKoNKYysMGlUqayoaXWVNKhpVKilMGlFTWKLTpE0rDorRNKlpVKkMGlVlYxQaVSppVBptKmlUWlFTWUwaVSpohpVKilUGlUqaUwaVWVNKoNKpUUqg0qlTWVQaXWVNKYNKpUUqg0qlTWVQaXWVNZTBpdKilUGlUqKUwbdVKmlebr0qsqaVQaVSopTBpVKmlUGlVlTSqDSqVFKoNKpU1lMGl1lTSqDSqVFKYNKpU1lUZ0qlTWUwaXWVNKoNKpUUqg0qlRSmDa6yprKozpdZU1lUG10qKymDS6VFKoNKpUUpg266VNZXlHZpdZU0pg0qlRSqDSqVFKYNKpU1lUZ0usqaymDa6VFZVBpdKilUGl1lRSmDa6yopVGdLrKmsqg2usqaymDa6yppVBtVKilMZ2qlRSqDaqVFKYNrrKilUZ2usqaymDa6VFKoNuysqayvKO3S6yppTBtVKilUG1UqKUwbVSprKoztdZU1lMG11lTWVQbXSorKoztdKilMG1UqKVQbVSopTGdrrKilUG11lTWUwbXWVNZVBtdKisqjO10qKymDa6VFKoNqpUUpjO1UqKVQbdtZUUryju2usqaymDa6yprKYztdKilUG1UqKVQbVSopTGdrrKilUG11lRSmDa6yopVGdrrKmsqg2ulRWUwbXSopVGdqpUUpg2qlRSqDaqVFKYztdZUUqg2usqaymDa6yprKoNrpUUqg27KVFZXnHbtdKilUG11lRSmM7XWVFKoNrrKmspg2usqayqM7XSorKYNrpUUqg2qlRSmDaqVFKoztdZU1lUG11lTWUwbXWVNKoNqpUUpjOlUqKVQbVSprKoNLrKmspg0usqayqDS6VFKoNOysqayvOOza6yprKYNrpUVlUG10qKVQbVSopTGdrrKilUG11lTWUwbXSopVBtVKilUGlUqaymM6XWVNZVBpdZU1lMGl0qKVQaVSprKoNKpU0pg0qsqaVQaVSprKoNKpU0pg0qsqaVQadVKilecdel1lTWUwaXSopVBpVKilUGlUqaymDS6yprKoNLrKmlMGlUqayqDSqVNKoNKrKmlMGlUqayqDSqVNKoNKrKmhGlUqRDTaVjKhpVKmlQ02iaVDSqJoVW0qaVCumsqaViOnSqVNZVBpVKmlMGlVlTSqDSqVNZVBpVKmlI0qlSJabSppUNKrKysqGlUTSkaUysrKhVUqRRVVZWCgraVgRQYJVowSrRggAJACT60oMvasoCFAEKwoFUpQQZSghSlBJgBAAhQYJACQAkAJACQAkAJACQAkAJP/2Q==);
-      background-repeat: no-repeat;
-      background-position-x: center;
-      background-size: 3000px 500px;
-  }
+
   .generostomi h1{
     color: white;
     font-size: 50px;
     margin-left: 30px;
     padding-top: 50px;
   }
-.search-section{
-    background-color: gray;
+.nomelacontainer{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-left: 5px;
 }
-.search-lista{
-    background-color: green;
-    margin-left: 5%;
-    margin-right: 5%;
-    justify-content: space-evenly
+.scroll{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.scroll h2{
+  
+    font-size: medium;
+    margin-left: 10%;
+}
+.scroll img{
+    width: 100%
 }
 /*Nour*/
 .search{
