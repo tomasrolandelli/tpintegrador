@@ -211,7 +211,6 @@ form.example button:hover {
     margin-left: 30px;
     padding-top: 50px;
   }
-<<<<<<< HEAD
 .nomelacontainer{
     overflow-x: scroll;
     overflow-y: hidden;
@@ -230,7 +229,7 @@ form.example button:hover {
 }
 .scroll img{
     width: 100%
-=======
+}
 .search-lista{
     justify-content: space-evenly;
     width: 100%;
@@ -244,7 +243,6 @@ form.example button:hover {
 .search-lista li a{
     font-size: x-large;
     text-align: center;
->>>>>>> be76a5bd6806a17220064d4e5153438ee41cc3fa
 }
 /*Nour*/
 .search{
