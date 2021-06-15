@@ -5,12 +5,16 @@ window.addEventListener("load", function () {
     let busqueda = queryStringObj.get('q');
 
     //QUERY SELECTORS
+    let resTitu = document.querySelector("#resultadoTitulo");
     let resGral = document.querySelector('#resultadosGral');
     let resCanc = document.querySelector("#resultadosCanciones");
     let resAlbu = document.querySelector("#resultadosAlbumes .nomelacontainer");
     let resArti = document.querySelector("#resultadosArtistas .nomelacontainer")
     let form= document.querySelector("#form");
     let search= document.querySelector("#search")
+
+    //RESULTADO DE...
+    resTitu.innerText+=`  ${busqueda}`
 
    
     //FETCH GENERAL
