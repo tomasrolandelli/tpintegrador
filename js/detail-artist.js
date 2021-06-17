@@ -28,6 +28,7 @@ window.addEventListener("load", function () {
       //DECLARO NUEVAS VARIABLES
       let fotoArtista = cantantes.picture_medium;
       let nombreArtista = cantantes.name;
+      
 
       artista.innerHTML += `
       <article class="portada">
@@ -54,16 +55,15 @@ window.addEventListener("load", function () {
       console.log(datos);
       //PREPARO BUCLE
       for (let i = 0; i < 5; i++) {
+        let albumID= datos.data[i].id
         let albumTitle = datos.data[i].title;
         let albumCover = datos.data[i].cover;
         albumes.innerHTML += `
       <article class="track">
-      <a href="./playlist.html" class="corazon"></a>
-      <a href="./detail-album"><img src="${albumCover}" alt="${albumTitle}"></a>
+      <a><img src="${albumCover}" alt="${albumTitle}"></a>
       <div>
-      <a href="detail-track.html"><h2>${albumTitle}</h2></a>
+      <a href="detail-album.html?id="${albumID}"><h2>${albumTitle}</h2></a>
       </div>
-      <a href="detail-track.html" class="punto"><i class="fas fa-ellipsis-h"></i></a>
       </article>
       `
       }

@@ -3,14 +3,26 @@ window.addEventListener("load", function () {
     let queryStringObj = new URLSearchParams(location.search);
     queryStringObj.get('buscador')
     let busqueda = queryStringObj.get('q');
+    
+
+
+    /* descargar gif
+    seccion o articulo que va  acargar lainfo pongo el gif como fondo o imagen
+    pero cuando el feth llega lo oculto
+    
+    */
 
     //QUERY SELECTORS
+    let resTitu = document.querySelector("#resultadoTitulo");
     let resGral = document.querySelector('#resultadosGral');
     let resCanc = document.querySelector("#resultadosCanciones");
     let resAlbu = document.querySelector("#resultadosAlbumes .nomelacontainer");
     let resArti = document.querySelector("#resultadosArtistas .nomelacontainer")
     let form= document.querySelector("#form");
     let search= document.querySelector("#search")
+
+    //RESULTADO DE...
+    resTitu.innerText+=`${busqueda}`
 
    
     //FETCH GENERAL

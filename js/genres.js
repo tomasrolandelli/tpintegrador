@@ -26,8 +26,8 @@ window.addEventListener("load", function () {
             
                 generos.innerHTML+=`
                 <article class="nourcajita">
-                <img class="imgmedium" src="${pictureMedium}" alt="${id}">
-                <a href="genres.html"><h2 class="generosname">${name}</h2></a>
+                <a href="detail-genres.html?id=${id}"><img class="imgmedium" src="${pictureMedium}" alt="${id}"></a>
+                <a href="detail-genres.html?id=${id}"><h2 class="generosname">${name}</h2></a>
                 </article>`
             }
             
