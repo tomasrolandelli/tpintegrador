@@ -58,12 +58,14 @@ window.addEventListener("load", function () {
         let albumID= datos.data[i].id
         let albumTitle = datos.data[i].title;
         let albumCover = datos.data[i].cover;
+        let albumId = datos.data[i].id;
         albumes.innerHTML += `
       <article class="track">
-      <a><img src="${albumCover}" alt="${albumTitle}"></a>
+      <a href="./detail-album?id=${albumId}"><img src="${albumCover}" alt="${albumTitle}"></a>
       <div>
-      <a href="detail-album.html?id="${albumID}"><h2>${albumTitle}</h2></a>
+      <a href="detail-album.html?id=${albumId}"><h2>${albumTitle}</h2></a>
       </div>
+  
       </article>
       `
       }

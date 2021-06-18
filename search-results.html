@@ -31,38 +31,61 @@
         </nav>
     </header>
     <main id="search-results">
-        <section class="search-section">
-            <ul class="search-lista">
-                <li><a href="#resultadosGral">Todo</a></li>
-                <li><a href="#resultadosCanciones">Canciones</a></li>
-                <li><a href="#resultadosArtistas">Artistas</a></li>
-                <li><a href="#resultadosAlbumes">Albumes</a></li>
-            </ul>
+        <section class="tomPadre">
+            <article id="all">
+                <p>ALL</p>
+            </article>
+            <article id="track">
+                <p>TRACK</p>
+            </article>
+            <article id="artist">
+                <p>ARTIST</p>
+            </article>
+            <article id="album">
+                <p>ALBUM</p>
+            </article>
         </section>
         <h2 id="resultadoTitulo" class="generalesSearch">
             Resultados de Búsqueda:
         </h2>
         <section id="resultadosGral" class="generalesSearch">
-            <h1>Mejor resultado</h2>
+            <h1 class="totuloUno">Mejor resultado:</h1>
 
         </section>
         <section id="resultadosCanciones" class="generalesSearch">
-            <h1>Canciones:</h2>
+            <h1 class="totuloDos">Tracks:</h1>
 
         </section>
         <section id="resultadosArtistas" class="scroll">
-            <h1>Artistas:</h2>
-            <div class="nomelacontainer">
+            <h1 class="totuloTres">Artists:</h1>
+                <div class="nomelacontainer">
 
-            </div>
+                </div>
         </section>
         <section id="resultadosAlbumes" class="scroll">
-            <h1>Albumes:</h2>
-            <div class="nomelacontainer">
+            <h1 class="totuloCuatro">Albums:</h1>
+                <div class="nomelacontainer">
 
-            </div>
+                </div>
         </section>
-        <!---<section class="avicii">
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li class="footernour"><img src="./img/Captura de Pantalla 2021-04-10 a la(s) 18.54.31.png" alt="logo">
+                </li>
+                <li class="nombres">Nour</li>
+                <li class="nombres">Tomas</li>
+                <li class="nombres">Clara</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="./js/search-results.js"></script>
+
+    <!-- CODIGO EXTRA -->
+    <!---<section class="avicii">
          <h2 class="title-search"> Artista</h2>
           <article class="artista">
             <figure><img src="https://api.deezer.com/album/194219042/image"></figure>
@@ -148,20 +171,6 @@
         Lo sentimos, pero no hemos encontrado resultados para su búsqueda: "Avicii"  
        </article>
        -->
-    </main>
-    <footer>
-        <nav>
-            <ul>
-                <li class="footernour"><img src="./img/Captura de Pantalla 2021-04-10 a la(s) 18.54.31.png" alt="logo">
-                </li>
-                <li class="nombres">Nour</li>
-                <li class="nombres">Tomas</li>
-                <li class="nombres">Clara</li>
-            </ul>
-        </nav>
-    </footer>
-    <!-- SCRIPT -->
-    <script src="./js/search-results.js"></script>
 </body>
 
 </html>
