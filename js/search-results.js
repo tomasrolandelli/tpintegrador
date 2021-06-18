@@ -44,6 +44,7 @@ window.addEventListener("load", function () {
             console.log(response);
             return response.json()
         })
+
         .then(function (datos) {
             let aprobar = datos.data
             if (aprobar.length!=0) {
@@ -72,6 +73,7 @@ window.addEventListener("load", function () {
             }
             
         })
+
         .catch(function (error) {
             console.log(error);
         })
@@ -220,7 +222,7 @@ window.addEventListener("load", function () {
 
     //ARTIST
     artist.addEventListener("click", function () {
-        resultadoAlbum.style.display="none"
+ 
         //FETCH ARTISTAS
         fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q=${busqueda}`)
             .then(function (response) {
@@ -286,7 +288,7 @@ window.addEventListener("load", function () {
             `
                     }
                 } else {
-            
+            totuloCuatro.style.display="none"
                     resAlbu.innerHTML = `<h1>NO SE ENCONTRARON RESULTADOS DE ${busqueda}</h1>`
                 }
             })

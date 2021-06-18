@@ -1,7 +1,7 @@
 window.addEventListener("load", function(){
   console.log(window);
   console.log(window.location.search);
-
+//onload
 let info= document.querySelector("#datosPortada ");
 let canciones= document.querySelector(".canciones");
 let corazon= document.querySelector(".corazon")
@@ -26,6 +26,7 @@ let imagenChica= datos.cover_small
 let imagenArtista= datos.artist.picture_small
 let releaseDate= datos.release_date
 let genero= datos.genres.data[0].name
+let genreID= datos.genres.data[0].id
 let artist= datos.artist.id
 
 info.innerHTML+=` <article class="portada">
@@ -38,7 +39,7 @@ info.innerHTML+=` <article class="portada">
      <a href="./detail-artist.html?id=${artist}"><h4>${artistaAlbum}</h4></a>
      <h6>${releaseDate}</h6>
     </div>
-    <h4>${genero}</h4>
+    <a href="detail-genres.html?id=${genreID}"><h4>${genero}</h4></a>
 </div> 
 </article>`
 
@@ -52,7 +53,7 @@ for(let i=0; i<album.length; i++){
    
   ` <article class="track">
   <a  class="corazon"><i class="far fa-heart" ></i></a> 
-  <a href="./detail-track.html?id="><img src= "${imagenChica}" alt="${nombreAlbum}"></a> 
+  <a href="./detail-track.html?id=${track}"><img src= "${imagenChica}" alt="${nombreAlbum}"></a> 
  
   <div>
      <a href="detail-track.html?id=${track}"><h2>${nombreCancion}</h2></a>                    

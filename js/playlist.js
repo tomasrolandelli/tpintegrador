@@ -24,18 +24,15 @@ for(let i=0; i<listaFavoritos.length; i++){
         let nombreTrack = datos.title
         let autorTrack = datos.artist.name
         let imagenTrack = datos.artist.picture_medium
-        let albumTrack = datos.album.title
-       
+        let artistID= datos.artist.id
 
         track.innerHTML+=`<article class="track">
-                   
         <a href="./detail-track.html?id=${cancion}"><img src= "${imagenTrack}" alt="${nombreTrack}"></a>
         <div>
         <a href="detail-track.html?id=${cancion}"><h2>${nombreTrack}</h2></a>
-        <a href="detail-track.html?id=${cancion}"><h6>${autorTrack}</h6></a>
+        <a href="detail-artist.html?id=${artistID}"><h6>${autorTrack}</h6></a>
        </div>
-       
-   </article>`
+        </article>`
     })
     .catch(function (error) {
         console.log(error)
