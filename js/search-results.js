@@ -65,8 +65,8 @@ window.addEventListener("load", function () {
                 resCanc.style.display = "none";
                 resArti.style.display = "none";
                 resAlbu.style.display = "none";
-                totuloTres.style.display = "none";
-                totuloCuatro.style.display = "none";
+                resultadoAlbum.style.display = "none";
+                resultadoArtista.style.display = "none";
 
 
             }
