@@ -15,6 +15,16 @@ nav{
   flex-wrap: wrap;
   justify-content: space-between;
 }
+nav .row1 .primeroH{
+    color: red;
+    font-size: large;
+    display: none;
+}
+nav .row1 .segundoH{
+    color: red;
+    font-size: large;
+    display: none;
+}
 header nav{
     border-bottom: solid 3px grey;
 }

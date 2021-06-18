@@ -32,7 +32,7 @@ window.addEventListener("load", function () {
 
     //RESULTADO DE...
 
-    resTitu.innerText+=`${busqueda}`
+    resTitu.innerText+=` "${busqueda}"`
 
 
     //ALL
@@ -251,6 +251,7 @@ window.addEventListener("load", function () {
             })
 
         resArti.style.display = "block";
+        resultadoArtista.style.display = "block";
         resGral.style.display = "none";
         resCanc.style.display = "none";
         resAlbu.style.display = "none";
@@ -295,6 +296,7 @@ window.addEventListener("load", function () {
             })
 
         resAlbu.style.display = "block";
+        resultadoAlbum.style.display = "block";
         resGral.style.display = "none";
         resCanc.style.display = "none";
         resArti.style.display = "none";
