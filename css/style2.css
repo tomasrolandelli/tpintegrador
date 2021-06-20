@@ -395,6 +395,10 @@ margin-top:15% ;
     flex-direction: column;
     margin-right: 5%;
     margin-left: 5%;
+    background-image: url(../img/loader.gif);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
 }
 #search-results ul{
     list-style: none;
@@ -458,13 +462,27 @@ margin-top:15% ;
 #search-results .tomPadre article{
     height: 100%;
     width: 23%;
-    background-color: purple;
+    background-color: rgba(126, 20, 142, 0.393);
+    border: solid 3px white;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #search-results .tomPadre article p{
     font-size: x-large;
+}
+.favoritoTom{
+    background-color: rgba(126, 20, 142, 0.393);
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+}
+.favoritoTom img{
+    border: solid 3px white;
+    margin-top: 10px;
 }
 
 

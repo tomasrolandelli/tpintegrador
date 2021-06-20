@@ -13,6 +13,7 @@ window.addEventListener("load", function () {
     */
 
     //QUERY SELECTORS
+    let supremo = document.querySelector("#search-results")
     let resTitu = document.querySelector("#resultadoTitulo");
     let resGral = document.querySelector('#resultadosGral');
     let resCanc = document.querySelector("#resultadosCanciones");
@@ -45,6 +46,7 @@ window.addEventListener("load", function () {
             return response.json()
         })
         .then(function (datos) {
+            supremo.style.backgroundImage = "none"
             let aprobar = datos.data
             if (aprobar.length!=0) {
                 let imagenGral = aprobar[0].album.cover;
@@ -52,13 +54,13 @@ window.addEventListener("load", function () {
             let typeGral = aprobar[0].type;
             let linkGral = aprobar[0].link;
             resGral.innerHTML += `
-    <div>
+    <article class="favoritoTom">
     <a href="./detail-track.html?id=${linkGral}">
     <img src="${imagenGral}">
     <h3>${titleGral}</h2>
-    <p>${typeGral}</p>
+    <p>[${typeGral}]</p>
     </a>
-    </div>
+    </article>
     `
             } else {
                 resGral.innerHTML = `NO SE ENCONTRARON RESULTADOS DE ${busqueda}`
