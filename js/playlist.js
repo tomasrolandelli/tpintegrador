@@ -3,7 +3,7 @@ window.addEventListener("load", function(){
 let recuperoStorage= localStorage.getItem("favoritos");
 let track = document.querySelector(".canciones")
 
-
+let listaFavoritos= []
 //en el caso de que haya elementos en storage. Osea no sea nulo,
 if (recuperoStorage != null){
     //transformo el string en array

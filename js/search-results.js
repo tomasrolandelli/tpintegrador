@@ -37,14 +37,12 @@ window.addEventListener("load", function () {
 
     //ALL
 
-
     //FETCH GENERAL
     fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${busqueda}`)
         .then(function (response) {
             console.log(response);
             return response.json()
         })
-
         .then(function (datos) {
             let aprobar = datos.data
             if (aprobar.length!=0) {
@@ -288,7 +286,7 @@ window.addEventListener("load", function () {
             `
                     }
                 } else {
-            totuloCuatro.style.display="none"
+      
                     resAlbu.innerHTML = `<h1>NO SE ENCONTRARON RESULTADOS DE ${busqueda}</h1>`
                 }
             })

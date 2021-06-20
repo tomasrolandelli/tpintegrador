@@ -1,13 +1,11 @@
 window.addEventListener("load", function(){
 
-let track= document.querySelector("#tracks") 
-console.log(track) 
-let album= document.querySelector("#album")
-let artist= document.querySelector("#artistas")
+let track= document.querySelector("#tracks");
+let album= document.querySelector("#album");
+let artist= document.querySelector("#artistas");
 
 fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart')
 .then(function(response){
-    console.log(response)
 return response.json()
 })
 .then(function(datos){
@@ -20,15 +18,15 @@ for (let i=0; i<albums.length; i++){
 let nombreAlbum= albums[i].title
 let artistaAlbum= albums[i].artist.name
 let imagenAlbum= albums[i].cover_medium
-album.innerHTML += ` 
+let artistID= albums[i].artist.id
 
+album.innerHTML += ` 
                     <article>
 <a href="./detail-album.html?id=${albums[i].id}" ><img src="${imagenAlbum}" alt="${nombreAlbum}"></a>
 <a href="./detail-album.html?id=${albums[i].id}"> <h3>${nombreAlbum}</h3> </a>
-<a href="./detail-album.html?id=${albums[i].id}"> <h4>${artistaAlbum}</h4></a>
+<a href="./detail-artist.html?id=${artistID}"> <h4>${artistaAlbum}</h4></a>
     </article>
  `
-
 }
 
 for (let i=0;i<artistas.length; i++){
@@ -46,11 +44,12 @@ for (let i=0; i<canciones.length; i++){
     let autorTrack= canciones[i].artist.name
     let imagenTrack= canciones[i].artist.picture_medium
     let albumTrack = canciones[i].album.title
+    let artistID = canciones[i].artist.id
     track.innerHTML+= 
     `<article>
     <a href="./detail-track.html?id=${canciones[i].id}"><img src="${imagenTrack}" alt="${nombreTrack}"></a>
-
-        <h3 id="indexhead3">${albumTrack}</h3><h4>${autorTrack}</h4>
+    <a href="./detail-track.html?id=${canciones[i].id}"> <h3 id="indexhead3">${albumTrack}</h3></a>
+       <a href="detail-artist.html?id=${artistID}"> <h4>${autorTrack}</h4><a>
         </div>
     </a>
 </article>`

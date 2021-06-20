@@ -1,7 +1,6 @@
 window.addEventListener("load", function(){
-  console.log(window);
-  console.log(window.location.search);
-//onload
+
+
 let info= document.querySelector("#datosPortada ");
 let canciones= document.querySelector(".canciones");
 let corazon= document.querySelector(".corazon")
