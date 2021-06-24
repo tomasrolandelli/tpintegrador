@@ -13,6 +13,8 @@ window.addEventListener("load", function () {
   //DECLARO VARIABLES
   let artista = document.querySelector("#artistatom");
   let albumes = document.querySelector("#albumes-artista");
+  let img = document.querySelector(".portada .banner img")
+  let hUno = document.querySelector("#album h1")
 
   //FETCH
   fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${busqueda}`)
@@ -29,15 +31,9 @@ window.addEventListener("load", function () {
       let fotoArtista = cantantes.picture_medium;
       let nombreArtista = cantantes.name;
       
-
-      artista.innerHTML += `
-      <article class="portada">
-      <figure class="banner"><img src="${fotoArtista}" alt="${nombreArtista}"></figure>
-      <div  id="album">
-      <h1>${nombreArtista}</h1>
-      </div>
-      </article>
-      `
+      hUno.innerText = nombreArtista;
+      img.src = fotoArtista;
+      img.alt = nombreArtista;
     }
 
     )
