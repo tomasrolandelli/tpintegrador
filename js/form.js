@@ -7,7 +7,7 @@ window.addEventListener("load", function () {
     let segundo = document.querySelector(".segundoH");
 
 
-    //CONDICINAL
+    //EVENTO Y CONDICIONAL
     formulario.addEventListener("submit", function (event) {
         event.preventDefault();
         if (inputT.value.length == 0) {
