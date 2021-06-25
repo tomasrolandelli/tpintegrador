@@ -59,7 +59,7 @@ window.addEventListener("load", function () {
       <article class="track">
       <a href="./detail-album.html?id=${albumId}"><img src="${albumCover}" alt="${albumTitle}"></a>
       <div>
-      <a href="detail-album.html?id=${albumId}"><h2>${albumTitle}</h2></a>
+      <a href="detail-album.html?id=${albumID}"><h2>${albumTitle}</h2></a>
       </div>
   
       </article>
@@ -67,5 +67,7 @@ window.addEventListener("load", function () {
       }
 
     })
-    .catch()
+    .catch(function(error){
+      console.log(error);
+    })
 })

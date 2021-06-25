@@ -43,7 +43,6 @@ window.addEventListener("load", function () {
 
     //ALL
 
-
     //FETCH GENERAL
     fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${busqueda}`)
         .then(function (response) {
@@ -79,6 +78,7 @@ window.addEventListener("load", function () {
             }
             
         })
+
         .catch(function (error) {
             console.log(error);
         })
@@ -227,7 +227,7 @@ window.addEventListener("load", function () {
 
     //ARTIST
     artist.addEventListener("click", function () {
-        resultadoAlbum.style.display="none"
+ 
         //FETCH ARTISTAS
         fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q=${busqueda}`)
             .then(function (response) {
@@ -294,7 +294,7 @@ window.addEventListener("load", function () {
             `
                     }
                 } else {
-            
+      
                     resAlbu.innerHTML = `<h1>NO SE ENCONTRARON RESULTADOS DE ${busqueda}</h1>`
                 }
             })
