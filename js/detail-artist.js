@@ -31,22 +31,9 @@ window.addEventListener("load", function () {
       let fotoArtista = cantantes.picture_medium;
       let nombreArtista = cantantes.name;
       
-<<<<<<< HEAD
-
-      artista.innerHTML += 
-      `
-      <article class="portada">
-      <figure class="banner"><img src="${fotoArtista}" alt="${nombreArtista}"></figure>
-      <div  id="album">
-      <h1>${nombreArtista}</h1>
-      </div>
-      </article>
-      `
-=======
       hUno.innerText = nombreArtista;
       img.src = fotoArtista;
       img.alt = nombreArtista;
->>>>>>> 77417bd24f29f2b268f9c75efc8f0de867a7d0a8
     }
 
     )
