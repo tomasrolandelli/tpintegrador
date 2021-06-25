@@ -13,17 +13,20 @@
         <header>
             <nav>
                 <div class="row1"><a class="logo3" href="index.html"><img src="./img/Captura de Pantalla 2021-04-10 a la(s) 18.54.31.png"></a>
-                <form class="example" action="search-results.html">
-                    <input type="text" placeholder="Search.." name="q">
+                    <form class="example" action="search-results.html" method="GET">
+                    <input id="tomInput" type="text" placeholder="Search.." name="q">
                     <button type="submit"><i class="fa fa-search"></i></button>
-                </form></div>
+                    </form>
+                    <h2 class="primeroH">EL CAMPO NO PUEDE ESTAR VACIO</h2>
+                    <h2 class="segundoH">INGRESE AL MENOS 3 CARACTERES</h2>
+                </div>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="genres.html">Generos</a></li>
-                    <li><a href="playlist.html">Playlist</a></li>
-                </ul>
+                    <li><a href="playlist.html">Playlist</a></li>   
+                </ul>   
             </nav>
-        </header>        
+         </header>        
     <main class="generostomi">
             <h1 id="generosid"></h1>
             <h2>Artistas populares</h2>
@@ -95,5 +98,6 @@
             </nav>
         </footer>
         <script src="./js/detail-genres.js"></script>
+        <script src="./js/form.js"></script>
     </body>
 </html>

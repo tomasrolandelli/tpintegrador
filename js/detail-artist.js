@@ -30,7 +30,8 @@ window.addEventListener("load", function () {
       let nombreArtista = cantantes.name;
       
 
-      artista.innerHTML += `
+      artista.innerHTML += 
+      `
       <article class="portada">
       <figure class="banner"><img src="${fotoArtista}" alt="${nombreArtista}"></figure>
       <div  id="album">
@@ -61,7 +62,7 @@ window.addEventListener("load", function () {
         let albumId = datos.data[i].id;
         albumes.innerHTML += `
       <article class="track">
-      <a href="./detail-album?id=${albumID}"><img src="${albumCover}" alt="${albumTitle}"></a>
+      <a href="./detail-album.html?id=${albumId}"><img src="${albumCover}" alt="${albumTitle}"></a>
       <div>
       <a href="detail-album.html?id=${albumID}"><h2>${albumTitle}</h2></a>
       </div>

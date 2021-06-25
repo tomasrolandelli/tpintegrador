@@ -27,7 +27,7 @@ window.addEventListener("load", function () {
             track.innerHTML += 
             `<a href="./detail-track.html"><div class= "divtrack"><div class= "divtrackhijo"><img class= "imgtrack" src="${imagenTrack}" alt="${nombreTrack}"></a>
             <a href="./detail-track.html"><h1 class= "headtrack" id="h1track">${nombreTrack}<h1>
-            <h3 class= "headtrack" id="h3track">${albumTrack}</h3>
+            <a href="./detail-artist.html?id=${artist}">  <h3 class= "headtrack" id="h3track">${albumTrack}</h3></a>
            <a href="./detail-artist.html?id=${artist}"> <h4 class= "headtrack">${autorTrack}</h4></a>
             <audio controls class="audiotrack"><source src="${linkTrack}"></audio>
             </a>
@@ -40,10 +40,10 @@ window.addEventListener("load", function () {
 let listaFavoritos= []
 
 let recuperoStorage= localStorage.getItem('favoritos');
-console.log(recuperoStorage)
+console.log(recuperoStorage);
 
 if (recuperoStorage != null){
-    listaFavoritos=JSON.parse(recuperoStorage)
+    listaFavoritos=JSON.parse(recuperoStorage);
 }
 let agregarAFav= document.querySelector('#agregarAFav');
 
@@ -53,7 +53,7 @@ if (listaFavoritos.includes(busqueda)){
     <i class="fas fa-heart"></i>`
     }
 
-agregarAFav.addEventListener('click', function(e){
+ agregarAFav.addEventListener('click', function(e){
     e.preventDefault();
    
     if (listaFavoritos.includes(busqueda)){
@@ -63,8 +63,7 @@ agregarAFav.addEventListener('click', function(e){
         agregarAFav.innerHTML =`
       <button>Agregar a mi playlist</button>
       <i class="far fa-heart"></i>`
-        console.log(listaFavoritos)
-
+        console.log(listaFavoritos);
     }
 
    else {
@@ -75,10 +74,10 @@ agregarAFav.addEventListener('click', function(e){
         `;
 
     }
-  
+    
     let trackAStorage= JSON.stringify(listaFavoritos);
-    localStorage.setItem('favoritos', trackAStorage)
-    console.log(localStorage)
+    localStorage.setItem('favoritos', trackAStorage);
+    console.log(localStorage);
 })
 
 

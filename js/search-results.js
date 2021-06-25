@@ -13,6 +13,7 @@ window.addEventListener("load", function () {
     */
 
     //QUERY SELECTORS
+    let supremo = document.querySelector("#search-results")
     let resTitu = document.querySelector("#resultadoTitulo");
     let resGral = document.querySelector('#resultadosGral');
     let resCanc = document.querySelector("#resultadosCanciones");
@@ -32,7 +33,7 @@ window.addEventListener("load", function () {
 
     //RESULTADO DE...
 
-    resTitu.innerText+=`${busqueda}`
+    resTitu.innerText+=` "${busqueda}"`
 
 
     //ALL
@@ -44,6 +45,7 @@ window.addEventListener("load", function () {
             return response.json()
         })
         .then(function (datos) {
+            supremo.style.backgroundImage = "none"
             let aprobar = datos.data
             if (aprobar.length!=0) {
                 let imagenGral = aprobar[0].album.cover;
@@ -51,21 +53,21 @@ window.addEventListener("load", function () {
             let typeGral = aprobar[0].type;
             let linkGral = aprobar[0].link;
             resGral.innerHTML += `
-    <div>
+    <article class="favoritoTom">
     <a href="./detail-track.html?id=${linkGral}">
     <img src="${imagenGral}">
     <h3>${titleGral}</h2>
-    <p>${typeGral}</p>
+    <p>[${typeGral}]</p>
     </a>
-    </div>
+    </article>
     `
             } else {
                 resGral.innerHTML = `NO SE ENCONTRARON RESULTADOS DE ${busqueda}`
                 resCanc.style.display = "none";
                 resArti.style.display = "none";
                 resAlbu.style.display = "none";
-                totuloTres.style.display = "none";
-                totuloCuatro.style.display = "none";
+                resultadoAlbum.style.display = "none";
+                resultadoArtista.style.display = "none";
 
 
             }
@@ -251,6 +253,7 @@ window.addEventListener("load", function () {
             })
 
         resArti.style.display = "block";
+        resultadoArtista.style.display = "block";
         resGral.style.display = "none";
         resCanc.style.display = "none";
         resAlbu.style.display = "none";
@@ -295,6 +298,7 @@ window.addEventListener("load", function () {
             })
 
         resAlbu.style.display = "block";
+        resultadoAlbum.style.display = "block";
         resGral.style.display = "none";
         resCanc.style.display = "none";
         resArti.style.display = "none";

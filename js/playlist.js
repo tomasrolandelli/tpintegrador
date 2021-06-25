@@ -1,18 +1,11 @@
 window.addEventListener("load", function(){
-
+    let track = document.querySelector(".canciones");
 let recuperoStorage= localStorage.getItem("favoritos");
-let track = document.querySelector(".canciones")
 
-let listaFavoritos= []
-//en el caso de que haya elementos en storage. Osea no sea nulo,
-if (recuperoStorage != null){
-    //transformo el string en array
-    //parse transforma a json en obj literal
-    listaFavoritos=JSON.parse(recuperoStorage)
-    console.log(listaFavoritos)
-}
+let listaFavoritos=JSON.parse(recuperoStorage);
 
-for(let i=0; i<listaFavoritos.length; i++){
+
+for(let i=0; i< listaFavoritos.length; i++){
     let cancion= listaFavoritos[i];
     fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${cancion}`)
     .then(function (response) {

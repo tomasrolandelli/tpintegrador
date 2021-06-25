@@ -11,19 +11,22 @@
     <title>Detail Artist</title>
 </head>
 <body>
-     <header>
-            <nav>
-                <div class="row1"><a class="logo3" href="index.html"><img src="./img/Captura de Pantalla 2021-04-10 a la(s) 18.54.31.png"></a>
-                <form class="example" action="search-results.html">
-                    <input type="text" placeholder="Search.." name="q">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form></div>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="genres.html">Generos</a></li>
-                    <li><a href="playlist.html">Playlist</a></li>
-                </ul>
-            </nav>
+    <header>
+        <nav>
+            <div class="row1"><a class="logo3" href="index.html"><img src="./img/Captura de Pantalla 2021-04-10 a la(s) 18.54.31.png"></a>
+                <form class="example" action="search-results.html" method="GET">
+                <input id="tomInput" type="text" placeholder="Search.." name="q">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <h2 class="primeroH">EL CAMPO NO PUEDE ESTAR VACIO</h2>
+                <h2 class="segundoH">INGRESE AL MENOS 3 CARACTERES</h2>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="genres.html">Generos</a></li>
+                <li><a href="playlist.html">Playlist</a></li>   
+            </ul>   
+        </nav>
      </header>
     <main id="detail-album">
             <div id="artistatom">
@@ -85,5 +88,6 @@
     </footer>
     <!--- SCRIPT -->
     <script src="./js/detail-artist.js"></script>
+    <script src="./js/form.js"></script>
 </body>
 </html>
