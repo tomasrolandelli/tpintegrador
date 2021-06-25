@@ -23,12 +23,17 @@ window.addEventListener("load", function () {
     let track = document.querySelector("#track");
     let artist = document.querySelector("#artist");
     let album = document.querySelector("#album");
+    let resultadoArtista=document.querySelector("#resultadosArtistas");
+    let resultadoAlbum= document.querySelector("#resultadosAlbumes");
+    
+    // VARIABLES NO USADAS
+
+    /*
     let totuloUno = document.querySelectorAll(".totuloUno");
     let totuloDos = document.querySelectorAll(".totuloDos");
     let totuloTres = document.querySelectorAll(".totuloTres");
     let totuloCuatro = document.querySelectorAll(".totuloCuatro");
-    let resultadoArtista=document.querySelector("#resultadosArtistas");
-    let resultadoAlbum= document.querySelector("#resultadosAlbumes");
+    */
 
 
     //RESULTADO DE...
@@ -52,7 +57,7 @@ window.addEventListener("load", function () {
                 let imagenGral = aprobar[0].album.cover;
             let titleGral = aprobar[0].title;
             let typeGral = aprobar[0].type;
-            let linkGral = aprobar[0].link;
+            let linkGral = aprobar[0].id;
             resGral.innerHTML += `
     <article class="favoritoTom">
     <a href="./detail-track.html?id=${linkGral}">

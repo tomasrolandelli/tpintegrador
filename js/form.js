@@ -16,7 +16,6 @@ window.addEventListener("load", function () {
         } else if (inputT.value.length < 3 && inputT.value.length != 0) {
             segundo.style.display = "block";
             primero.style.display = "none";
-
         } else {
             this.submit()
         }
