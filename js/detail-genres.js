@@ -3,8 +3,9 @@ window.addEventListener("load", function () {
     console.log(window.location.search);
 
     let queryString = location.search;
-    let queryStringObj = new URLSearchParams(queryString)
+    let queryStringObj = new URLSearchParams(queryString)   
     let busqueda = queryStringObj.get('id');
+
     
     let generos = document.querySelector("#generosid")
     let artist = document.querySelector('.nomelacontainer')
@@ -15,10 +16,9 @@ window.addEventListener("load", function () {
         console.log(response)
         return response.json()
     })
-    .then(function (datos) {
-        console.log(datos)
-      let genres = datos
-      let name = genres.name
+    .then(function (data) {
+        console.log(data)
+      let name = data.name
 
         generos.innerHTML+=`
         ${name}`
@@ -33,9 +33,9 @@ window.addEventListener("load", function () {
         console.log(response)
         return response.json()
     })
-    .then(function (datos) {
-        console.log(datos)
-    let artistas = datos.data
+    .then(function (data) {
+        console.log(data)
+    let artistas = data.data
 
     for(let i=0; i<artistas.length; i++){
         let artistID= artistas[i].id
@@ -49,5 +49,10 @@ window.addEventListener("load", function () {
     </article>`
     }
     })
+    .catch(function (error) {
+        console.log(error)
+    })
 })
+
+
 
